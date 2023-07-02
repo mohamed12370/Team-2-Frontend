@@ -3,7 +3,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const CircleProgress = () => {
-  const percentage1 = 70;
+  const percentage1 = 90;
   const NumOfQuestion = 20;
 
   return (

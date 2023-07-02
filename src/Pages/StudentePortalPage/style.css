@@ -14,17 +14,13 @@ body {
   margin: auto;
 }
 
-
-.container2{
-
+.container2 {
   /* padding-top: 5px; */
   width: 87% !important;
   margin: auto;
- 
-
 }
 
-.background-color{
+.background-color {
   background-color: #1a1919f1;
 }
 
@@ -38,83 +34,75 @@ body {
   background-color: #1a1919f1;
 }
 
-
 .titles-page {
   font-size: 55px;
 }
 
 .introuduction-text h4 {
   font-size: 38px !important;
-
 }
 
 .titles-page1 {
-  color: #BF9B30;
+  color: #bf9b30;
 }
 
-
-.instructor-text,.instructor-subtext {
-
+.instructor-text,
+.instructor-subtext {
   font-size: 25px;
   font-weight: 600;
 }
 
 .instructor-text {
-  color: #BF9B30;
+  color: #bf9b30;
 }
 
 button {
-
-  width: 200px;
-  height: 60px;
-  background-color: #BF9B30 !important;
+  /* width: 200px; */
+  /* height: 60px; */
+  background-color: #bf9b30;
   color: white !important;
-  font-size: 22px !important;
+  font-size: 20px;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .titles-page {
     font-size: 35px !important;
   }
 
-
   .introuduction-text h4 {
     font-size: 23px !important;
-
   }
 
-  .instructor-text,.instructor-subtext {
-
+  .instructor-text,
+  .instructor-subtext {
     font-size: 18px;
     font-weight: 300;
   }
 
-  button {
+  /* button {
     height: 40px !important;
-    font-size: 13px !important;
+    font-size: 13px;
     width: 110px !important;
-
-  }
+  } */
 }
 
 /* ///////////////////////////////////////    Sub Title      //////////////////////////////////////////// */
 
 .studentportal {
   color: #b7b4b4;
-  font-size: 23PX;
+  font-size: 20px;
 }
 
 .studentportalline {
-  background-color: #BF9B30;
+  background-color: #bf9b30;
   width: 115px;
   height: 1px;
   margin: -7px 0px 5px 2px;
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .studentportal {
     font-size: 17px;
   }
@@ -122,38 +110,46 @@ button {
 
 /* ////////////////////////     Student Portal Title And View    //////////////////// */
 
-.welcom-back,.welcom-back1 {
-  font-size: 55px;
+.welcom-back,
+.welcom-back1 {
+  font-size: 30px;
   text-transform: uppercase;
 }
 
 .welcom-back1 {
-  color: #BF9B30;
+  color: #bf9b30;
 }
 
 .btn-view-profile {
-  width: 200px;
-  background-color: #BF9B30;
+  /* width: 200px; */
+  background-color: #bf9b30;
   color: white;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-
 }
 
-@media(max-width:567px) {
-  .welcom-back,.welcom-back1 {
-    font-size: 30px;
+@media (max-width: 768px) {
+  .welcom-back,
+  .welcom-back1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .welcom-back,
+  .welcom-back1 {
+    font-size: 20px;
   }
 
   .btn-view-profile {
-    font-size: 13px;
+    /* font-size: 13px;
     margin-top: 30px;
     width: 110px;
-    padding: 7px !important;
+    padding: 7px !important; */
+    font-size: 14px;
   }
 }
-
 
 /* ///////////////////////////////////     Number Upcoming And Registered And Completed    //////////////////////////// */
 
@@ -165,17 +161,17 @@ button {
   margin-left: 0px !important;
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .Number-Upcoming-Registered-Completed {
     padding: 0px;
   }
 }
 
 .Number-Upcoming-Registered h2 {
-  height: 120px;
-  font-size: 60px;
+  height: 100px;
+  font-size: 50px;
   font-weight: 600;
-  border: 2px solid #BF9B30;
+  border: 2px solid #bf9b30;
   border-radius: 5px;
   padding: 15px 0px;
 }
@@ -184,16 +180,14 @@ button {
   font-size: 34px;
 }
 
-
 /* //////////////////////////////   Level And ProgressBar    //////////////////////////////////////// */
-
 
 .LevelAndProgressBar h4 {
   margin-bottom: 23px;
   font-size: 38px;
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .LevelAndProgressBar h4 {
     margin-bottom: 13px;
     font-size: 19px;
@@ -206,9 +200,8 @@ button {
 }
 
 .progress-bar {
-  background-color: #BF9B30;
+  background-color: #bf9b30;
 }
-
 
 /* //////////////////////////////////      All Clear          //////////////////////////////// */
 
@@ -228,7 +221,7 @@ button {
   font-size: 35px;
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .AllClear h4 {
     font-size: 20px !important;
     padding-left: 10px !important;
@@ -242,8 +235,6 @@ button {
     padding: 43px 10px 30px 5px !important;
   }
 }
-
-
 
 /* //////////////////////////////      Registered Courses     //////////////////////////// */
 
@@ -269,9 +260,7 @@ button {
   margin-top: 40px !important;
 }
 
-
-@media(max-width:567px) {
-
+@media (max-width: 567px) {
   .Registered-Courses h3 {
     font-size: 23px !important;
   }
@@ -279,18 +268,15 @@ button {
   .lev1-view {
     margin-top: 5px !important;
   }
-
 }
-
 
 /* ///////////////////////////////////    Upcoming  Exams /////////////////////// */
 .lev1Exam {
   font-size: 23px !important;
 }
 
-
 .list-group-item {
-  background-color: #BF9B30 !important;
+  background-color: #bf9b30 !important;
   border: none !important;
 }
 
@@ -298,28 +284,24 @@ button {
   background-color: rgba(0, 0, 0, 0.962);
 }
 
-@media(max-width:567px) {
-
+@media (max-width: 567px) {
   .lev1Exam {
     font-size: 19px !important;
   }
-
-
 }
 
 /* /////////////////////////////////         Here-Is-How-You  //////////////////////////// */
 
-.card-body,.card-body1 {
+.card-body,
+.card-body1 {
   background: rgba(0, 0, 0, 0.962);
 }
-
-
 
 .circularparent {
   margin: 30px 0px;
   position: relative;
-  width:200px !important;
-  height:200px !important;
+  width: 200px !important;
+  height: 200px !important;
 }
 
 .circularchildren {
@@ -328,9 +310,8 @@ button {
   position: absolute;
 }
 
-.circularchildren h4{
-
-font-size: 30px !important;
+.circularchildren h4 {
+  font-size: 30px !important;
   font-weight: 800;
 }
 
@@ -350,40 +331,34 @@ font-size: 30px !important;
   font-weight: 700;
 }
 
-
-
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .circularparent {
     margin: 30px 0px !important;
     position: relative;
-    width:105px !important;
-    height:105px !important;
+    width: 105px !important;
+    height: 105px !important;
   }
- 
+
   .circularchildren {
     width: 5em;
     height: 5em;
     position: absolute;
-  
   }
 
-   .card-body{
+  .card-body {
     padding-top: 50px !important;
-   }
+  }
 
-
-  .props-title , .hour ,.card-text ,.circularchildren h4{
-
-  
-      /* padding-top: 50px !important; */
+  .props-title,
+  .hour,
+  .card-text,
+  .circularchildren h4 {
+    /* padding-top: 50px !important; */
     font-size: 20px !important;
     font-weight: 300;
     margin: 0px !important;
   }
-
-  
-
-  }
+}
 /* //////////////////////////////////   Earned-Certificates     /////////////////////////////////////// */
 
 .Earned-Certificates-box {
@@ -397,29 +372,29 @@ font-size: 30px !important;
   font-size: 38px !important;
 }
 
-.Earned-Certificates-subtitle1,.Earned-Certificates-subtitle2 {
+.Earned-Certificates-subtitle1,
+.Earned-Certificates-subtitle2 {
   font-size: 20px;
   font-weight: 600;
 }
 
 .Earned-Certificates-subtitle1 {
-  color: #BF9B30;
+  color: #bf9b30;
 }
 
 .Earned-Certificates-button {
   width: 200px;
-  background-color: #BF9B30;
+  background-color: #bf9b30;
   color: white;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-@media(max-width:567px) {
+@media (max-width: 567px) {
   .Earned-Certificates-button {
     font-size: 13px;
     width: 110px !important;
     padding: 7px !important;
-
   }
 }
