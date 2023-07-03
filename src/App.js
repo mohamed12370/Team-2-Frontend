@@ -4,6 +4,7 @@ import HomePage from './Pages/Home/HomePage';
 import ExamResultPage from './Pages/ExamResult/ExamResultPage';
 import AdminCreateUserPage from './Pages/Admin/AdminCreateUserPage/AdminCreateUserPage';
 import CreateNewExamPage from './Pages/ExamPages/CreateNewExamPage/CreateNewExamPage';
+import OnlineExamPage from './Pages/ExamPages/OnlineExamPage/OnlineExamPage';
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/studentportal" element={<StudentPortalPage />} />
+          {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
+          <Route path="/onlineexam" element={<OnlineExamPage />} />
           {/* Admin Route */}
           <Route path="/createuser" element={<AdminCreateUserPage />} />
         </Routes>
