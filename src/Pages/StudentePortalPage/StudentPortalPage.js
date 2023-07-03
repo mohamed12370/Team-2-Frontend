@@ -19,7 +19,6 @@ function StudentPortalPage() {
         <LevelAndProgressBar />
         <AllClear />
       </div>
-
       <div className="background-color">
         <div className=" container2">
           <RegisteredCoursesAndUpcomingExams />

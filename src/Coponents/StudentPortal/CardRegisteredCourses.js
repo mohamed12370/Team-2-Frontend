@@ -1,17 +1,25 @@
-function CardRegisteredCourses(props) {
+function CardRegisteredCourses({ title = '' }) {
   return (
-    <div class="row col-lg-12 introuduction-text Registered-Courses my-5 py-3">
+    <div className="row col-lg-12 Registered-Courses-introuduction-text  my-4 py-2">
       <h4>Introduction to React js </h4>
       <span>
         {' '}
-        <span className="instructor-text">Instructor </span>{' '}
-        <span className=" instructor-subtext "> : {props.title} </span>
+        <span className="Registered-Courses-instructor-text">
+          Instructor{' '}
+        </span>{' '}
+        <span className=" Registered-Courses-instructor-subtext ">
+          {' '}
+          : {title}{' '}
+        </span>
       </span>
       <br /> <br />
-      <div className="row lev1-view">
-        <h3 className="col-6 ">LEV.1</h3>
+      <div className="row ">
+        <h3 className="col-6 Registered-Courses-lev1 ">LEV.1</h3>
         <div className="col-6  clearfix">
-          <button className="view-profile float-end btn mb-4 " type="button">
+          <button
+            className="view-profile float-end btn mb-4 Registered-Courses-button"
+            type="button"
+          >
             VIEW DETAILS
           </button>
         </div>
