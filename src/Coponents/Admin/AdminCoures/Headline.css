@@ -1,0 +1,39 @@
+.headline{
+    text-transform: capitalize;
+    padding: 42px 0px;
+  }
+.section{
+    color: #D0D0D0;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.headline hr{
+    margin: 0px;
+    width: 70px;
+    background-color: #BF9B30;
+  }
+
+ .button-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+} 
+
+
+.button-div button{
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: .3s;
+    margin-right: 2rem;
+    
+    
+    
+}
+
+.button-div button:hover{
+    background-color:var(--hover);
+}

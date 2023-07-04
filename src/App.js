@@ -2,10 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import StudentPortalPage from './Pages/StudentePortalPage/StudentPortalPage';
 import HomePage from './Pages/Home/HomePage';
 import ExamResultPage from './Pages/ExamPages/ExamResult/ExamResultPage';
-import AdminCreateUserPage from './Pages/Admin/AdminUser/AdminCreateUserPage';
+import AdminCreateUserPage from './Pages/Admin/AdminUser/AdminCreateUser/AdminCreateUserPage';
 import CreateNewExamPage from './Pages/ExamPages/CreateNewExamPage/CreateNewExamPage';
 import OnlineExamPage from './Pages/ExamPages/OnlineExamPage/OnlineExamPage';
-import CreateCVPageMainIfo from './Pages/CreateCV/CreateCVPage';
 import MainInformationPage from './Pages/CreateCV/main-information';
 import SummaryPage from './Pages/CreateCV/summary';
 import SkillsPage from './Pages/CreateCV/skills';
@@ -14,6 +13,8 @@ import HobbiesAndInterestsPage from './Pages/CreateCV/hobbies-and-interests';
 import ExperiencePage from './Pages/CreateCV/experience';
 import EducationPage from './Pages/CreateCV/education';
 import LinksPage from './Pages/CreateCV/links';
+import AdminAllArticlesPage from './Pages/Admin/AdminArticles/AdminAllArticlesPage';
+import AdminAllUsersPage from './Pages/Admin/AdminUser/AdminAllUser/AdminAllUsersPage';
 
 function App() {
   return (
@@ -22,15 +23,17 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/studentportal" element={<StudentPortalPage />} />
+
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
           <Route path="/onlineexam" element={<OnlineExamPage />} />
           {/* Admin Route */}
-          <Route path="/createuser" element={<AdminCreateUserPage />} />
+          <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
+          <Route path="/adminalluser" element={<AdminAllUsersPage />} />
+          <Route path="/adminallcoures" element={<AdminAllArticlesPage />} />
 
           {/* Create Cv */}
-          {/* <Route path="/createcvmaininfo" element={<CreateCVPageMainIfo />} /> */}
           <Route
             path="/createcv/main-information"
             element={<MainInformationPage />}
