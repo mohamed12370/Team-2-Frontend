@@ -1,14 +1,11 @@
 import React from 'react';
-
-export default function AdminSidebar() {
+const Side = () => {
   return (
     <div className="Side">
       <div className="SideDiv">
-        <h3 className="SideHeader ">
-          <a href="#/" className="fs-5">
-            Users
-          </a>
-        </h3>
+        <h5 className="SideHeader ff">
+          <a href="#/">Users</a>
+        </h5>
         <ul>
           <li>
             <a href="#/">Admins</a>
@@ -25,11 +22,9 @@ export default function AdminSidebar() {
         </ul>
       </div>
       <div className="SideDiv">
-        <h3 className="SideHeader">
-          <a href="#/" className="fs-5">
-            Articles
-          </a>
-        </h3>
+        <h5 className="SideHeader">
+          <a href="#/">Articles</a>
+        </h5>
         <ul>
           <li>
             <a href="#/">Published Articles</a>
@@ -43,11 +38,9 @@ export default function AdminSidebar() {
         </ul>
       </div>
       <div className="SideDiv">
-        <h3 className="SideHeader">
-          <a href="#/" className="fs-5">
-            Jobs
-          </a>
-        </h3>
+        <h5 className="SideHeader">
+          <a href="#/">Jobs</a>
+        </h5>
         <ul>
           <li>
             <a href="#/">Published Jobs</a>
@@ -58,11 +51,9 @@ export default function AdminSidebar() {
         </ul>
       </div>
       <div className="SideDiv">
-        <h3 className="SideHeader">
-          <a href="#/" className="fs-5">
-            Courses
-          </a>
-        </h3>
+        <h5 className="SideHeader">
+          <a href="#/">Courses</a>
+        </h5>
         <ul>
           <li>
             <a href="#/">Published Courses</a>
@@ -77,4 +68,6 @@ export default function AdminSidebar() {
       </div>
     </div>
   );
-}
+};
+
+export default Side;
