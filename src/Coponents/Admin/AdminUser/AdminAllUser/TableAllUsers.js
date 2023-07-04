@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TableUserCard from './TableUserCard';
 // import DataTable from "react-data-table-component";
 
-const Table = () => {
+const TableAllUsers = () => {
   const list = [
     {
       id: 1,
@@ -84,4 +84,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default TableAllUsers;

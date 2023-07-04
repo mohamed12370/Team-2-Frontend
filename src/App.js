@@ -29,9 +29,9 @@ function App() {
           <Route path="/createexam" element={<CreateNewExamPage />} />
           <Route path="/onlineexam" element={<OnlineExamPage />} />
           {/* Admin Route */}
-          <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
           <Route path="/adminalluser" element={<AdminAllUsersPage />} />
-          <Route path="/adminallcoures" element={<AdminAllArticlesPage />} />
+          <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
+          <Route path="/adminallarticle" element={<AdminAllArticlesPage />} />
 
           {/* Create Cv */}
           <Route

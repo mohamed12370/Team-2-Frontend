@@ -28,7 +28,7 @@ body {
 .Header {
   color: #fff;
   position: relative;
-  padding-top: 20px;
+  padding-top: 30px;
   width: fit-content;
   margin-bottom: 20px;
 }
@@ -146,13 +146,12 @@ a {
   height: 2px;
   background-color: #bf9b30;
 }
-.title button {
+.title .adminSearch {
   width: 300px;
   background-color: #ffffff1e;
   border: none;
   font-size: 20px;
-  /*font-weight: bold;
-  */
+  position: relative;
   padding: 5px 0;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -160,14 +159,34 @@ a {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.title button i {
+.title .adminSearch input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  padding: 0 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.title .adminSearch input::placeholder {
+  padding: 0 10px;
+  color: rgb(255, 255, 255, 0.5);
+}
+.title .adminSearch i {
   color: #bf9b30;
-  font-size: 16px;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
-  margin-top: -20px;
-  padding-bottom: 5px;
+  font-size: 22px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 @media (max-width: 768px) {
   .title h5,

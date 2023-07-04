@@ -6,7 +6,7 @@ import dummyArticles from './DummyArticles';
 const AllArticles = () => {
   return (
     <div>
-      <table borderless className="articles-table table-dark g">
+      <table borderless className="articles-table  g">
         <thead>
           <tr>
             <th>Title</th>
