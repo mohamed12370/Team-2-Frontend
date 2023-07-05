@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function PropsTitlePages({ title }) {
   return (
     <div className="row">
@@ -7,9 +9,12 @@ function PropsTitlePages({ title }) {
         </h1>
       </div>
       <div className=" col-3 clearfix">
-        <button className="btn-view-profile float-end btn py-1 " type="button">
+        <Link
+          to={`/userprofile`}
+          className="btn-view-profile float-end btn py-1 "
+        >
           view profile
-        </button>
+        </Link>
       </div>
     </div>
   );

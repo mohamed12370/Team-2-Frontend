@@ -21,6 +21,8 @@ import AdminCreateArticlePage from './Pages/Admin/AdminArticles/AdminCreateArtic
 import AdminCreateJobPage from './Pages/Admin/AdminJobs/AdminCreateJobs/AdminCreateJobPage';
 import AdminAllJobsPage from './Pages/Admin/AdminJobs/AdminAllJobs/AdminAllJobsPage';
 import InstructorPortalPage from './Pages/InstructorPortalPage/InstructorPortalPage';
+import UserProfilePage from './Pages/User/UserProfile/userProfilePage';
+import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePage';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/studentportal" element={<StudentPortalPage />} />
           <Route path="/instructorportal" element={<InstructorPortalPage />} />
+          <Route path="/userprofile" element={<UserProfilePage />} />
+          <Route path="/edituserprofile" element={<EditUserProfilePage />} />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />

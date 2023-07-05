@@ -3,7 +3,7 @@
 function InstructorPortal6th() {
   return (
     <div>
-      <p className="studentportal"> Edit Profile</p>
+      <p className="studentportal"> instructor portal</p>
       <div className="studentportalline"></div>
       <p className="studentportal">6th June 2023</p>
     </div>
