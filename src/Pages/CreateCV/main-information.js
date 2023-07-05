@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './create-cv-style.css';
 import { useNavigate } from 'react-router-dom';
 import HeaderTitle from '../../Coponents/CreateCV/HeaderTitle';
 import CreateCVStipper from '../../Coponents/CreateCV/CreateCVStipper';
@@ -39,6 +40,7 @@ function MainInformationPage() {
 
   return (
     <div style={{ backgroundColor: 'rgb(26 26 26 / .9)' }}>
+      {/* <div className="overlay"></div> */}
       <HeaderTitle />
       <CreateCVStipper />
       <section className="container-fluid">

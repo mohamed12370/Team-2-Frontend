@@ -1,11 +1,11 @@
 import React from 'react';
 import './ArticlesList.css';
 import { Col, Container, Pagination, Row } from 'react-bootstrap';
-import Side from '../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
-import Header from '../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
-import Btn from '../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser';
-import Title from '../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
-import TableAllAtricles from '../../../Coponents/Admin/AdminArticles/TableAllAtricles';
+import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
+import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
+import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser';
+import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
+import TableAllAtricles from '../../../../Coponents/Admin/AdminArticles/AdminAllArticles/TableAllAtricles';
 
 export default function AdminAllArticlesPage() {
   return (

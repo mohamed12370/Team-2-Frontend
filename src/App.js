@@ -13,8 +13,14 @@ import HobbiesAndInterestsPage from './Pages/CreateCV/hobbies-and-interests';
 import ExperiencePage from './Pages/CreateCV/experience';
 import EducationPage from './Pages/CreateCV/education';
 import LinksPage from './Pages/CreateCV/links';
-import AdminAllArticlesPage from './Pages/Admin/AdminArticles/AdminAllArticlesPage';
+import AdminAllArticlesPage from './Pages/Admin/AdminArticles/AdminAllArticlesPage/AdminAllArticlesPage';
 import AdminAllUsersPage from './Pages/Admin/AdminUser/AdminAllUser/AdminAllUsersPage';
+import AdminAllCoursesPage from './Pages/Admin/AdminCourses/AdminAllCoures/AdminAllCoursesPage';
+import AdminCreateCoursesPage from './Pages/Admin/AdminCourses/AdminCreateCoures/AdminCreateCoursesPage';
+import AdminCreateArticlePage from './Pages/Admin/AdminArticles/AdminCreateArticlePage/AdminCreateArticlePage';
+import AdminCreateJobPage from './Pages/Admin/AdminJobs/AdminCreateJobs/AdminCreateJobPage';
+import AdminAllJobsPage from './Pages/Admin/AdminJobs/AdminAllJobs/AdminAllJobsPage';
+import InstructorPortalPage from './Pages/InstructorPortalPage/InstructorPortalPage';
 
 function App() {
   return (
@@ -23,15 +29,28 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/studentportal" element={<StudentPortalPage />} />
+          <Route path="/instructorportal" element={<InstructorPortalPage />} />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
           <Route path="/onlineexam" element={<OnlineExamPage />} />
+
           {/* Admin Route */}
           <Route path="/adminalluser" element={<AdminAllUsersPage />} />
           <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
           <Route path="/adminallarticle" element={<AdminAllArticlesPage />} />
+          <Route
+            path="/admincreatearticle"
+            element={<AdminCreateArticlePage />}
+          />
+          <Route path="/adminallcourses" element={<AdminAllCoursesPage />} />
+          <Route
+            path="/admincreatecourses"
+            element={<AdminCreateCoursesPage />}
+          />
+          <Route path="/adminalljob" element={<AdminAllJobsPage />} />
+          <Route path="/admincreatejob" element={<AdminCreateJobPage />} />
 
           {/* Create Cv */}
           <Route

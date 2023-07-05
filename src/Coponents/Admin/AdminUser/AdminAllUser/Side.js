@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Side = ({ activeTitle }) => {
   return (
     <div className="Side">
@@ -6,7 +7,7 @@ const Side = ({ activeTitle }) => {
         <h5
           className={activeTitle === 'users' ? 'SideHeader ff' : 'SideHeader'}
         >
-          <a href="#/">Users</a>
+          <Link to={`/adminalluser`}>Users</Link>
         </h5>
         <ul>
           <li>
@@ -29,7 +30,7 @@ const Side = ({ activeTitle }) => {
             activeTitle === 'articles' ? 'SideHeader ff' : 'SideHeader'
           }
         >
-          <a href="#/">Articles</a>
+          <Link to={`/adminallarticle`}>Articles</Link>
         </h5>
         <ul>
           <li>
@@ -45,7 +46,7 @@ const Side = ({ activeTitle }) => {
       </div>
       <div className="SideDiv">
         <h5 className={activeTitle === 'jobs' ? 'SideHeader ff' : 'SideHeader'}>
-          <a href="#/">Jobs</a>
+          <Link to={`/adminalljob`}>Jobs</Link>
         </h5>
         <ul>
           <li>
@@ -60,7 +61,7 @@ const Side = ({ activeTitle }) => {
         <h5
           className={activeTitle === 'courses' ? 'SideHeader ff' : 'SideHeader'}
         >
-          <a href="#/">Courses</a>
+          <Link to={`/adminallcourses`}>Courses</Link>
         </h5>
         <ul>
           <li>
