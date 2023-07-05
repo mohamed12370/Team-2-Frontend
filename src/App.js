@@ -23,6 +23,7 @@ import AdminAllJobsPage from './Pages/Admin/AdminJobs/AdminAllJobs/AdminAllJobsP
 import InstructorPortalPage from './Pages/InstructorPortalPage/InstructorPortalPage';
 import UserProfilePage from './Pages/User/UserProfile/userProfilePage';
 import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePage';
+import UserAllJobsPage from './Pages/UserJobs/UserAllJobsPage';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           <Route path="/instructorportal" element={<InstructorPortalPage />} />
           <Route path="/userprofile" element={<UserProfilePage />} />
           <Route path="/edituserprofile" element={<EditUserProfilePage />} />
+
+          {/* User Jobs */}
+          <Route path="/useralljob" element={<UserAllJobsPage />} />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
