@@ -1,6 +1,7 @@
 import React from "react";
 
 import DragDropImgSmall from "./DragDropImgSmall";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 function Experience4Form({ formData, handelChange, addExperienceInput, deleteExperience }) {
 	console.log(formData);
@@ -10,11 +11,8 @@ function Experience4Form({ formData, handelChange, addExperienceInput, deleteExp
 
 			<div className="d-flex flex-column gap-3 w-100">
 				{formData?.map((ele, i) => (
-					<div>
-						<div
-							className="add-experience-container row row-gap-3 g-2 align-items-center mx-0 mx-lg-2 px-0 px-lg-3 py-4 mb-3"
-							key={i}
-						>
+					<div key={i}>
+						<div className="add-experience-container row row-gap-3 g-2 align-items-center mx-0 mx-lg-2 px-0 px-lg-3 py-4 mb-3">
 							<div className="col-12">
 								<label htmlFor="inputCompanyName" className="form-label text-capitalize">
 									company Name
@@ -43,7 +41,7 @@ function Experience4Form({ formData, handelChange, addExperienceInput, deleteExp
 								/>
 							</div>
 
-							<div className="col-12 col-lg-6">
+							<div className="col-12 col-lg-6 ">
 								<label htmlFor="inputPeriodFrom" className="form-label text-capitalize">
 									From
 								</label>
@@ -102,11 +100,11 @@ function Experience4Form({ formData, handelChange, addExperienceInput, deleteExp
 			</div>
 
 			<div
-				className="align-self-end mb-2 pe-3 clickable click-primary text-end"
+				className="align-self-end mb-2 pe-2 clickable click-primary text-end"
 				style={{ marginTop: "-48px" }}
 				onClick={addExperienceInput}
 			>
-				<i className="circle-plus-icon fa-solid fa-plus" />
+				<AiOutlinePlusCircle size="28" />
 			</div>
 		</>
 	);

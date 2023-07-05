@@ -1,4 +1,5 @@
-import './style.css';
+import React from 'react';
+//import './style.css';
 import AllClear from '../../Coponents/StudentPortal/AllClear';
 import EarnedCertificates from '../../Coponents/StudentPortal/EarnedCertificates';
 import HereIsHowYou from '../../Coponents/StudentPortal/HereIsHowYou';

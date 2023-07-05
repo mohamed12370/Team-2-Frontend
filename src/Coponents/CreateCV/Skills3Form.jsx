@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 function Skills3Form({ title, formData, handelChangeSkills, addSkillInput, deleteSkill }) {
 	return (
@@ -26,8 +27,9 @@ function Skills3Form({ title, formData, handelChangeSkills, addSkillInput, delet
 								</div>
 							))}
 					</div>
+
 					<div className="clickable click-primary align-self-end mb-2" onClick={addSkillInput}>
-						<i className="circle-plus-icon fa-solid fa-plus"></i>
+						<AiOutlinePlusCircle size="28" />
 					</div>
 				</div>
 			</div>

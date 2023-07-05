@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 
 function Education5Form({ formData, handelChange, addEducationInput, deleteEducation }) {
@@ -14,7 +15,10 @@ function Education5Form({ formData, handelChange, addEducationInput, deleteEduca
 							key={i}
 						>
 							<div className="col-12">
-								<label htmlFor="inputOrganizationName" className="form-label text-capitalize">
+								<label
+									htmlFor="inputOrganizationName"
+									className="form-label text-capitalize"
+								>
 									Organization Name
 								</label>
 								<input
@@ -69,7 +73,6 @@ function Education5Form({ formData, handelChange, addEducationInput, deleteEduca
 								/>
 							</div>
 
-
 							<div className="col-12 h-100">
 								<label htmlFor="inputDescription" className="form-label">
 									Description
@@ -96,11 +99,11 @@ function Education5Form({ formData, handelChange, addEducationInput, deleteEduca
 				))}
 			</div>
 			<div
-				className="align-self-end mb-2 pe-3 clickable click-primary text-end"
+				className="align-self-end mb-2 pe-2 clickable click-primary text-end"
 				style={{ marginTop: "-48px" }}
 				onClick={addEducationInput}
 			>
-				<i className="circle-plus-icon fa-solid fa-plus" />
+				<AiOutlinePlusCircle size="28" />
 			</div>
 		</>
 	);

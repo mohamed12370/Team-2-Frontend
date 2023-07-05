@@ -5,9 +5,9 @@ import HeaderTitle from '../../Coponents/CreateCV/HeaderTitle';
 import CreateCVStipper from '../../Coponents/CreateCV/CreateCVStipper';
 import MainInformation1Form from '../../Coponents/CreateCV/MainInformation1Form';
 import CVTemplate1 from '../../Coponents/CreateCV/CVTemplate1';
+import BackAndContinueBtns from '../../Coponents/CreateCV/BackAndContinueBtns';
 
 function MainInformationPage() {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     main_information: {
       firstName: 'Hani',
@@ -39,8 +39,7 @@ function MainInformationPage() {
   }
 
   return (
-    <div style={{ backgroundColor: 'rgb(26 26 26 / .9)' }}>
-      {/* <div className="overlay"></div> */}
+    <div style={{ backgroundColor: 'rgb(26 26 26 / .9)', color: '#fff' }}>
       <HeaderTitle />
       <CreateCVStipper />
       <section className="container-fluid">
@@ -58,20 +57,7 @@ function MainInformationPage() {
             <CVTemplate1 data={formData.main_information} />
           </div>
         </div>
-        <div className="d-flex flex-wrap flex-column flex-md-row p-2 gap-4 text-capitalize pb-5 ">
-          <button
-            className="btn btn-gray btn-lg btn-width"
-            onClick={() => navigate(-1)}
-          >
-            Back
-          </button>
-          <button
-            className="btn btn-primary btn-lg btn-width"
-            onClick={() => navigate('/createcv/summary')}
-          >
-            Continue
-          </button>
-        </div>
+        <BackAndContinueBtns />
       </section>
     </div>
   );

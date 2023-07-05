@@ -48,7 +48,7 @@ body {
 }
 .form:hover,
 .form:focus {
-  border: 1.5px solid #ffc107;
+  border: 1.5px solid #bf9b30;
   outline: 0;
 }
 .search_icons {
@@ -97,7 +97,7 @@ body {
   background-color: #3b3a3a;
 }
 .job_details input[type='checkbox']:checked {
-  background-color: #ffca2c;
+  background-color: #bf9b30;
   border-color: #ffca2c;
 }
 .job_details input[type='checkbox'] {

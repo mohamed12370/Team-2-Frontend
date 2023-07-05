@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 function HonersAndAwards6Form({ formData, handelChange, addEducationInput, deleteEducation }) {
 	console.log(formData);
@@ -7,7 +8,7 @@ function HonersAndAwards6Form({ formData, handelChange, addEducationInput, delet
 			<h5 className="mb-4 mb-lg-5 text-capitalize">Honers And Awards</h5>
 			<div className="d-flex flex-column gap-3 w-100">
 				{formData?.map((ele, i) => (
-					<div>
+					<div key={i}>
 						<div
 							className="add-experience-container row row-gap-3 g-2 align-items-center mx-0 mx-lg-2 px-0 px-lg-3 py-4 mb-3"
 							key={i}
@@ -66,11 +67,11 @@ function HonersAndAwards6Form({ formData, handelChange, addEducationInput, delet
 				))}
 			</div>
 			<div
-				className="align-self-end mb-2 pe-3 clickable click-primary text-end"
+				className="align-self-end mb-2 pe-2 clickable click-primary text-end"
 				style={{ marginTop: "-48px" }}
 				onClick={addEducationInput}
 			>
-				<i className="circle-plus-icon fa-solid fa-plus" />
+				<AiOutlinePlusCircle size="28" />
 			</div>
 		</>
 	);
