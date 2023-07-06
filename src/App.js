@@ -25,10 +25,12 @@ import UserProfilePage from './Pages/User/UserProfile/userProfilePage';
 import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePage';
 import UserAllJobsPage from './Pages/UserJobs/UserAllJobsPage';
 import UserAllCoursesPage from './Pages/UserCourses/UserAllCoursesPage/UserAllCoursesPage';
+import HeaderHome from './Coponents/Home/Header';
 
 function App() {
   return (
     <>
+      <HeaderHome />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

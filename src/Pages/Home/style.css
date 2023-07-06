@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary: #bf9b30;
+  --Green: #34a853;
+  --Red: #1a1919b3;
+  --Grey: #d0d0d09e;
+  --Black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--Black);
+}
+
+/* start background */
+.home-background {
+  background-image: url(../../Images/main_background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 660px;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1800px;
+  background-color: rgba(29, 29, 29, 0.9);
+  opacity: 0.8.5;
+  z-index: 5;
+}
+
+/* End background */
+/* start navbar */
+
+.nav-bar-button-color {
+  border: 2px solid var(--Primary);
+}
+.nav-bar-button-color:hover {
+  background-color: var(--Primary);
+}
+.navbar-nav-home-list {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.nav-link-home-text {
+  font-size: 11.4px;
+}
+/* end navbar */
+.home-h3 {
+  width: 85%;
+
+  margin: auto;
+  margin-top: 180px;
+  font-size: 45px;
+  color: white;
+}
+
+.home-div-row {
+  border-radius: 8px;
+  margin: 80px auto 100px;
+  width: 85%;
+  background-color: var(--Red);
+  color: white;
+  padding: 25px 0px 0px;
+}
+
+.about-right-div {
+  height: 100%;
+  width: 45%;
+  padding-right: 40px;
+}
+
+.about-right {
+  position: relative;
+}
+
+.home-row {
+  height: 300px;
+  width: 50%;
+  margin-left: 25px;
+}
+
+.home-line {
+  height: 1px;
+  width: 60px;
+  background-color: var(--Primary);
+  margin: -12px 0px 8px 0px;
+}
+
+.about-p {
+  padding-right: 50px;
+}
+
+.left-div {
+  width: 93%;
+  margin-top: 5px;
+  position: relative;
+}
+
+.about-span {
+  font-size: 14px;
+}
+.home-tech-text {
+  font-size: 14px;
+}
+
+.about-right-HERES-THE {
+  font-size: 17px;
+}
+.about-right-text {
+  font-size: 14px;
+}
+
+.home-HERES-THE {
+  font-size: 25px;
+}
+
+.span-icon-about {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+}
+
+.home-card {
+  color: white;
+  margin: auto;
+  border: 1px;
+
+  width: 80%;
+}
+
+.Education-Tech-Sports-box {
+  padding: 10px;
+}
+
+.Education-Tech-Sports-text1 {
+  font-size: 13px;
+}
+.Education-Tech-Sports-text22 {
+  font-size: 13.5px;
+}
+.Education-Tech-Sports-text3 {
+  font-size: 14px;
+}
+.Education-Tech-Sports-image {
+  width: 100%;
+  height: 90%;
+}
+.Education-Tech-Sports-icon {
+  color: gray;
+  font-size: 15px;
+}
+
+.Education-Tech-Sports-icon2 {
+  color: var(--Primary);
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .icon-span-home {
+    top: 5px;
+  }
+
+  /* .home-overlay {
+    height: 2800px;
+  } */
+
+  .seffuture-footer {
+    width: 300px;
+    display: block;
+  }
+}
+
+.FEATURED {
+  transform: rotate(270deg);
+  position: absolute;
+  margin: 145px 0px 0px -175px;
+  font-size: 38px;
+}
+
+.home-div-1 {
+  width: 2%;
+  /* background-color: rgba(245, 18, 18, 0.13); */
+}
+
+@media (max-width: 768px) {
+  .home-h3 {
+    font-size: 40px;
+  }
+  .Education-Tech-Sports-icon2 {
+    display: none;
+  }
+  .about-right-div {
+    height: 100%;
+    width: 100%;
+    margin-top: 250px;
+  }
+  .Education-Tech-Sports-box {
+    padding: 0px;
+  }
+  .Education-Tech-Sports-text2 {
+    font-size: 18px;
+  }
+  .Education-Tech-Sports-text3 {
+    font-size: 12.5px;
+  }
+
+  .home-row {
+    width: 100%;
+    height: 10% !important;
+    /* height: 100%; */
+    /* background-color: rgba(3, 3, 3, 0.13); */
+  }
+
+  .icon-span-home {
+    top: 0;
+    width: 94px;
+  }
+
+  .about-right-top-div {
+    width: 550px;
+    /* margin:200px auto !important; */
+  }
+
+  .home-div-row {
+    height: 300px;
+    margin-bottom: 580px;
+  }
+
+  .about-right-top-div {
+    width: 106%;
+    margin: 10px auto 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    height: 180px;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  .span-icon-about {
+    top: 0px;
+  }
+
+  .FEATURED {
+    margin: 100px 0px 0px -170px;
+  }
+}
+
+@media (max-width: 567px) {
+  .home-h3 {
+    font-size: 33px;
+  }
+  .FEATURED {
+    margin: 0px 0px 0px -148px !important;
+    font-size: 28px;
+  }
+  .home-overlay {
+    height: 2800px;
+  }
+
+  .home-HERES-THE {
+    font-size: 15px;
+  }
+  .home-tech-text {
+    font-size: 12px;
+  }
+  .about-span-text2 {
+    font-size: 11px;
+  }
+  .about-right-top-div {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-div-row {
+    margin-top: 172px;
+  }
+  .about-right-top-div {
+    height: 200px;
+    width: 115% !important;
+    padding: 35px 15px 40px !important;
+    margin: -20px 0px 40px 0px !important;
+  }
+  .about-span {
+    padding: 0px;
+  }
+  .about-span-text2 {
+    font-size: 12px;
+  }
+  .about-span-icon5 {
+    font-size: 12px;
+  }
+  .home-overlay {
+    height: 3150px;
+  }
+}
