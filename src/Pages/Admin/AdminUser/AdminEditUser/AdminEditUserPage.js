@@ -1,15 +1,14 @@
 import React from 'react';
-import './AdminCreateJobPage.css';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
-import Form from '../../../../Coponents/Admin/AdminJobs/AdminCreateJobs/Form';
+import AdminEditUser from '../../../../Coponents/Admin/AdminUser/AdminEditUser/AdminEditUser';
 
-export default function AdminCreateJobPage() {
+export default function AdminEditUserPage() {
   return (
     <div>
       <div className="overlay"></div>
       <div className="container">
-        <Header title={'Create New Job'} date={'6th june 2023'} />
+        <Header title={'Update New User'} date={'6th june 2023'} />
       </div>
       <div className="container">
         <div className="row">
@@ -17,7 +16,7 @@ export default function AdminCreateJobPage() {
             <Side />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
-            <Form />
+            <AdminEditUser />
           </div>
         </div>
       </div>

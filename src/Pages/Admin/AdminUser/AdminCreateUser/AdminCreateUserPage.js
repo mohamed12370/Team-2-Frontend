@@ -10,8 +10,6 @@ export default function AdminCreateUserPage() {
     <div>
       <div className="overlay"></div>
       <div className="container">
-        {/* <h5 className="Header">Create New User</h5>
-        <h6 className="Header2">6th june 2023</h6> */}
         <Header title={'Create New User'} date={'6th june 2023'} />
       </div>
       <div className="container">

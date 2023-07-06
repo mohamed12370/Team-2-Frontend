@@ -35,7 +35,7 @@ body {
   height: 1800px;
   background-color: rgba(29, 29, 29, 0.9);
   opacity: 0.8.5;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 /* End background */

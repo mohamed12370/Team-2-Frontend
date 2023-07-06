@@ -26,6 +26,8 @@ import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePag
 import UserAllJobsPage from './Pages/UserJobs/UserAllJobsPage';
 import UserAllCoursesPage from './Pages/UserCourses/UserAllCoursesPage/UserAllCoursesPage';
 import HeaderHome from './Coponents/Home/Header';
+import AdminEditUserPage from './Pages/Admin/AdminUser/AdminEditUser/AdminEditUserPage';
+import RegisterPage from './Pages/Auth/RegisterPage';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/singup" element={<RegisterPage />} />
+
           <Route path="/studentportal" element={<StudentPortalPage />} />
           <Route path="/instructorportal" element={<InstructorPortalPage />} />
           <Route path="/userprofile" element={<UserProfilePage />} />
@@ -51,6 +55,7 @@ function App() {
           {/* Admin Route */}
           <Route path="/adminalluser" element={<AdminAllUsersPage />} />
           <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
+          <Route path="/adminedituser/:id" element={<AdminEditUserPage />} />
           <Route path="/adminallarticle" element={<AdminAllArticlesPage />} />
           <Route
             path="/admincreatearticle"

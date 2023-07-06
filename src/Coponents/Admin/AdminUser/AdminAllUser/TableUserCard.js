@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TableUserCard({ item }) {
   return (
@@ -19,7 +20,9 @@ export default function TableUserCard({ item }) {
       <div className="d-lg-none col-12  email">Email</div>
       <div className="col-lg-2 col-6  email-name ">{item?.email}</div>
       <div className="col-lg-2 col-6  icon d-flex justify-content-end">
-        <i class="far fa-edit edit"></i>
+        <Link to={`/adminedituser/id`}>
+          <i class="far fa-edit edit"></i>
+        </Link>
         <i class="far fa-trash-alt delete ms-2"></i>
       </div>
     </div>
