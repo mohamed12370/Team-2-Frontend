@@ -24,6 +24,7 @@ import InstructorPortalPage from './Pages/InstructorPortalPage/InstructorPortalP
 import UserProfilePage from './Pages/User/UserProfile/userProfilePage';
 import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePage';
 import UserAllJobsPage from './Pages/UserJobs/UserAllJobsPage';
+import UserAllCoursesPage from './Pages/UserCourses/UserAllCoursesPage/UserAllCoursesPage';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
 
           {/* User Jobs */}
           <Route path="/useralljob" element={<UserAllJobsPage />} />
+          <Route path="/userallcourses" element={<UserAllCoursesPage />} />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
