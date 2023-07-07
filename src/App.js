@@ -29,6 +29,7 @@ import HeaderHome from './Coponents/Home/Header';
 import AdminEditUserPage from './Pages/Admin/AdminUser/AdminEditUser/AdminEditUserPage';
 import RegisterPage from './Pages/Auth/RegisterPage';
 import AdminUpdateCoursesPage from './Pages/Admin/AdminCourses/AdminUpdateCourses/AdminUpdateCoursesPage';
+import UpComingExamPagea from './Pages/ExamPages/UpComingExamPagea/UpComingExamPagea';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/examresult" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
           <Route path="/onlineexam" element={<OnlineExamPage />} />
+          <Route path="/upcomingexam" element={<UpComingExamPagea />} />
 
           {/* Admin Route */}
           <Route path="/adminalluser" element={<AdminAllUsersPage />} />

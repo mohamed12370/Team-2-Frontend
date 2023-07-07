@@ -9,7 +9,7 @@ export default function OnlineExamPage() {
   return (
     <div>
       <section className="bg-exam">
-        <div className="overlay-exam text-light">
+        <div className="overlay-exam text-light h-auto">
           <div className="container">
             <TitleExamResult />
             <TimerBar />
