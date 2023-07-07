@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { adminJobsListData } from './adminJobData';
 import { LiaTrashAlt } from 'react-icons/lia';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function JobListContainerLg() {
+  const navigate = useNavigate();
   const [jobsStat, setJobsStat] = useState(adminJobsListData);
 
   const handelDeleteJob = (index) => {
@@ -42,7 +43,11 @@ function JobListContainerLg() {
               <h6>{`${job?.postedDay},  ${job?.postedDate}`}</h6>
               <h6>{job?.postedTime}</h6>
             </div>
-            <div className="col-6 col-lg-1">
+            <div
+              className="col-6 col-lg-1"
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate(`/adminapplicationjob/:id`)}
+            >
               <h6>{job?.applications}</h6>
             </div>
             <div className="col-6 col-lg-1 d-flex align-items-center gap-2 text_primary">

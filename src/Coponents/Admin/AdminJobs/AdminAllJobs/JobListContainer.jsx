@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { adminJobsListData } from './adminJobData';
 import { LiaTrashAlt } from 'react-icons/lia';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function JobListContainer() {
+  const navigate = useNavigate();
   const [jobsStat, setJobsStat] = useState(adminJobsListData);
 
   const handelDeleteJob = (index) => {
@@ -69,7 +70,11 @@ function JobListContainer() {
             </div>
 
             <div className="col-12 col-sm-6 mb-4">
-              <div className="d-flex flex-column flex-wrap gap-2">
+              <div
+                className="d-flex flex-column flex-wrap gap-2"
+                style={{ cursor: 'pointer' }}
+                onClick={() => navigate(`/adminapplicationjob/:id`)}
+              >
                 <h5 className="text-light text-opacity-75 fw-bold text-capitalize">
                   Applications
                 </h5>
