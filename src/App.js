@@ -31,6 +31,7 @@ import RegisterPage from './Pages/Auth/RegisterPage';
 import AdminUpdateCoursesPage from './Pages/Admin/AdminCourses/AdminUpdateCourses/AdminUpdateCoursesPage';
 import UpComingExamPagea from './Pages/ExamPages/UpComingExamPagea/UpComingExamPagea';
 import AdminUpdateJobPage from './Pages/Admin/AdminJobs/AdminUpdateJob/AdminUpdateJobPage';
+import AdminUpdateArticlePage from './Pages/Admin/AdminArticles/AdminUpdateArticle/AdminUpdateArticlePage';
 
 function App() {
   return (
@@ -64,6 +65,10 @@ function App() {
           <Route
             path="/admincreatearticle"
             element={<AdminCreateArticlePage />}
+          />
+          <Route
+            path="/adminupdatearticle/:id"
+            element={<AdminUpdateArticlePage />}
           />
           <Route path="/adminallcourses" element={<AdminAllCoursesPage />} />
           <Route

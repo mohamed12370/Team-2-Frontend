@@ -7,6 +7,7 @@ import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import TableAllUsers from '../../../../Coponents/Admin/AdminUser/AdminAllUser/TableAllUsers';
 import Pagination from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Pagination';
+import { Link } from 'react-router-dom';
 //import AdminSidebar from '../../../../Coponents/Admin/AdminSidebar';
 
 export default function AdminAllUsersPage() {
@@ -33,6 +34,13 @@ export default function AdminAllUsersPage() {
           </div>
         </div>
         <Pagination />
+        <div className="row">
+          <div className="col">
+            <Link to={`/admincreateuser`} className="btnAppearInMQ text-center">
+              create new user
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

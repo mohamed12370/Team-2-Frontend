@@ -1,23 +1,22 @@
 import React from 'react';
-import './AdminCreateJobPage.css';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
-import Form from '../../../../Coponents/Admin/AdminJobs/AdminCreateJobs/Form';
+import AdminUpdateArticle from '../../../../Coponents/Admin/AdminArticles/AdminUpdateArticle/AdminUpdateArticle';
 
-export default function AdminCreateJobPage() {
+export default function AdminUpdateArticlePage() {
   return (
     <div>
       <div className="overlay"></div>
       <div>
-        <Header title={'Create New Job'} date={'6th june 2023'} />
+        <Header title={'Update New Atricle'} date={'6th june 2023'} />
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-3 mb-4">
-            <Side activeTitle={'jobs'} />
+            <Side activeTitle={'articles'} />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
-            <Form />
+            <AdminUpdateArticle />
           </div>
         </div>
       </div>

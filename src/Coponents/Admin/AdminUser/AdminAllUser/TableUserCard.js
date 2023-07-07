@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function TableUserCard({ item }) {
+  const navigate = useNavigate();
+
   return (
     <div className="row table-container">
       <div className="d-lg-none col-6 name">Name</div>
@@ -20,13 +22,15 @@ export default function TableUserCard({ item }) {
       <div className="d-lg-none col-12  email">Email</div>
       <div className="col-lg-2 col-6  email-name ">{item?.email}</div>
       <div
-        className="col-lg-2 col-6  icon d-flex justify-content-end position-relative start-0 top-0"
+        className="col-lg-2 col-6  icon d-flex justify-content-end align-items-center position-relative start-0 top-0"
         style={{ transform: 'scale(1)' }}
       >
-        <Link to={`/adminedituser/id`}>
-          <i className="far fa-edit edit "></i>
-        </Link>
-        <i className="far fa-trash-alt delete ms-2"></i>
+        <i
+          className="far fa-edit edit "
+          onClick={() => navigate(`/adminedituser/id`)}
+        ></i>
+
+        <i className="far fa-trash-alt delete ms-3"></i>
       </div>
     </div>
   );

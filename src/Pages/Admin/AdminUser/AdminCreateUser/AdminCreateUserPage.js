@@ -15,7 +15,7 @@ export default function AdminCreateUserPage() {
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <Side />
+            <Side activeTitle={'users'} />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <AdminCreateUser />

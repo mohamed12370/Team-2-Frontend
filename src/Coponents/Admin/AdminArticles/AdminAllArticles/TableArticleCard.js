@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TableArticleCard({ item }) {
   return (
@@ -17,7 +18,9 @@ export default function TableArticleCard({ item }) {
       <div className="d-lg-none col-6 role">Date&Time</div>
       <div className="col-lg-3 col-6 text-center user-id">{item?.dateTime}</div>
       <div className="col-lg-2 col-12 d-flex justify-content-end email-name">
-        <i class="far fa-edit edit"></i>
+        <Link to={`/adminupdatearticle/:id`}>
+          <i class="far fa-edit edit"></i>
+        </Link>
         <i class="far fa-trash-alt delete ms-2"></i>
       </div>
     </div>

@@ -16,7 +16,7 @@ function JobListContainerLg() {
         <div className="col-6 col-lg-3">Position</div>
         <div className="col-6 col-lg-2">Status</div>
         <div className="col-6 col-lg-2">Posted At</div>
-        <div className="col-6 col-lg-2"># Applications</div>
+        <div className="col-6 col-lg-2">#Applications</div>
         <div className="col-6 col-lg-1"></div>
       </div>
       {jobsStat &&

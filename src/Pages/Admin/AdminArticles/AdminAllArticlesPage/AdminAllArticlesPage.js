@@ -1,11 +1,13 @@
 import React from 'react';
 import './ArticlesList.css';
-import { Col, Container, Pagination, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import TableAllAtricles from '../../../../Coponents/Admin/AdminArticles/AdminAllArticles/TableAllAtricles';
+import { Link } from 'react-router-dom';
+import Pagination from '../../../../Coponents/UserAllCourses/Pagination';
 
 export default function AdminAllArticlesPage() {
   return (
@@ -27,7 +29,14 @@ export default function AdminAllArticlesPage() {
             />
             <TableAllAtricles />
             <Pagination />
-            <button className="btnAppearInMQ">create new article</button>
+          </Col>
+          <Col>
+            <Link
+              to={`/admincreatearticle`}
+              className="btnAppearInMQ text-center"
+            >
+              create new article
+            </Link>
           </Col>
         </Row>
       </Container>
