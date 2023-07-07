@@ -1,11 +1,9 @@
-//import './style.css'
-
-function About() {
+function About1() {
   return (
     <>
-      <div className="About">
-        <h3 className="h-about">About</h3>
-        <p className="p-apout">
+      <div className="aboutt-profile-box">
+        <h3 className="h-aboutt-profile">About</h3>
+        <p className="p-aboutt-profile">
           At vero eos et accusamus et iusto odio dignissimos qui blanditiis
           deleniti atque corrupti quos dolores
         </p>
@@ -14,4 +12,4 @@ function About() {
   );
 }
 
-export default About;
+export default About1;

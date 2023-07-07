@@ -30,6 +30,7 @@ import AdminEditUserPage from './Pages/Admin/AdminUser/AdminEditUser/AdminEditUs
 import RegisterPage from './Pages/Auth/RegisterPage';
 import AdminUpdateCoursesPage from './Pages/Admin/AdminCourses/AdminUpdateCourses/AdminUpdateCoursesPage';
 import UpComingExamPagea from './Pages/ExamPages/UpComingExamPagea/UpComingExamPagea';
+import AdminUpdateJobPage from './Pages/Admin/AdminJobs/AdminUpdateJob/AdminUpdateJobPage';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
           />
           <Route path="/adminalljob" element={<AdminAllJobsPage />} />
           <Route path="/admincreatejob" element={<AdminCreateJobPage />} />
+          <Route path="/adminupdatejob/:id" element={<AdminUpdateJobPage />} />
 
           {/* Create Cv */}
           <Route

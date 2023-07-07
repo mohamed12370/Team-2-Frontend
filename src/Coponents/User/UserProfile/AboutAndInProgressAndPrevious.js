@@ -1,11 +1,11 @@
-import About from './About';
-import InProgress from './InProgress';
-import Previous from './Previous';
+import About1 from './About1';
+import InProgress from '../EditUserProfile/InProgress';
+import Previous from '../EditUserProfile/Previous';
 
 function AboutAndInProgressAndPrevious() {
   return (
-    <div className="left-div col-lg-7 col-12">
-      <About />
+    <div className="left-div-profile  col-lg-7 col-12">
+      <About1 />
       <InProgress />
       <Previous />
     </div>

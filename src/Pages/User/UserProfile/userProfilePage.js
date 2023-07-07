@@ -1,20 +1,19 @@
 import React from 'react';
-//import './ProfileStyle.css';
-import Profile16th from '../../../Coponents/User/UserProfile/Profile16th';
-import ImageAndNameAndButton from '../../../Coponents/User/UserProfile/ImageAndNameAndButton';
+import './ProfileStyle.css';
 import PersonalInfoAndAbout from '../../../Coponents/User/UserProfile/PersonalInfoAndAbout';
+import EditeProfile16th from '../../../Coponents/User/EditUserProfile/EditeProfile16th';
+import ImageAndNameAndButton from '../../../Coponents/User/EditUserProfile/ImageAndNameAndButton';
 
 export default function UserProfilePage() {
   return (
-    <>
-      <div>
-        <div class="overlay"></div>
-        <div className="container cont ">
-          <Profile16th />
+    <div class="profile-background">
+      <div class="profile-overlay">
+        <div className="container cont-profile ">
+          <EditeProfile16th />
           <ImageAndNameAndButton />
           <PersonalInfoAndAbout />
         </div>
       </div>
-    </>
+    </div>
   );
 }

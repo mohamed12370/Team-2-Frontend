@@ -1,4 +1,3 @@
-//import './style.css'
 import PersonalAndEducationAndContact from './PersonalAndEducationAndContact';
 import AboutAndInProgressAndPrevious from './AboutAndInProgressAndPrevious';
 

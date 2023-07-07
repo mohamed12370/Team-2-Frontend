@@ -1,10 +1,14 @@
 import React from 'react';
+import './AdminAllJobsPage.css';
 import Overlay from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Overlay';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import Pagination from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Pagination';
+import JobListContainerLg from '../../../../Coponents/Admin/AdminJobs/AdminAllJobs/JobListContainerLg';
+import JobListContainer from '../../../../Coponents/Admin/AdminJobs/AdminAllJobs/JobListContainer';
+import { Link } from 'react-router-dom';
 
 export default function AdminAllJobsPage() {
   return (
@@ -24,10 +28,25 @@ export default function AdminAllJobsPage() {
               optionTitle={'Puplished'}
               option1={'Saved Drafts'}
             />
-            {/* <TableAllUsers /> */}
+            <JobListContainerLg />
+            <JobListContainer />
           </div>
         </div>
-        <Pagination />
+        <div className="row mt-2">
+          <div className="col">
+            <Pagination />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col pb-2">
+            <Link
+              to={`/admincreatejob`}
+              className="btnAppearInMQ mb-0 text-center fs-5"
+            >
+              create new Job
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

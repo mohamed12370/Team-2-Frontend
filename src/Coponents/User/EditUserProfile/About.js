@@ -1,11 +1,9 @@
-//import './style.css'
-
 function About() {
   return (
     <>
-      <div className="About">
-        <h3 className="h-apout">About</h3>
-        <p className="p-apout">
+      <div className="edit-profile-about-box ">
+        <h3 className="edit-about">About</h3>
+        <p className="edite-p-about">
           At vero eos et accusamus et iusto odio dignissimos qui blanditiis
           deleniti atque corrupti quos dolores
         </p>

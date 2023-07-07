@@ -90,10 +90,12 @@ body {
   content: '\f2ed';
   font-size: 24px;
   color: #d8b23f;
+  cursor: pointer;
 }
 .circle-plus {
   font-size: 24px;
   color: #d8b23f;
+  cursor: pointer;
 }
 .question {
   color: #d0d0d0;
