@@ -1,32 +1,31 @@
 import React from 'react';
-import './AdminCreateCoursesPage.css';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
-import CreateCourseForms from '../../../../Coponents/Admin/AdminCourses/AdminCreateCourses/CreateCourseForms';
+import UpdateCoursesForms from '../../../../Coponents/Admin/AdminCourses/AdminUpdateCouses/UpdateCoursesForms';
 import SaveButtons from '../../../../Coponents/Admin/AdminCourses/AdminCreateCourses/SaveButtons';
-import AddAndDeleteBtn from '../../../../Coponents/Admin/AdminCourses/AdminCreateCourses/AddAndDeletelesson';
+import AddAndDeleteBtnUpdateCourse from '../../../../Coponents/Admin/AdminCourses/AdminUpdateCouses/AddAndDeleteBtnUpdateCourse';
 
-export default function AdminCreateCoursesPage() {
+export default function AdminUpdateCoursesPage() {
   return (
     <div>
       <div className="overlay"></div>
       <div className="container">
-        <Header title={'Create New Course'} date={'6th june 2023'} />
+        <Header title={'Update New Course'} date={'6th june 2023'} />
       </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <Side activeTitle={'courses'} />
+            <Side />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <div className="row">
               <div className="course text-capitalize col-12 col-lg-9">
-                <CreateCourseForms />
+                <UpdateCoursesForms />
                 <div className="mt-4 row position-relative  Lessons">
                   <div className="col-7 col-lg-12 ">
                     <h6 className="title-lesson mt-2">Lessons</h6>
                   </div>
-                  <AddAndDeleteBtn />
+                  <AddAndDeleteBtnUpdateCourse />
                 </div>
                 <SaveButtons />
               </div>

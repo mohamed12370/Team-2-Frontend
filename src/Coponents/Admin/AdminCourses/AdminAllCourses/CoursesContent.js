@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 function CoursesContent({
   title,
   status,
@@ -83,9 +84,9 @@ function CoursesContent({
         </div>
         {/*  edit and delet  */}
         <div className="col-lg-1 col-12 d-flex justify-content-end justify-content-lg-around pe-0 ">
-          <a href="/#">
+          <Link to={`/adminupdatecourses/:id`}>
             <FontAwesomeIcon icon={faPenToSquare} className="pt-1 edit" />
-          </a>
+          </Link>
           <a href="/#">
             <FontAwesomeIcon icon={faTrashCan} className="pt-1 delete" />
           </a>

@@ -51,9 +51,9 @@ body {
   top: calc(100% + 10px);
 }
 @media (max-width: 768px) {
-  .Side {
+  /* .Side {
     display: none;
-  }
+  } */
 }
 .FormSection {
   margin-top: 28px;

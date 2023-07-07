@@ -19,11 +19,14 @@ export default function TableUserCard({ item }) {
       <div className="col-lg-2 col-6 text-center role-text">{item?.role}</div>
       <div className="d-lg-none col-12  email">Email</div>
       <div className="col-lg-2 col-6  email-name ">{item?.email}</div>
-      <div className="col-lg-2 col-6  icon d-flex justify-content-end">
+      <div
+        className="col-lg-2 col-6  icon d-flex justify-content-end position-relative start-0 top-0"
+        style={{ transform: 'scale(1)' }}
+      >
         <Link to={`/adminedituser/id`}>
-          <i class="far fa-edit edit"></i>
+          <i className="far fa-edit edit "></i>
         </Link>
-        <i class="far fa-trash-alt delete ms-2"></i>
+        <i className="far fa-trash-alt delete ms-2"></i>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Side = ({ activeTitle }) => {
   return (
-    <div className="Side">
+    <div className="Side ">
       <div className="SideDiv">
         <h5
           className={activeTitle === 'users' ? 'SideHeader ff' : 'SideHeader'}

@@ -9,7 +9,7 @@ const Title = ({ title, placeholder, option1, option2, option3 }) => {
         </div>
         <div className="adminSearch">
           <input type="text" placeholder={placeholder}></input>
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </div>
       </div>
       <div className="custom-select">

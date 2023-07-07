@@ -1,5 +1,6 @@
 import React from 'react';
 import CoursesContent from './CoursesContent';
+import { Link } from 'react-router-dom';
 
 export default function TableAllCourses() {
   const Courses = [
@@ -66,7 +67,12 @@ export default function TableAllCourses() {
         return <CoursesContent key={index} {...Card} />;
       })}
       <div class="w-100 d-lg-none d-flex mt-5">
-        <div class=" fs-6 btn btn-course  text-white">CREATE NEW COURSE</div>
+        <Link
+          to={`/admincreatecourses`}
+          class=" fs-6 btn btn-course  text-white"
+        >
+          CREATE NEW COURSE
+        </Link>
       </div>
     </>
   );

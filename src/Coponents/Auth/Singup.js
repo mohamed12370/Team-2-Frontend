@@ -5,7 +5,7 @@ export default function Singup() {
   return (
     <div className="Sign-Up-container">
       <div className="sign-up-parent-box">
-        <img className=" sign-up-image" src={signuplogo} />
+        <img className=" sign-up-image" src={signuplogo} alt="" />
         <div className="sign-up-child-box row">
           <i class="fa-regular fa-user sign-up-first-name-icon"></i>
           <input
@@ -50,7 +50,7 @@ export default function Singup() {
         <p className=" sign-up-already">
           {' '}
           Already have an account?{' '}
-          <a className="sign-up-login" href="#">
+          <a className="sign-up-login" href="#/">
             login
           </a>
         </p>

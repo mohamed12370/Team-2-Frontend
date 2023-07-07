@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import HeaderLogo from '../../Images/seff_logo_transparent.png';
 
 function HeaderHome() {
@@ -8,9 +9,9 @@ function HeaderHome() {
       style={{ backgroundColor: 'rgba(29, 29, 29, 0.9)' }}
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           <img src={HeaderLogo} alt="logo" height={70} />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

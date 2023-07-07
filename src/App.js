@@ -28,12 +28,13 @@ import UserAllCoursesPage from './Pages/UserCourses/UserAllCoursesPage/UserAllCo
 import HeaderHome from './Coponents/Home/Header';
 import AdminEditUserPage from './Pages/Admin/AdminUser/AdminEditUser/AdminEditUserPage';
 import RegisterPage from './Pages/Auth/RegisterPage';
+import AdminUpdateCoursesPage from './Pages/Admin/AdminCourses/AdminUpdateCourses/AdminUpdateCoursesPage';
 
 function App() {
   return (
     <>
-      <HeaderHome />
       <BrowserRouter>
+        <HeaderHome />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/singup" element={<RegisterPage />} />
@@ -65,6 +66,10 @@ function App() {
           <Route
             path="/admincreatecourses"
             element={<AdminCreateCoursesPage />}
+          />
+          <Route
+            path="/adminupdatecourses/:id"
+            element={<AdminUpdateCoursesPage />}
           />
           <Route path="/adminalljob" element={<AdminAllJobsPage />} />
           <Route path="/admincreatejob" element={<AdminCreateJobPage />} />

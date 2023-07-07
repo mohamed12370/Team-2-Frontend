@@ -76,8 +76,8 @@ const TableAllUsers = () => {
       </div>
 
       <div>
-        {lists.map((current) => (
-          <TableUserCard item={current} />
+        {lists.map((current, i) => (
+          <TableUserCard key={i} item={current} />
         ))}
       </div>
     </div>
