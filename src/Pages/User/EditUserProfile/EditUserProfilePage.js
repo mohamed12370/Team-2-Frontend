@@ -1,19 +1,20 @@
 import React from 'react';
 import './EditProfileStyle.css';
-import EditeProfile16th from '../../../Coponents/User/EditUserProfile/EditeProfile16th';
-import ImageAndNameAndButton from '../../../Coponents/User/EditUserProfile/ImageAndNameAndButton';
-import PersonalInfoAndAbout from '../../../Coponents/User/EditUserProfile/PersonalInfoAndAbout';
+import EidtProfile6thJun2023 from '../../../Coponents/User/EditUserProfile/EidtProfile6thJun2023';
+import ImageAndNameAndButtonEidtprofile from '../../../Coponents/User/EditUserProfile/ImageAndNameAndButtonEidtprofile';
+import PersonalInfoAndAboutEditprofile from '../../../Coponents/User/EditUserProfile/PersonalInfoAndAboutEditprofile';
 
 export default function EditUserProfilePage() {
   return (
-    <div class="edit-profile-background">
-      <div class="edit-profile-overlay">
-        <div className="container edit-profile-container">
-          <EditeProfile16th />
-          <ImageAndNameAndButton />
-          <PersonalInfoAndAbout />
-        </div>
+    <>
+      <div className="edit-profile-container ">
+        <div className="edit-profile-overlayOnImage"></div>
+        <EidtProfile6thJun2023 />
+        <ImageAndNameAndButtonEidtprofile />
+        <PersonalInfoAndAboutEditprofile />
+
+        <div className="edit-profile-background"></div>
       </div>
-    </div>
+    </>
   );
 }

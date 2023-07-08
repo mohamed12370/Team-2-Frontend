@@ -1,602 +1,247 @@
-* {
+:root {
+  --Primary: #bf9b30;
+  --Green: #34a853;
+  --Red: #1a1919;
+  --Grey: #d0d0d0;
+  --Black: #000000;
+  --white: #ffffff;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --Primary: #fed049;
-  --Secondary: #007580;
-  --Red: #e01b24;
-  --Grey: #fafafa;
-  --Black: #000000;
-}
-
-/* start background */
-.profile-background {
+  background: url(../../../Images/secondary_background.jpg) no-repeat fixed
+    center;
+  background-size: cover;
   position: relative;
-}
-.ProfilePage {
-  height: 1500px;
-}
-.profile-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(29, 29, 29, 0.9);
-  opacity: 8.5;
-  /* z-index: 5; */
+  color: var(--white);
 }
 
-/* End background */
-/* start container */
-
-.btn-profile {
-  font-size: 13px;
-}
-
-.ul-profile {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cont-profile {
-  height: 1200px;
-  width: 80%;
+.profile-container {
+  padding: 120px 0px;
+  width: 87%;
   margin: auto;
 }
 
-.top-right-button-profile {
-  position: fixed;
-  top: 200px;
-  right: 200px;
+.profile-overlayOnImage {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1a1919f1;
 }
 
-.content-profile {
-  margin-top: 20px;
+.profile-background-color {
+  background-color: #1a1919f1;
 }
 
-.div-email-profile {
-  margin: 110px auto;
-  width: 90%;
-  color: white;
+.profile-container2 {
+  width: 87%;
+  margin: auto;
 }
 
-/* End container */
-/* start profile div */
-.profile {
-  width: 120px;
+/* ///////////////////////////////////////    Sub Title      //////////////////////////////////////////// */
+
+.profile-sub-title {
+  color: var(--Grey);
 }
 
-.line-profile {
-  height: 0.2px;
-  width: 83px;
-  background-color: #fed049;
-  margin-top: -5px;
-  margin-bottom: 10px;
+.profile-line {
+  background-color: var(--Primary);
+  width: 80px;
+  height: 1px;
+  margin: -7px 0px 5px 2px;
 }
 
-/* end profile div */
-.div-2-profile {
-  border-radius: 5px;
-  background-color: black;
-  width: 90%;
-  margin: 20px auto;
-  height: 50px;
-  line-height: 50px;
-  font-size: 21px;
-  padding-left: 16px;
+/* /////////////////////////////////    Image-Name-Button   ////////////////////////////////////// */
+
+.Image-Name-Button-box {
+  border-radius: 8px;
+  background-color: var(--Black);
 }
 
-.div-3-profile {
-  width: 90%;
-  margin: 50px auto;
-  height: 300px;
+.Image-Name-Button-icon {
+  font-size: 80px;
 }
 
-.div-4-profile {
-  width: 51%;
-  height: 300px;
-  color: white;
+.Image-Name-Button-button {
+  font-size: 14px !important;
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px;
+  color: var(--white);
+  background-color: var(--Primary);
 }
 
-.div-md-profile {
-  width: 47%;
-  margin-left: 2%;
-  height: 300px;
+.Image-Name-Button-text {
+  margin: 5px 35px 0px;
 }
 
-.div-text-profile {
-  border-radius: 5px;
-  background-color: black;
-  width: 90%;
-  margin: -100px auto;
-  height: 50px;
-  line-height: 50px;
-  font-size: 21px;
-  padding-left: 16px;
+@media (max-width: 768px) {
+  .Image-Name-Button-text {
+    margin: 5px;
+  }
 }
 
-.-profile-md {
-  color: white;
-  margin-top: 16px;
+@media (max-width: 567px) {
+  .Image-Name-Button-text {
+    margin-top: 15px;
+  }
 }
 
-.un-profile {
-  width: 90%;
-  margin: 120px auto;
-  color: white;
-}
-.icon--profile {
-  font-size: 60px !important;
-}
-.div-icon-profile {
-  margin: -95px auto;
-  width: 90%;
-  color: white;
+/* /////////////////////////////////////////////  */
+.bg-infooooooooo {
+  width: 97%;
+  /* margin-left: 25px; */
+  background-color: #34a853;
 }
 
-.sp-profile {
-  font-size: 28px;
+@media (max-width: 768px) {
+  .bg-infooooooooo {
+    width: 110%;
+    padding-left: 0px !important;
+
+    margin-left: 0px !important;
+    background-color: #34a853;
+  }
 }
 
-.enve-profile {
-  width: 8%;
-  color: #fed049;
-  font-size: 15px;
+/* ////////////////////////////   Personal-Education-Contact   ///////////////////// */
+
+.personal-education-contact-box {
+  border-radius: 8px;
+  padding: 25px 20px;
+  background-color: rgba(0, 0, 0, 0.478);
 }
 
-.p-aboutt-profile {
-  color: white;
+/* //////////////////////    personal info box ///////////////////// */
 
-  padding: 10px 8px 30px;
-  margin: 0px 10px 0px 10px;
-}
-.h-aboutt-profile {
-  color: white;
-}
-.person-profile {
-  align-items: center;
-  height: 160px;
-  background-color: rgba(0, 0, 0, 0.527);
+.personal-info-title-box {
+  background-color: var(--Black);
+  border-radius: 8px;
+  padding: 15px 20px 7px;
+  font-size: 19px;
 }
 
-/* .hidde{
-    display: none;
-} */
-.div-pa-profile {
-  margin-left: 15px !important;
+.personal-info-subtitle-box {
+  padding: 15px 20px 7px;
 }
 
-.div-cont-profile {
-  border-radius: 5px;
-  background-color: black;
-  width: 90%;
-  margin: -90px auto;
-  height: 50px;
-  line-height: 50px;
-  font-size: 21px;
-  padding-left: 16px;
-}
-
-.right-div-profile,
-.aboutt-profile-box,
-.info-profile,
-.info-1-profile,
-.info-2-profile,
-.info-3-profile {
-  background-color: rgba(0, 0, 0, 0.527);
-  border-radius: 5px;
-  position: relative;
-}
-
-.aboutt-profile-box {
-  background-color: #0000009f;
-}
-
-.rd-profile {
-  padding: 4px;
+.personal-info-subtitle {
   margin-top: 8px;
 }
 
-.h-lev-profile {
-  /* display: none; */
-  position: absolute;
-  bottom: 5px;
-  right: 6px;
+.personal-info-subtitle1 {
+  margin-top: 6px;
+  font-size: 17.5px;
 }
 
-.aboutt-profile {
-  color: white;
-  min-height: 175px;
-  position: relative;
-}
-.iconn-profile {
-  font-size: 80px !important;
-}
-.h-aboutt-profile {
-  padding: 40px 0px 0px 15px;
+/* ////////////////////////////////////////    education box          ///////////////////////////////// */
+.education-title-box {
+  background-color: var(--Black);
+  border-radius: 8px;
+  padding: 15px 20px 12px;
+  font-size: 19px;
 }
 
-.intro-profile {
-  margin-top: -5px;
+.education-subtitle-box {
+  padding: 15px 20px 7px;
 }
 
-.h-intro-profile {
-  margin-top: -5px;
+.education-subtitle {
+  font-size: 17.5px;
 }
 
-.inpro-profile {
-  color: white;
-  margin: 30px 0px 20px 0px;
-  padding: 40px 0px 0px 15px;
+/* /////////////////////////////////    Contact-info-title -box        ///////////////////////////// */
+
+.Contact-info-title-box {
+  background-color: var(--Black);
+  border-radius: 8px;
+  padding: 15px 20px 12px;
+  font-size: 19px;
 }
 
-.info-1-profile {
-  color: white;
-  padding: 30px 0px 45px 15px;
-  /* height: 105px; */
+.Contact-info-subtitle-box {
+  padding: 15px 20px 7px;
 }
 
-.info-2-profile {
-  margin-top: 28px;
-  color: white;
-  padding: 40px 0px 50px 15px !important;
-  /* height: 105px; */
+.Contact-info-subtitle-icon {
+  color: var(--Primary);
 }
 
-.info-3-profile {
-  margin-top: 28px;
-  color: white;
-  padding: 40px 0px 0px 15px;
-  height: 105px;
+.Contact-info-subtitle {
+  font-size: 17px;
 }
 
-.sp2-profile {
-  color: #fed049;
+/* /////////////////       About-InProgress-Previous-box  ////////////////////// */
+
+.About-InProgress-Previous-box {
+  padding: 0px;
 }
 
-.info-profile {
-  margin-top: 28px;
-  color: white;
-  padding: 40px 0px 0px 15px;
-  height: 105px;
+/* ///////////////////// About-Profile-box ////////////////// */
+.About-Profile-box {
+  background-color: var(--Black);
+  border-radius: 8px;
+  padding: 33px 28px 20px;
 }
 
-.seffuture {
-  padding-left: 20px;
-}
-
-.nav-navbarr {
-  margin-left: -10px;
-  padding: 0px 0px 15px 40px;
-}
-
-.nav-navbarr li {
-  list-style: none;
-  display: inline;
-  margin-left: 10px;
-}
-
-.speech {
-  background-color: rgba(201, 201, 201, 0.027);
-}
-
-.PHONEE {
-  width: 27%;
-  position: absolute;
-  right: 0px;
-}
-
-.imgg {
-  width: 100px;
-  height: 100px;
-}
-
-.foter {
-  min-height: 320px;
-  margin: 150px auto 0px;
-  width: 80%;
-  background-color: black;
-}
-
-.numm-profile {
-  margin-left: 7px;
-}
-
-.line2-profile {
-  width: 100%;
-  height: 0.5px;
-  background-color: white;
-  margin: 20px 0px;
-}
-
-.cona1 {
-  display: none;
-}
-
-.cona2 {
-  display: block;
-  width: 28%;
-}
-
-.PHONEE2 {
-  margin-left: 23px;
-  color: #fed049;
-}
-
-.PHONEE1 {
-  color: #fed049;
-}
-
-.PHONEE9 {
-  display: none;
-}
-
-.mid-profile {
-  width: 60%;
-  padding-bottom: 20px;
-}
-
-.sp1 {
-  margin-left: 10%;
-}
-
-.ul-profile {
-  /* display: flex; */
-  justify-content: space-between;
-}
-
-.profile-ull {
-  width: 60%;
-}
-
-.cona1 {
-  display: none;
-}
-
-.cona2 {
-  display: block;
-  width: 28%;
-}
-
-.fffff {
-  position: relative;
-}
-
-.number-profile {
-  margin-left: 7px;
-}
-
-.cona2 {
-  font-size: 20px;
-  margin-left: auto;
-}
-
-.div-1-profile {
-  margin-left: 40px !important;
-}
-.ul-profile {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Image-Name-button {
-  margin: -130px 0px 0px 560px !important;
-  position: absolute;
-}
-@media (max-width: 992px) {
-  .icon-2-profile {
-    display: none;
-  }
-
-  .Image-Name-button {
-    margin: -80px 0px 0px 540px !important;
-  }
-  .div-1-profile {
-    /* width: 450px; */
-    margin-left: 40px !important;
-  }
-
-  .div-pa-profile {
-    margin-left: 15px !important;
-  }
-
-  .profile-overlay {
-    height: 2800px;
-  }
-
-  .aboutt-profile {
-    margin-top: 50px;
-  }
-
-  .cona1 {
-    display: block;
-  }
-
-  .cona2 {
-    display: none;
-  }
-
-  .SOFWARE {
-    width: 80%;
-    padding-left: 10px;
-  }
-
-  .SOFWARE1 {
-    width: 10%;
-  }
-
-  .SOFWARE1 i {
-    font-size: 28px;
-  }
-
-  .hight {
-    width: 400px;
-  }
-
-  .PHONEE {
-    display: none;
-  }
-
-  .PHONEE9 {
-    width: 300px;
-    display: block;
-  }
-
-  .mid-profile {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/*start tablet view */
-@media (max-width: 768px) {
-  .aboutt-profile-box {
+@media (max-width: 820px) {
+  .About-Profile-box {
     margin-top: 40px;
   }
-  .ProfilePage {
-    height: 2500px;
-  }
-  .Image-Name-button {
-    margin: -100px 0px 0px 360px !important;
-  }
+}
 
-  .icon-1-profile {
-    order: 1;
-  }
-
-  .btn-hidde-profile {
-    order: 2;
-  }
-
-  .div-1-profile {
-    order: 3;
-  }
-
-  .person-profile {
-    height: 230px;
-  }
-
-  .div-1-profile {
-    margin-left: 3px !important;
-  }
-
-  .right-div-profile {
-    padding: 10px 0px 100px !important;
-  }
-  .div-pa-profile {
-    margin-left: 10px !important;
-  }
-
-  .hidde-profile {
-    display: block;
-  }
-
-  .left-div-profile {
-    margin-top: 20px;
-  }
-
-  .foter {
-    margin-top: 1150px;
-  }
-
-  .line2--profile {
-    display: none;
-  }
-
-  .iconat-profile {
-    margin-top: 20px;
-  }
-
-  .mid-profile {
-    width: 100%;
+@media (max-width: 768px) {
+  .About-Profile-box {
+    margin-top: 30px;
   }
 }
 
-/* end tablet view */
+/* ////////////////////    InProgress-profile-box    /////////////////// */
 
-/* start mobile view */
+.InProgress-profile-title {
+  margin-left: 20px;
+}
+
+.Card-InProgressp-rofile-box {
+  width: 100%;
+  margin-left: 0px;
+  background-color: var(--Black);
+  border-radius: 8px;
+  padding: 25px 0px 25px 10px;
+}
+
+.Card-InProgressp-rofile-subtitle {
+  color: var(--Primary);
+}
+.Card-InProgressp-rofile-lev1 {
+  margin-left: auto !important;
+}
+
 @media (max-width: 567px) {
-  .overlay {
-    height: 2600px;
+  .Card-InProgressp-rofile-subtitle,
+  .Card-InProgressp-rofile-subtitle1 {
+    font-size: 14px;
   }
-  .Image-Name-button {
-    margin: -180px 0px 0px 150px !important;
+  .Card-InProgressp-rofile-title {
+    font-size: 17px;
   }
-  .hidep {
-    display: block;
-  }
-
-  .aboutt-profile {
-    min-height: 230px;
-  }
-
-  .left-div-profile {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .right-div-profile {
-    padding: 10px 0px 120px !important;
-  }
-  .sara {
-    position: relative;
-    min-height: 140px;
-  }
-
-  .mo {
-    position: relative;
-    min-height: 150px;
-  }
-
-  .foter {
-    margin-top: 1400px;
+  .Card-InProgressp-rofile-lev1 {
+    margin-left: auto !important;
   }
 }
 
-/* end mobile view */
-
-@media (max-width: 500px) {
-  .Image-Name-button {
-    margin: -180px 0px 0px 120px !important;
-  }
-  .mo {
-    position: relative;
-    min-height: 160px;
-  }
-
-  .aboutt-profile {
-    min-height: 240px;
-  }
-
-  .overlay {
-    height: 3050px;
-  }
-
-  .SOFWARE1 {
-    width: 20%;
+@media (max-width: 567px) {
+  .Card-InProgressp-rofile-lev1 {
+    font-size: 15px;
   }
 }
-@media (max-width: 320px) {
-  .Image-Name-button {
-    margin: -180px 0px 0px 120px !important;
-  }
-  .mo {
-    position: relative;
-    min-height: 160px;
-  }
 
-  .aboutt-profile {
-    min-height: 240px;
-  }
-
-  .overlay {
-    height: 3050px;
-  }
-
-  .SOFWARE1 {
-    width: 20%;
-  }
+/* ///////////////////         Previous-profile-box         ///////////////////// */
+.Previous-profile-title {
+  margin-left: 20px;
 }

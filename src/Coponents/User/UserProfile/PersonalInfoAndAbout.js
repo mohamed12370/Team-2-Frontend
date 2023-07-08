@@ -1,12 +1,14 @@
-import PersonalAndEducationAndContact from './PersonalAndEducationAndContact';
-import AboutAndInProgressAndPrevious from './AboutAndInProgressAndPrevious';
+import PersonalAndEducationAndContactprofile from './PersonalAndEducationAndContactprofile';
+import AboutAndInProgressAndPreviousprofile from './AboutAndInProgressAndPreviousprofile';
 
 function PersonalInfoAndAbout() {
   return (
-    <div className="content-profile row d-flex justify-content-between">
-      <PersonalAndEducationAndContact />
-      <AboutAndInProgressAndPrevious />
-    </div>
+    <>
+      <div className="row mt-4 justify-content-between">
+        <PersonalAndEducationAndContactprofile />
+        <AboutAndInProgressAndPreviousprofile />
+      </div>
+    </>
   );
 }
 

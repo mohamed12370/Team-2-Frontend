@@ -1,9 +1,9 @@
-function About() {
+function AboutProfile() {
   return (
     <>
-      <div className="edit-profile-about-box ">
-        <h3 className="edit-about">About</h3>
-        <p className="edite-p-about">
+      <div className="About-Profile-box">
+        <h4 className="About-Profile-title mb-3">About</h4>
+        <p>
           At vero eos et accusamus et iusto odio dignissimos qui blanditiis
           deleniti atque corrupti quos dolores
         </p>
@@ -12,4 +12,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutProfile;
