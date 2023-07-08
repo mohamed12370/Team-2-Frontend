@@ -34,11 +34,14 @@ import AdminUpdateJobPage from './Pages/Admin/AdminJobs/AdminUpdateJob/AdminUpda
 import AdminUpdateArticlePage from './Pages/Admin/AdminArticles/AdminUpdateArticle/AdminUpdateArticlePage';
 import AdminApplicationJobPage from './Pages/Admin/AdminJobs/AdminApplicationJob/AdminApplicationJobPage';
 import ShowCourseDetailsPage from './Pages/UserCourses/ShowCoursesDetailsPage/ShowCourseDetailsPage';
+import FooterHome from './Coponents/Home/FooterHome';
+import HeaderTopLogIn from './Coponents/Home/HeaderTopLogIn';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <HeaderTopLogIn />
         <HeaderHome />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -112,6 +115,7 @@ function App() {
           <Route path="/createcv/education" element={<EducationPage />} />
           <Route path="/createcv/links" element={<LinksPage />} />
         </Routes>
+        <FooterHome />
       </BrowserRouter>
     </>
   );

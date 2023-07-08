@@ -9,7 +9,7 @@ function EducationAndTechAndSports() {
           title="EDUCATION"
           subtitle="HERE'S THE FIRST ARTICAL"
         />
-        <CardEducationAndTechAndSports title="TECH" subtitle="ARTICAL" />
+        {/* <CardEducationAndTechAndSports title="TECH" subtitle="ARTICAL" />
         <CardEducationAndTechAndSports
           title="SPORTS"
           subtitle="HERE'S THE FIRST ARTICAL"
@@ -17,7 +17,7 @@ function EducationAndTechAndSports() {
         <CardEducationAndTechAndSports
           title="EDUCATION"
           subtitle="HERE'S THE FIRST ARTICAL"
-        />
+        /> */}
       </div>
     </>
   );

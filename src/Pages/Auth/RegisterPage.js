@@ -4,8 +4,10 @@ import Singup from '../../Coponents/Auth/Singup';
 
 export default function RegisterPage() {
   return (
-    <div>
-      <Singup />
-    </div>
+    <>
+      <div>
+        <Singup />
+      </div>
+    </>
   );
 }
