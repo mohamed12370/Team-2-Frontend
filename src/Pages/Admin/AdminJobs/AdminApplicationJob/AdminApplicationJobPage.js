@@ -1,11 +1,11 @@
 import React from 'react';
 import './AdminApplicationJobPage.css';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
-import Pagination from '../../../../Coponents/UserAllCourses/Pagination';
 import AdminSectionTitle from '../../../../Coponents/Admin/AdminJobs/AdminApplicationJob/AdminSectionTitle';
 import HeaderTitleShrok from '../../../../Coponents/Admin/AdminJobs/AdminApplicationJob/HeaderTitleShrok';
 import JobApplicationsContainer from '../../../../Coponents/Admin/AdminJobs/AdminApplicationJob/JobApplicationsContainer';
 import JobApplicationsContainerLg from '../../../../Coponents/Admin/AdminJobs/AdminApplicationJob/JobApplicationsContainerLg';
+import Pagination from '../../../../Coponents/UserCourses/UserAllCourses/Pagination';
 
 export default function AdminApplicationJobPage() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import './UserAllCoursesPage.css';
-import PageHeader from '../../../Coponents/UserAllCourses/PageHeader';
-import NewCourse from '../../../Coponents/UserAllCourses/NewCourse';
-import OtherCoursesHeader from '../../../Coponents/UserAllCourses/OtherCoursesHeader';
-import OtherCourses from '../../../Coponents/UserAllCourses/OtherCourses';
+import PageHeader from '../../../Coponents/UserCourses/UserAllCourses/PageHeader';
+import NewCourse from '../../../Coponents/UserCourses/UserAllCourses/NewCourse';
+import OtherCoursesHeader from '../../../Coponents/UserCourses/UserAllCourses/OtherCoursesHeader';
+import OtherCourses from '../../../Coponents/UserCourses/UserAllCourses/OtherCourses';
 
 export default function UserAllCoursesPage() {
   return (

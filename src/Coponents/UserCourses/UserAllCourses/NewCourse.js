@@ -1,8 +1,11 @@
 import React from 'react';
 import CoursesArrayData from './CoursesArrayData';
-import img from '../../Images/Python.svg.png';
+import img from '../../../Images/Python.svg.png';
+import { useNavigate } from 'react-router-dom';
 
 const NewCourse = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="row  mt-1 parent-card">
@@ -30,7 +33,11 @@ const NewCourse = () => {
                   <a href="#/" className="btn mt-4">
                     ENROLL
                   </a>
-                  <div className="mt-2" style={{ cursor: 'pointer' }}>
+                  <div
+                    className="mt-2"
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => navigate(`/usercoursesdetails/:id`)}
+                  >
                     <span className="text-light">View Details </span>
                     <i className="fa-solid fa-angle-right"></i>
                   </div>

@@ -7,7 +7,7 @@ import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import TableAllAtricles from '../../../../Coponents/Admin/AdminArticles/AdminAllArticles/TableAllAtricles';
 import { Link } from 'react-router-dom';
-import Pagination from '../../../../Coponents/UserAllCourses/Pagination';
+import Pagination from '../../../../Coponents/UserCourses/UserAllCourses/Pagination';
 
 export default function AdminAllArticlesPage() {
   return (

@@ -33,6 +33,7 @@ import UpComingExamPagea from './Pages/ExamPages/UpComingExamPagea/UpComingExamP
 import AdminUpdateJobPage from './Pages/Admin/AdminJobs/AdminUpdateJob/AdminUpdateJobPage';
 import AdminUpdateArticlePage from './Pages/Admin/AdminArticles/AdminUpdateArticle/AdminUpdateArticlePage';
 import AdminApplicationJobPage from './Pages/Admin/AdminJobs/AdminApplicationJob/AdminApplicationJobPage';
+import ShowCourseDetailsPage from './Pages/UserCourses/ShowCoursesDetailsPage/ShowCourseDetailsPage';
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
           {/* User Jobs */}
           <Route path="/useralljob" element={<UserAllJobsPage />} />
           <Route path="/userallcourses" element={<UserAllCoursesPage />} />
+          <Route
+            path="/usercoursesdetails/:id"
+            element={<ShowCourseDetailsPage />}
+          />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />

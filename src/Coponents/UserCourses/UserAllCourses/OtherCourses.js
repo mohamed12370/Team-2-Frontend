@@ -1,7 +1,9 @@
 import React from 'react';
 import Pagination from './Pagination';
 import CoursesArrayData from './CoursesArrayData';
-import img from '../../Images/Python.svg.png';
+import img from '../../../Images/Python.svg.png';
+import { Link } from 'react-router-dom';
+
 const OtherCourses = () => {
   return (
     <div>
@@ -64,9 +66,12 @@ const OtherCourses = () => {
                     <button className=" btn w-75 mb-2 d-flex justify-content-center mx-auto">
                       ENROLL
                     </button>
-                    <p className="d-flex justify-content-lg-center justify-content-end">
+                    <Link
+                      to={`/usercoursesdetails/:id`}
+                      className="d-flex justify-content-lg-center justify-content-end"
+                    >
                       View Deatils
-                    </p>
+                    </Link>
                   </div>
                 </div>
               </>
