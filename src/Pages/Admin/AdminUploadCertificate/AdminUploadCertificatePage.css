@@ -1,0 +1,241 @@
+/* start global rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('../../../Images/secondary_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.containers {
+  width: 90%;
+  margin: auto;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #1a1919f1;
+  z-index: -1;
+}
+/* end global rules */
+/* start header */
+.Header {
+  color: #fff;
+  position: relative;
+  padding-top: 20px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.Header2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+.Header::before {
+  content: '';
+  position: absolute;
+  width: calc(100% - 32%);
+  height: 1px;
+  background-color: #bf9b30;
+  top: calc(100% + 10px);
+}
+/* end header */
+/* start side */
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.Side {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.448);
+  padding: 20px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.Side .SideDiv {
+  margin-bottom: 28px;
+}
+
+.Side .SideHeader {
+  background-color: rgba(0, 0, 0, 0.408);
+  padding: 12px 0;
+  padding-left: 18px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.Side ul {
+  list-style: none;
+  padding: 6px 18px;
+  color: #fff;
+}
+.Side li {
+  margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+  .Side {
+    display: none;
+    /* padding: 0; */
+  }
+}
+
+/* End side */
+/* start title */
+.title h5 {
+  color: #fff;
+  position: relative;
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .title h5 {
+    margin-top: -90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title h5::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 0;
+    width: calc(100% - 10px);
+    height: 2px;
+    background-color: #bf9b30;
+  }
+  .title h5 span {
+    display: none;
+  }
+}
+/* end title */
+/* start form */
+.FormSection {
+  margin-top: 28px;
+  position: relative;
+  /* background-color: rgba(0, 0, 0, 0.408);; */
+}
+.FormSection .row {
+  margin-bottom: 24px;
+}
+
+.FormSection label {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.FormSection input:not([type='file']),
+.FormSection select {
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #4a4a4ab7;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .course-title span {
+    display: none;
+  }
+}
+/* end form */
+/* start uploader */
+.uploader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploader-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100vw;
+  height: 40vh;
+  border: 2px dashed #bf9b30;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.upload-text:not(.upload-text a) {
+  color: white;
+  font-weight: 600;
+}
+.upload-text a {
+  color: #bf9b30 !important;
+  text-decoration: underline !important;
+}
+.upload-text + P {
+  text-align: center;
+  padding: 10px;
+  color: #ffffff1e;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+/* end uploader */
+/* start buttons */
+.TwoButton button {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #bf9b30;
+  color: white;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(90%);
+  margin-left: auto;
+}
+.TwoButton button a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+.TwoButton {
+  justify-content: right;
+}
+.TwoButton .BtnOne {
+  background-color: #9d9c9c;
+  color: white;
+}
+@media (max-width: 767px) {
+  .TwoButton {
+    display: block;
+    width: 100%;
+    padding: 70px 0;
+  }
+  .buttonFrist {
+    display: flex;
+    order: 2;
+  }
+  .buttonTwo {
+    display: flex;
+    order: 1;
+    margin-bottom: 30px !important;
+  }
+}
+/* end buttons */

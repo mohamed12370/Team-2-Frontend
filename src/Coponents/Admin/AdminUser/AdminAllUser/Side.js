@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 const Side = ({ activeTitle }) => {
+  const [showUploadCertificate, setShowUploadCertificate] = useState(false);
+  const handleGetAllUser = () => {
+    setShowUploadCertificate(true);
+  };
   return (
     <div className="Side ">
       <div className="SideDiv">
@@ -20,7 +25,9 @@ const Side = ({ activeTitle }) => {
             <a href="#/">Instructors</a>
           </li>
           <li>
-            <a href="#/">Students</a>
+            <a href="#/" onClick={handleGetAllUser}>
+              Students
+            </a>
           </li>
         </ul>
       </div>
@@ -75,6 +82,19 @@ const Side = ({ activeTitle }) => {
           </li>
         </ul>
       </div>
+      {showUploadCertificate ? (
+        <Link
+          to={`/adminuploadcertificate`}
+          className="d-none d-lg-block w-100 text-light text-center py-1 rounded"
+          style={{
+            background: '#bf9b30',
+          }}
+        >
+          Upload Certificates
+        </Link>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

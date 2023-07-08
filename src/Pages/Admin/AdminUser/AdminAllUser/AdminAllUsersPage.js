@@ -35,9 +35,23 @@ export default function AdminAllUsersPage() {
         </div>
         <Pagination />
         <div className="row">
-          <div className="col">
-            <Link to={`/admincreateuser`} className="btnAppearInMQ text-center">
+          <div className="col-12">
+            <Link
+              to={`/admincreateuser`}
+              className="btnAppearInMQ text-center mb-0"
+            >
               create new user
+            </Link>
+          </div>
+          <div className="col-12">
+            <Link
+              to={`/adminuploadcertificate`}
+              className="btnAppearInMQ text-center"
+              style={{
+                background: '#bf9b30',
+              }}
+            >
+              Upload Certificates
             </Link>
           </div>
         </div>

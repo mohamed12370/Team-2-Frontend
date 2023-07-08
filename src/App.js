@@ -36,6 +36,7 @@ import AdminApplicationJobPage from './Pages/Admin/AdminJobs/AdminApplicationJob
 import ShowCourseDetailsPage from './Pages/UserCourses/ShowCoursesDetailsPage/ShowCourseDetailsPage';
 import FooterHome from './Coponents/Home/FooterHome';
 import HeaderTopLogIn from './Coponents/Home/HeaderTopLogIn';
+import AdminUploadCertificatePage from './Pages/Admin/AdminUploadCertificate/AdminUploadCertificatePage';
 
 function App() {
   return (
@@ -67,6 +68,10 @@ function App() {
           <Route path="/upcomingexam" element={<UpComingExamPagea />} />
 
           {/* Admin Route */}
+          <Route
+            path="/adminuploadcertificate"
+            element={<AdminUploadCertificatePage />}
+          />
           <Route path="/adminalluser" element={<AdminAllUsersPage />} />
           <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
           <Route path="/adminedituser/:id" element={<AdminEditUserPage />} />
