@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faStopwatch } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 function UpComingExams({ title, instructor, Date, time, level }) {
   return (
     <>
@@ -33,12 +34,13 @@ function UpComingExams({ title, instructor, Date, time, level }) {
           </span>
         </div>
         <div className="col-lg-2 col-12 m-0 row mt-2 mt-lg-0  justify-content-lg-end">
-          <button
+          <Link
+            to={`/onlineexam/:id`}
             class=" btn join-btn text-uppercase"
-            style={{ height: '60px' }}
+            style={{ height: '40px' }}
           >
             join exam
-          </button>
+          </Link>
         </div>
       </div>
     </>

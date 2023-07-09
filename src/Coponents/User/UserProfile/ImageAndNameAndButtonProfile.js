@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function ImageAndNameAndButton() {
   return (
     <div className="row Image-Name-Button-box py-4">
@@ -13,9 +15,12 @@ function ImageAndNameAndButton() {
         </div>
       </div>
       <div className="col-2  cleacrfix">
-        <button className="btn float-end  Image-Name-Button-button">
+        <Link
+          to={`/edituserprofile`}
+          className="btn float-end  Image-Name-Button-button"
+        >
           EDIT PROFILE
-        </button>
+        </Link>
       </div>
     </div>
   );

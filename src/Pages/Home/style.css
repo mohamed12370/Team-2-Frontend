@@ -512,3 +512,20 @@ body {
     margin-right: 100px !important;
   }
 }
+
+.navbar-globle-color {
+  background-color: rgba(0, 0, 0, 0.888);
+  height: 45px;
+}
+.navbar-globle-color li a {
+  color: white;
+}
+.nav-globle5-icon {
+  background-color: #bf9b30 !important;
+}
+
+@media (max-width: 567px) {
+  .nav-globle5 {
+    margin-left: 0px !important;
+  }
+}

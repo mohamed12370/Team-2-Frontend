@@ -19,9 +19,8 @@ body {
 }
 
 .profile-container {
-  padding: 120px 0px;
   width: 87%;
-  margin: auto;
+  margin: 40px auto 0;
 }
 
 .profile-overlayOnImage {

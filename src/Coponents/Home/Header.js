@@ -26,13 +26,13 @@ function HeaderHome() {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 navbar-nav-home-list  w-75 ">
             <li className="nav-item">
-              <a
+              <Link
+                to={`/`}
                 className="nav-link active nav-link-home-text"
                 aria-current="page"
-                href="#"
               >
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link  active nav-link-home-text" href="#">
@@ -125,12 +125,13 @@ function HeaderHome() {
 
             <li className="nav-item"></li>
           </ul>
-          <button
+          <Link
+            to={`/contactus`}
             type="button"
             className=" btn nav-bar-button-color rounded-1 text-white ms-5 nav-link-home-text"
           >
             CONTACT US
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

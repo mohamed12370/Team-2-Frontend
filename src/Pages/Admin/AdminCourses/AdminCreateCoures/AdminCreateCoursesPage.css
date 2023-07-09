@@ -56,7 +56,7 @@ label {
   color: var(--primary);
 }
 .bg-exam {
-  height: 85vh;
+  /* height: 85vh; */
   background-image: url(../../../../Images/secondary_background.jpg);
   background-size: cover;
   background-position: center;
