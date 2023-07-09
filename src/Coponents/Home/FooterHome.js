@@ -3,20 +3,20 @@ import footerlogo from '../../Images/seff_logo_transparent.png';
 function FooterHome() {
   return (
     <>
-      <div className="footer-home-container ">
+      <div className="footer-home-container8 ">
         <div className="clearfix ">
           <div className="float-start ">
             <img
               src={footerlogo}
               alt=""
-              className="footer-image"
+              className="footer-image8"
               width={200}
               height={200}
             />
           </div>
 
-          <div className=" float-end footer-icon-arow-box">
-            <i class="fa-solid fa-circle-up footer-icon-arow"></i>
+          <div className=" float-end footer-icon-arow-box8">
+            <i class="fa-solid fa-circle-up footer-icon-arow8"></i>
           </div>
         </div>
 
@@ -24,34 +24,34 @@ function FooterHome() {
           <div className="float-start">
             <div>
               {' '}
-              <h3 className="footer-title">SOFTWARE ENGINEERING FOR FUTURE</h3>
+              <h3 className="footer-title8">SOFTWARE ENGINEERING FOR FUTURE</h3>
             </div>
-            <div className="mt-4 footer-text-header-box">
+            <div className="mt-4 footer-text-header-box8">
               <span>HOME</span>
-              <span className="footer-text-header">ABOUT</span>
-              <span className="footer-text-header">TECH</span>
-              <span className="footer-text-header">BUSINESS</span>
-              <span className="footer-text-header">SECURITY</span>
+              <span className="footer-text-header8">ABOUT</span>
+              <span className="footer-text-header8">TECH</span>
+              <span className="footer-text-header8">BUSINESS</span>
+              <span className="footer-text-header8">SECURITY</span>
               <br />
               <span>MEDICAL</span>
-              <span className="footer-text-header">STARTUPS</span>
-              <span className="footer-text-header">APPS</span>
-              <span className="footer-text-header">COURSES</span>
-              <span className="footer-text-header">CONTACT US</span>
-              <span className="footer-text-header">SPORTS</span>
+              <span className="footer-text-header8">STARTUPS</span>
+              <span className="footer-text-header8">APPS</span>
+              <span className="footer-text-header8">COURSES</span>
+              <span className="footer-text-header8">CONTACT US</span>
+              <span className="footer-text-header8">SPORTS</span>
             </div>
           </div>
 
-          <div className="float-end footer-icon12-box ">
-            <p className="footer-icon12-box-text">
+          <div className="float-end footer-icon12-box8 ">
+            <p className="footer-icon12-box-text8">
               sefffuture@gmail.com{' '}
-              <i class="fa-solid fa-envelope footer-icon12"></i>
+              <i class="fa-solid fa-envelope footer-icon128"></i>
             </p>
-            <p className="footer-icon12-box-text ">
+            <p className="footer-icon12-box-text8 ">
               +20 109 8481 288{' '}
-              <i class="fa-solid fa-phone-volume footer-icon12"></i>
+              <i class="fa-solid fa-phone-volume footer-icon128"></i>
             </p>
-            <p className="footer-icon12-box-text">+20 155 5177 645</p>
+            <p className="footer-icon12-box-text8">+20 155 5177 645</p>
           </div>
         </div>
         <hr />
@@ -59,11 +59,11 @@ function FooterHome() {
           <div className="float-start">
             <span>@2023 EGYPT,ALL RIGHTS RESERVED</span>
           </div>
-          <div className="float-end footer-icon11-box">
-            <i class="fa-brands fa-facebook  footer-icon11"></i>
-            <i class="fa-brands fa-twitter  footer-icon11"></i>
-            <i class="fa-brands fa-instagram  footer-icon11"></i>
-            <i class="fa-brands fa-linkedin  footer-icon11"></i>
+          <div className="float-end footer-icon11-box8">
+            <i class="fa-brands fa-facebook  footer-icon118"></i>
+            <i class="fa-brands fa-twitter  footer-icon118"></i>
+            <i class="fa-brands fa-instagram  footer-icon118"></i>
+            <i class="fa-brands fa-linkedin  footer-icon118"></i>
           </div>
         </div>
       </div>

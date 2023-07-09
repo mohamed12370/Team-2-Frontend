@@ -37,6 +37,7 @@ import ShowCourseDetailsPage from './Pages/UserCourses/ShowCoursesDetailsPage/Sh
 import FooterHome from './Coponents/Home/FooterHome';
 import HeaderTopLogIn from './Coponents/Home/HeaderTopLogIn';
 import AdminUploadCertificatePage from './Pages/Admin/AdminUploadCertificate/AdminUploadCertificatePage';
+import ContactUsPage from './Pages/ContactUs/ContactUsPage';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <HeaderHome />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/contactus" element={<ContactUsPage />} />
           <Route path="/singup" element={<RegisterPage />} />
 
           <Route path="/studentportal" element={<StudentPortalPage />} />
