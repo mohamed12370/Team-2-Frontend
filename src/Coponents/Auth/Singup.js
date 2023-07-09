@@ -60,7 +60,7 @@ export default function Singup() {
         <p className=" sign-up-already">
           {' '}
           Already have an account?{' '}
-          <Link to={``} className="sign-up-login">
+          <Link to={`/login`} className="sign-up-login">
             login
           </Link>
         </p>

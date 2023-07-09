@@ -38,6 +38,7 @@ import FooterHome from './Coponents/Home/FooterHome';
 import HeaderTopLogIn from './Coponents/Home/HeaderTopLogIn';
 import AdminUploadCertificatePage from './Pages/Admin/AdminUploadCertificate/AdminUploadCertificatePage';
 import ContactUsPage from './Pages/ContactUs/ContactUsPage';
+import LoginPage from './Pages/Auth/LoginPage';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contactus" element={<ContactUsPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/singup" element={<RegisterPage />} />
 
           <Route path="/studentportal" element={<StudentPortalPage />} />

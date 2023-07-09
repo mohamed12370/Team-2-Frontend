@@ -1,5 +1,5 @@
 /* start global rules */
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,7 +12,7 @@ body {
   width: 100%;
   position: relative;
   background-position: center;
-}
+} */
 
 .containers {
   width: 90%;
@@ -25,7 +25,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #1a1919f1;
+  background-color: rgba(29, 29, 29, 0.9);
   z-index: -1;
 }
 /* end global rules */
@@ -53,7 +53,7 @@ body {
 /* start side */
 a {
   text-decoration: none !important;
-  color: #fff !important;
+  color: #fff;
 }
 
 .Side {
