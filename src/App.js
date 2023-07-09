@@ -39,6 +39,7 @@ import HeaderTopLogIn from './Coponents/Home/HeaderTopLogIn';
 import AdminUploadCertificatePage from './Pages/Admin/AdminUploadCertificate/AdminUploadCertificatePage';
 import ContactUsPage from './Pages/ContactUs/ContactUsPage';
 import LoginPage from './Pages/Auth/LoginPage';
+import UserAllArticlesPage from './Pages/UserArticles/UserAllArticlesPage/UserAllArticlesPage';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
             path="/usercoursesdetails/:id"
             element={<ShowCourseDetailsPage />}
           />
+          <Route path="/userallarticle" element={<UserAllArticlesPage />} />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />

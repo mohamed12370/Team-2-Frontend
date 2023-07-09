@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary: #bf9b30;
+  --Green: #34a853;
+  --Red: #1a1919b3;
+  --Grey: #d0d0d09e;
+  --Black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--Black);
+}
+
+/* .latst-business-background {
+  position: relative;
+  z-index: -2;
+} */
+
+.latst-business-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1500px;
+  background-color: rgba(29, 29, 29, 0.903);
+  opacity: 0.8.5;
+  z-index: 5;
+}
+
+.latest-business-news-title {
+  width: 85%;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 40px;
+  color: white;
+}
+
+.Card-Businss-Left-subtitle {
+  font-size: 14px;
+}
+
+.latest-business-news-box-left {
+  border-radius: 8px;
+  margin: 80px auto 100px;
+  width: 85%;
+  background-color: var(--Red);
+  color: white;
+  padding: 25px 0px 0px;
+}
+
+.latest-business-news-box-right {
+  height: 100%;
+  width: 45%;
+  padding-right: 40px;
+}
+
+.Card-Businss-Left-box115 {
+  position: relative;
+}
+
+.Card-Businss-Left-box {
+  height: 300px;
+  width: 50%;
+}
+
+.Card-Businss-Left-subtitle-line {
+  height: 1px;
+  width: 45px;
+  background-color: var(--Primary);
+  margin: -12px 0px 8px 0px;
+}
+
+.Card-Businss-Left-box11 {
+  margin-left: 10px;
+  width: 105%;
+}
+
+.Businss-Left-title-icon {
+  position: relative;
+}
+
+.Businss-Left-box-icon22 {
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.Card-Businss-Left-title {
+  font-size: 30px;
+}
+
+.Businss-Left-icon-about {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+}
+
+.Card-Business-bottom-box {
+  color: white;
+  margin: auto;
+  border: 1px;
+  width: 80%;
+}
+
+.Card-Business-bottom-box-text {
+  padding: 10px;
+}
+
+.Businss-Left-text15 {
+  font-size: 12px;
+}
+
+.Businss-Left-text2r {
+  font-size: 17px;
+}
+
+.Businss-Left-text255 {
+  font-size: 29px;
+  width: 65%;
+}
+
+.Businss-Left-text2 {
+  font-size: 23px;
+}
+
+.Businss-Left-text3 {
+  font-size: 13px;
+}
+
+.Businss-Left-image {
+  width: 100%;
+  height: 90%;
+}
+
+.Businss-Left-icon {
+  color: gray;
+  font-size: 15px;
+}
+
+.Businss-Left-icon2 {
+  color: var(--Primary);
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .icon-span-home {
+    top: 5px;
+  }
+
+  .home-overlay {
+    height: 2300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card-Businss-Left-subtitle {
+    font-size: 12px;
+  }
+
+  .latst-business-overlay {
+    height: 1850px;
+  }
+
+  .latest-business-news-title {
+    font-size: 36px;
+  }
+
+  .Businss-Left-box-icon22 {
+    font-size: 16px;
+
+    right: 0px !important;
+    top: 0;
+  }
+
+  .Businss-Left-icon2 {
+    display: none;
+  }
+
+  .latest-business-news-box-right {
+    height: 100%;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .Businss-Left-text255 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .Card-Business-bottom-box-text {
+    padding: 0px;
+  }
+
+  .Businss-Left-text2 {
+    font-size: 18px;
+  }
+
+  .Businss-Left-text3 {
+    font-size: 12.5px;
+  }
+
+  .Card-Businss-Left-box {
+    width: 100%;
+    height: 10%;
+  }
+
+  .Businss-Left-boxxx {
+    width: 110%;
+  }
+
+  .latest-business-news-box-left {
+    height: 220px;
+    margin-bottom: 580px;
+  }
+
+  .Businss-Left-boxxx {
+    width: 106%;
+    margin: 10px auto 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    height: 170px;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  .Businss-Left-icon-about {
+    top: 0px;
+  }
+}
+
+@media (max-width: 567px) {
+  .latest-business-news-title {
+    font-size: 30px;
+  }
+
+  .latst-business-overlay {
+    height: 2850px;
+  }
+
+  .Card-Businss-Left-title {
+    font-size: 17px;
+  }
+
+  .Businss-Left-boxxx {
+    height: 200px;
+    padding: 35px 15px 40px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .latest-business-news-box-left {
+    height: 260px;
+    margin-top: 62px;
+  }
+
+  .about-right-top-div {
+    height: 230px;
+    width: 115% !important;
+    padding: 35px 15px 40px !important;
+    /* margin:-20px 0px 40px 0px  !important; */
+  }
+
+  /* .Businss-Left-boxxx {
+    
+    padding: 0px;} */
+
+  .latst-business-overlay {
+    height: 2900px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Card-Businss-Left-title {
+    font-size: 20px;
+  }
+
+  .latst-business-overlay {
+    height: 2800px;
+  }
+}
