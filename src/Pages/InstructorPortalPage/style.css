@@ -28,9 +28,9 @@ body {
   margin: auto;
 }
 
-.background-color1 {
+/* .background-color1 {
   background-color: #1a1919f1;
-}
+} */
 
 .overlayOnImage1 {
   position: absolute;
@@ -236,11 +236,10 @@ body {
 /* ///////////////////////////////////    Upcoming  Exams /////////////////////// */
 
 .Upcoming-Exams-title {
-  font-size: 33px;
+  font-size: 30px;
 }
 
 .Upcoming-Exams-button {
-  margin-top: 53px !important;
   background-color: var(--Primary);
   color: var(--white);
   font-size: 12px !important;

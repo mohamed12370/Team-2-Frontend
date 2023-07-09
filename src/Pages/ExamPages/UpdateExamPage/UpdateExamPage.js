@@ -1,20 +1,19 @@
 import React from 'react';
-import './main.css';
 import Title from '../../../Coponents/Exames/CreateExam/Title';
 import ExamInfo from '../../../Coponents/Exames/CreateExam/ExamInfo';
-import Buttons from '../../../Coponents/Exames/CreateExam/Buttons';
 import AddAndDeleteBtn from '../../../Coponents/Exames/CreateExam/AddAndDeleteBtn';
+import Buttons from '../../../Coponents/Exames/CreateExam/Buttons';
 
-export default function CreateNewExamPage() {
+export default function UpdateExamPage() {
   return (
     <>
       <div class="main-overlay">
         <div class="container">
           <Title
-            title={'create new exam'}
-            subTitle={'add exam details'}
+            title={'Update exam'}
+            subTitle={'update exam details'}
             date={'6th june 2023'}
-            btnTitle={'puplish'}
+            btnTitle={'save'}
           />
           <ExamInfo />
           <div class="main-questions">

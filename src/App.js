@@ -41,6 +41,7 @@ import ContactUsPage from './Pages/ContactUs/ContactUsPage';
 import LoginPage from './Pages/Auth/LoginPage';
 import UserAllArticlesPage from './Pages/UserArticles/UserAllArticlesPage/UserAllArticlesPage';
 import ShowUserArticleDetailsPage from './Pages/UserArticles/ShowUserArticlePage/ShowUserArticlePage';
+import UpdateExamPage from './Pages/ExamPages/UpdateExamPage/UpdateExamPage';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
+          <Route path="/updateexam/:id" element={<UpdateExamPage />} />
           <Route path="/onlineexam/:id" element={<OnlineExamPage />} />
           <Route path="/upcomingexam" element={<UpComingExamPagea />} />
 
