@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image1 from '../../../Images/secondary_background.jpg';
 
 function CardBusinessbottom() {
@@ -35,7 +36,9 @@ function CardBusinessbottom() {
                 </p>
               </div>
               <div className="col-1">
-                <i className="fa-solid fa-chevron-right Businss-Left-icon2"></i>
+                <Link to={`/userarticledetails/:id`}>
+                  <i className="fa-solid fa-chevron-right Businss-Left-icon2"></i>
+                </Link>
               </div>
             </div>
           </div>

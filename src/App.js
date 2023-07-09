@@ -40,6 +40,7 @@ import AdminUploadCertificatePage from './Pages/Admin/AdminUploadCertificate/Adm
 import ContactUsPage from './Pages/ContactUs/ContactUsPage';
 import LoginPage from './Pages/Auth/LoginPage';
 import UserAllArticlesPage from './Pages/UserArticles/UserAllArticlesPage/UserAllArticlesPage';
+import ShowUserArticleDetailsPage from './Pages/UserArticles/ShowUserArticlePage/ShowUserArticlePage';
 
 function App() {
   return (
@@ -66,6 +67,10 @@ function App() {
             element={<ShowCourseDetailsPage />}
           />
           <Route path="/userallarticle" element={<UserAllArticlesPage />} />
+          <Route
+            path="/userarticledetails/:id"
+            element={<ShowUserArticleDetailsPage />}
+          />
 
           {/* Exam Page */}
           <Route path="/examresult" element={<ExamResultPage />} />
