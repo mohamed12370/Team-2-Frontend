@@ -14,7 +14,7 @@ const NewCourse = () => {
             <div key={course.id} className="card p-2 col-md-6 col-lg-3">
               <div className="userCourses-parent">
                 <div className="userCourses-parentImg position-relative">
-                  <img className="card-img" src={img} alt="Card-cap" />
+                  <img className="" src={img} alt="Card-cap" height={200} />
                   <div className="userCourses-parentImgContent position-absolute bottom-0 left-0 start-0 p-2">
                     <h5 className="text-white fw-bold">{course.title}</h5>
                     <span style={{ color: '#bf9b30' }}>instructor:</span>

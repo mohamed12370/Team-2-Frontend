@@ -16,7 +16,7 @@ export default function ShowCourseDetailsPage() {
               <CourseInfo />
             </div>
 
-            <div className="row  orde p-0 m-0">
+            <div className="row  orde p-0 m-0 pb-5">
               <CourseContent />
               <CourseInteraction />
             </div>

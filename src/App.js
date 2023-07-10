@@ -84,7 +84,7 @@ function App() {
           />
 
           {/* Exam Page */}
-          <Route path="/examresult" element={<ExamResultPage />} />
+          <Route path="/examresult/:id" element={<ExamResultPage />} />
           <Route path="/createexam" element={<CreateNewExamPage />} />
           <Route path="/updateexam/:id" element={<UpdateExamPage />} />
           <Route path="/onlineexam/:id" element={<OnlineExamPage />} />

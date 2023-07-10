@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const CourseContent = () => {
   return (
     <>
-      <div className="col-lg-8 col-12 text-white order-2 order-lg-1">
+      <div className="col-lg-8 col-12 text-white order-2 order-lg-1 mb-5 pb-5">
         <div className="mt-5 d-none d-lg-block intro-1">
           <h6 className="header-section">introduction</h6>
           <p>
@@ -21,7 +21,7 @@ const CourseContent = () => {
         <div
           className="accordion m-lg-75 mt-4 p-2 accordion-section "
           id="accordionExample"
-          style={{ width: "85%" }}
+          style={{ width: '85%' }}
         >
           <div className="accordion-item text-white bg-black mt-2 icon-introduction div-accordion">
             <h2

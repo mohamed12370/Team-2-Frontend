@@ -12,7 +12,9 @@ function OngoingCoursesAndUpcomingExams() {
       </div>
       <div className=" col-lg-6 col-12  ">
         <div className="d-flex justify-content-between align-items-center mb-2">
-          <p className=" Upcoming-Exams-title">Upcoming Exams</p>
+          <Link to={`/upcomingexam`} className=" Upcoming-Exams-title mb-2">
+            Upcoming Exams
+          </Link>
           <Link to={`/createexam`} className="btn Upcoming-Exams-button ">
             {' '}
             CREATE NEW Exam{' '}

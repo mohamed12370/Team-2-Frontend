@@ -12,8 +12,6 @@ export default function EditUserProfilePage() {
         <EidtProfile6thJun2023 />
         <ImageAndNameAndButtonEidtprofile />
         <PersonalInfoAndAboutEditprofile />
-
-        <div className="edit-profile-background"></div>
       </div>
     </>
   );

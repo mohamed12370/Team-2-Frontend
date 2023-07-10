@@ -2,7 +2,7 @@ import footerlogo from '../../Images/seff_logo_transparent.png';
 
 function FooterHome() {
   return (
-    <div style={{ backgroundColor: 'rgba(29, 29, 29, 0.9)' }}>
+    <div style={{ backgroundColor: 'rgba(30, 30, 30 )' }}>
       <div className="footer-home-container8 ">
         <div className="clearfix ">
           <div className="float-start ">

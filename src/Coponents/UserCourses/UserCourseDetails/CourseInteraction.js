@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const CourseInteraction = () => {
   return (
     <>
-      <div className="col-lg-4 col-12 order-1 order-lg-2 div-assin">
+      <div className="col-lg-4 col-12 order-1 order-lg-2 div-assin ">
         <div className="mt-5 d-lg-none div-assin2">
           <h6>introduction</h6>
           <p>
@@ -16,7 +16,7 @@ const CourseInteraction = () => {
             dolorum cum numquam asperiores consequatur.
           </p>
         </div>
-        <div className="mt-3  p-3 ass-pp div-assin3">
+        <div className="mt-5  p-3 ass-pp div-assin3">
           <h6 className="header-section">Assessment</h6>
 
           <p className="mt-4 ">

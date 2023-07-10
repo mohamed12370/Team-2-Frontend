@@ -94,20 +94,23 @@ function HeaderHome() {
               <a className="nav-link active nav-link-home-text">APPS</a>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <Link
+                to={`/userallcourses`}
                 className="nav-link dropdown-toggle active nav-link-home-text"
-                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 COURSES
-              </a>
+              </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item nav-link-home-text" href="#">
+                  <Link
+                    to={`/userallcourses`}
+                    className="dropdown-item nav-link-home-text"
+                  >
                     LAPTOPS
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="dropdown-item nav-link-home-text" href="#">

@@ -12,7 +12,12 @@ const Side = ({ activeTitle }) => {
         <h5
           className={activeTitle === 'users' ? 'SideHeader ff' : 'SideHeader'}
         >
-          <Link to={`/adminalluser`}>Users</Link>
+          <Link
+            to={`/adminalluser`}
+            onClick={() => setShowUploadCertificate(false)}
+          >
+            Users
+          </Link>
         </h5>
         <ul>
           <li>
