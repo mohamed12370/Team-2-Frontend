@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-function SidebarFiltersLeft() {
+function SidebarFiltersLeft({ showCreateCv }) {
   const navigate = useNavigate();
   return (
     <>
@@ -149,14 +149,17 @@ function SidebarFiltersLeft() {
       </div>
 
       <div className="d-grid pt-4">
-        <Link
-          to={`/createcv/main-information`}
-          type="button"
-          className="btn btn-warning btn-block p-2 text-light"
-          onClick={() => navigate('/createcv/main-information')}
-        >
-          CREATE YOUR CV
-        </Link>
+        {showCreateCv && (
+          <Link
+            to={`/createcv/main-information`}
+            type="button"
+            className="btn btn-block p-2 text-light"
+            style={{ backgroundColor: '#bf9b30' }}
+            onClick={() => navigate('/createcv/main-information')}
+          >
+            CREATE YOUR CV
+          </Link>
+        )}
       </div>
     </>
   );

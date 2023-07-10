@@ -23,7 +23,7 @@ import AdminAllJobsPage from './Pages/Admin/AdminJobs/AdminAllJobs/AdminAllJobsP
 import InstructorPortalPage from './Pages/InstructorPortalPage/InstructorPortalPage';
 import UserProfilePage from './Pages/User/UserProfile/userProfilePage';
 import EditUserProfilePage from './Pages/User/EditUserProfile/EditUserProfilePage';
-import UserAllJobsPage from './Pages/UserJobs/UserAllJobsPage';
+import UserAllJobsPage from './Pages/UserJobs/UserAllJobs/UserAllJobsPage';
 import UserAllCoursesPage from './Pages/UserCourses/UserAllCoursesPage/UserAllCoursesPage';
 import HeaderHome from './Coponents/Home/Header';
 import AdminEditUserPage from './Pages/Admin/AdminUser/AdminEditUser/AdminEditUserPage';
@@ -42,6 +42,8 @@ import LoginPage from './Pages/Auth/LoginPage';
 import UserAllArticlesPage from './Pages/UserArticles/UserAllArticlesPage/UserAllArticlesPage';
 import ShowUserArticleDetailsPage from './Pages/UserArticles/ShowUserArticlePage/ShowUserArticlePage';
 import UpdateExamPage from './Pages/ExamPages/UpdateExamPage/UpdateExamPage';
+import ShowUserJobDetailsPage from './Pages/UserJobs/ShowUserJobDetails/ShowUserJobDetailsPage';
+import UserApplyForJobPage from './Pages/UserJobs/UserApplyForJobPage/UserApplyForJobPage';
 
 function App() {
   return (
@@ -62,6 +64,14 @@ function App() {
 
           {/* User Jobs */}
           <Route path="/useralljob" element={<UserAllJobsPage />} />
+          <Route
+            path="/userjobdetails/:id"
+            element={<ShowUserJobDetailsPage />}
+          />
+          <Route
+            path="/userapplyforjob/:id"
+            element={<UserApplyForJobPage />}
+          />
           <Route path="/userallcourses" element={<UserAllCoursesPage />} />
           <Route
             path="/usercoursesdetails/:id"

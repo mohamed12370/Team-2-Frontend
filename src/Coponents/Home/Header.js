@@ -125,7 +125,12 @@ function HeaderHome() {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">JOBS</a>
+              <Link
+                to={`/useralljob`}
+                className="nav-link active nav-link-home-text"
+              >
+                JOBS
+              </Link>
             </li>
 
             <li className="nav-item"></li>

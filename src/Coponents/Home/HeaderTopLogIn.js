@@ -5,12 +5,12 @@ function HeaderTopLogIn() {
     <nav class="navbar  navbar-expand-sm navbar-globle-color">
       <div class="container ">
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon nav-globle5-icon bg-info"></span>
+          <span class="navbar-toggler-icon nav-globle5-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
