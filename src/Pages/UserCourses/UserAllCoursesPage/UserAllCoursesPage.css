@@ -24,7 +24,6 @@ body {
 .all-courses {
   /* background-image: url(../../../Images/secondary_background.jpg); */
   background-size: cover;
-  height: calc(100vh+200px);
   background-position: center;
 }
 .all-courses .userCourses-overlay {

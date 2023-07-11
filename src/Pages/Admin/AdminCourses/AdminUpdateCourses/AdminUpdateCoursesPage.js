@@ -12,14 +12,14 @@ export default function AdminUpdateCoursesPage() {
       <div>
         <Header title={'Update New Course'} date={'6th june 2023'} />
       </div>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <div className="row">
           <div className="col-lg-3 mb-4">
             <Side activeTitle={'courses'} />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <div className="row">
-              <div className="course text-capitalize col-12 col-lg-9">
+              <div className="course text-capitalize col-12 col-lg-12">
                 <UpdateCoursesForms />
                 <div className="mt-4 row position-relative  Lessons">
                   <div className="col-7 col-lg-12 ">

@@ -11,7 +11,7 @@ export default function AdminApplicationJobPage() {
   return (
     <div>
       <div className="overlay"></div>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <HeaderTitleShrok />
         <div className="row">
           <div className="col-lg-3">

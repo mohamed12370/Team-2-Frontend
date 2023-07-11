@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function AdminUpdateArticle() {
   return (
-    <>
-      <div className="col-lg-9 article-form">
+    <div className="row">
+      <div className="col-lg-12 article-form">
         <div className="row d-flex justify-content-between">
           <div className="col-6">
             <h3 className="text-light title text-capitalize">
@@ -145,6 +145,6 @@ export default function AdminUpdateArticle() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }

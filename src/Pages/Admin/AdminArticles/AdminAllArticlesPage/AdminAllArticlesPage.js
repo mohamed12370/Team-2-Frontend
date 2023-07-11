@@ -13,7 +13,7 @@ export default function AdminAllArticlesPage() {
   return (
     <div>
       <div className="overlay"></div>
-      <Container>
+      <Container className="mb-5 pb-5">
         <Header title={'Admin Panel'} date={'6th june 2023'} />
         <Btn title={'creat new article'} path={'/admincreatearticle'} />
         <Row>

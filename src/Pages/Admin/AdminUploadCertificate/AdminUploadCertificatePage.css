@@ -58,7 +58,7 @@ a {
 
 .Side {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.448);
+  /* background-color: rgba(0, 0, 0, 0.448); */
   padding: 20px 10px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -91,10 +91,9 @@ a {
   margin-bottom: 4px;
 }
 @media (max-width: 768px) {
-  .Side {
+  /* .Side {
     display: none;
-    /* padding: 0; */
-  }
+  } */
 }
 
 /* End side */

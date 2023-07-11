@@ -351,3 +351,9 @@ input[type='time']::-webkit-calendar-picker-indicator {
     padding: 12px 0px;
   }
 }
+
+.createCourse-select option {
+  background-color: #1a1919f1;
+  color: white;
+  font-size: 16px;
+}

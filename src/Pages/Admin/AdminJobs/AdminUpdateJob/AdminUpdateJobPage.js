@@ -10,7 +10,7 @@ export default function AdminUpdateJobPage() {
       <div>
         <Header title={'Update New Job'} date={'6th june 2023'} />
       </div>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <div className="row">
           <div className="col-lg-3 mb-4">
             <Side activeTitle={'jobs'} />

@@ -11,7 +11,7 @@ const NewCourse = () => {
       <div className="row  mt-1 parent-card">
         {CoursesArrayData.map((course) => {
           return (
-            <div key={course.id} className="card p-2 col-md-6 col-lg-3">
+            <div key={course.id} className=" p-2 col-md-6 col-lg-3">
               <div className="userCourses-parent">
                 <div className="userCourses-parentImg position-relative">
                   <img className="" src={img} alt="Card-cap" height={200} />

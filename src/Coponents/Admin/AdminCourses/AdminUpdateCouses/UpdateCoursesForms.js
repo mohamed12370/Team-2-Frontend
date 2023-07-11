@@ -156,19 +156,19 @@ export default function UpdateCoursesForms() {
                 <p className="mb-0">Certificate </p>
               </label>
               <select
-                className="input form-select p-2"
+                className="input form-select p-2 opacity-100 createCourse-select"
                 name="languages"
                 id="language-select"
-                onFocus={(e) => {
-                  e.target.size = 6;
-                }}
-                onBlur={(e) => {
-                  e.target.size = 0;
-                }}
-                onChange={(e) => {
-                  e.target.size = 1;
-                  e.target.blur();
-                }}
+                // onFocus={(e) => {
+                //   e.target.size = 6;
+                // }}
+                // onBlur={(e) => {
+                //   e.target.size = 0;
+                // }}
+                // onChange={(e) => {
+                //   e.target.size = 1;
+                //   e.target.blur();
+                // }}
               >
                 <option value="">select Certificate</option>
                 <option value="javascript">JavaScript</option>

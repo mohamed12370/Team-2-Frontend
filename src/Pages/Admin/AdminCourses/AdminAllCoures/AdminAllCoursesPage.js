@@ -12,7 +12,7 @@ export default function AdminAllCoursesPage() {
   return (
     <div>
       <Overlay />
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <Header title={'Admin Panel'} date={'6th june 2023'} />
         <Btn title={'creat new course'} path={'/admincreatecourses'} />
         <div className="row">

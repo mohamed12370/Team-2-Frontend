@@ -10,7 +10,7 @@ export default function AdminEditUserPage() {
       <div className="container">
         <Header title={'Update New User'} date={'6th june 2023'} />
       </div>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <div className="row">
           <div className="col-lg-3">
             <Side activeTitle={'users'} />
