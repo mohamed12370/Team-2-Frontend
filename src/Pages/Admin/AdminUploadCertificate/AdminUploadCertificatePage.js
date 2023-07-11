@@ -11,7 +11,7 @@ export default function AdminUploadCertificatePage() {
     <div>
       <div className="overlay"></div>
       <Header title={'Admin Panel'} date={'6th june 2023'} />
-      <div className="containers">
+      <div className="containers mb-5 pb-5">
         <div className="row">
           <div className="col-lg-3">
             <Side activeTitle={'users'} />
