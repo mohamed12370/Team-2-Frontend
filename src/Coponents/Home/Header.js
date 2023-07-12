@@ -28,20 +28,20 @@ function HeaderHome() {
             <li className="nav-item">
               <Link
                 to={`/`}
-                className="nav-link active nav-link-home-text"
+                className="nav-link  nav-link-home-text"
                 aria-current="page"
               >
                 HOME
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link  active nav-link-home-text" href="#">
+              <a className="nav-link   nav-link-home-text" href="#">
                 ABOUT
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle active nav-link-home-text"
+                className="nav-link dropdown-toggle  nav-link-home-text"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -73,30 +73,30 @@ function HeaderHome() {
             <li className="nav-item">
               <Link
                 to={`/userallarticle`}
-                className="nav-link active nav-link-home-text "
+                className="nav-link  nav-link-home-text "
               >
                 BUSINESS
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">SECURITY</a>
+              <a className="nav-link  nav-link-home-text">SECURITY</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">SPORTS</a>
+              <a className="nav-link  nav-link-home-text">SPORTS</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">MEDICAL</a>
+              <a className="nav-link  nav-link-home-text">MEDICAL</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">STARTUPS</a>
+              <a className="nav-link  nav-link-home-text">STARTUPS</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active nav-link-home-text">APPS</a>
+              <a className="nav-link  nav-link-home-text">APPS</a>
             </li>
             <li className="nav-item dropdown">
               <Link
                 to={`/userallcourses`}
-                className="nav-link dropdown-toggle active nav-link-home-text"
+                className="nav-link dropdown-toggle  nav-link-home-text"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -128,10 +128,7 @@ function HeaderHome() {
               </ul>
             </li>
             <li className="nav-item">
-              <Link
-                to={`/useralljob`}
-                className="nav-link active nav-link-home-text"
-              >
+              <Link to={`/useralljob`} className="nav-link  nav-link-home-text">
                 JOBS
               </Link>
             </li>

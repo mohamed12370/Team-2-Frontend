@@ -311,7 +311,7 @@ table button {
   -o-border-radius: 20px;
   /* margin-left: -40px; */
 }
-.active {
+.user-active {
   background-color: #bf9b30;
   padding: 7px 25px;
 }

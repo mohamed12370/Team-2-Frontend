@@ -105,9 +105,9 @@ function LoginCard() {
           </div>
 
           <h6 className=" fw-bold text-end pe-3">
-            <a className="text-secondary shadow" href="#">
+            <Link to={`/forgetpassword`} className="text-secondary shadow">
               Forget your password ?
-            </a>
+            </Link>
           </h6>
 
           <button

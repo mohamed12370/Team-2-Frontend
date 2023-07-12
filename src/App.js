@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import StudentPortalPage from './Pages/StudentePortalPage/StudentPortalPage';
 import HomePage from './Pages/Home/HomePage';
 import ExamResultPage from './Pages/ExamPages/ExamResult/ExamResultPage';
@@ -44,6 +44,17 @@ import ShowUserArticleDetailsPage from './Pages/UserArticles/ShowUserArticlePage
 import UpdateExamPage from './Pages/ExamPages/UpdateExamPage/UpdateExamPage';
 import ShowUserJobDetailsPage from './Pages/UserJobs/ShowUserJobDetails/ShowUserJobDetailsPage';
 import UserApplyForJobPage from './Pages/UserJobs/UserApplyForJobPage/UserApplyForJobPage';
+import ForgetPasswordPage from './Pages/Auth/ForgetPasswordPage';
+
+import NewCreateCVPage from './Pages/CreateCV/MainCreateCV/MainCreateCV';
+import MainInformation1Form from './Coponents/MainCreateCV/MainInformation1Form';
+import Summary2Form from './Coponents/MainCreateCV/Summary2Form';
+import Skills3Form from './Coponents/MainCreateCV/Skills3Form';
+import HonersAndAwards6Form from './Coponents/MainCreateCV/HonersAndAwards6Form';
+import HobbiesAndInterests7Form from './Coponents/MainCreateCV/HobbiesAndInterests7Form';
+import Experience4Form from './Coponents/MainCreateCV/Experience4Form';
+import Education5Form from './Coponents/MainCreateCV/Education5Form';
+import Links8Form from './Coponents/MainCreateCV/Links8Form';
 
 function App() {
   return (
@@ -56,6 +67,7 @@ function App() {
           <Route path="/contactus" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/singup" element={<RegisterPage />} />
+          <Route path="/forgetpassword" element={<ForgetPasswordPage />} />
 
           <Route path="/studentportal" element={<StudentPortalPage />} />
           <Route path="/instructorportal" element={<InstructorPortalPage />} />
@@ -124,8 +136,32 @@ function App() {
             element={<AdminApplicationJobPage />}
           />
 
+          {/* New Create CV */}
+          <Route path="/createcv" element={<NewCreateCVPage />}>
+            {/* redirect to first route -------------------------------- */}
+            <Route
+              index
+              element={<Navigate replace to="/createcv/main-information" />}
+            />
+
+            <Route path="main-information" element={<MainInformation1Form />} />
+            <Route path="summary" element={<Summary2Form />} />
+            <Route path="skills" element={<Skills3Form />} />
+            <Route
+              path="honers-and-awards"
+              element={<HonersAndAwards6Form />}
+            />
+            <Route
+              path="hobbies-and-interests"
+              element={<HobbiesAndInterests7Form />}
+            />
+            <Route path="experience" element={<Experience4Form />} />
+            <Route path="education" element={<Education5Form />} />
+            <Route path="links" element={<Links8Form />} />
+          </Route>
+
           {/* Create Cv */}
-          <Route
+          {/* <Route
             path="/createcv/main-information"
             element={<MainInformationPage />}
           />
@@ -141,7 +177,7 @@ function App() {
           />
           <Route path="/createcv/experience" element={<ExperiencePage />} />
           <Route path="/createcv/education" element={<EducationPage />} />
-          <Route path="/createcv/links" element={<LinksPage />} />
+          <Route path="/createcv/links" element={<LinksPage />} /> */}
         </Routes>
         <FooterHome />
       </BrowserRouter>

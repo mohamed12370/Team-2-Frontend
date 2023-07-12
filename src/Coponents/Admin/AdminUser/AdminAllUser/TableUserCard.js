@@ -10,7 +10,7 @@ export default function TableUserCard({ item }) {
       <div className=" col-lg-2 col-12 upper  name-text">{item?.name}</div>
       <div className="col-lg-2 col-6  status">
         {item?.status === 'Active' ? (
-          <button className="active">{item?.status}</button>
+          <button className="user-active">{item?.status}</button>
         ) : (
           <button className="notActive">{item?.status}</button>
         )}

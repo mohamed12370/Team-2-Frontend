@@ -8,7 +8,7 @@ import Pagination from '../../../Coponents/Exames/UpComingExamP/Pagination';
 export default function UpComingExamPagea() {
   return (
     <>
-      <section className="bg-exam">
+      <section className="">
         <div className="overlay-exam text-light ">
           <div className="container">
             <Title />
