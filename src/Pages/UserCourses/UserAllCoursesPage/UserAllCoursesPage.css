@@ -24,6 +24,7 @@ body {
 .all-courses {
   /* background-image: url(../../../Images/secondary_background.jpg); */
   background-size: cover;
+  height: calc(100vh+200px);
   background-position: center;
 }
 .all-courses .userCourses-overlay {
@@ -70,7 +71,10 @@ body {
 .all-courses .userCourses-overlay .container .card .card-body .card-icon {
   color: var(--primary);
 }
-
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
 .inp1 {
   position: relative;
 }

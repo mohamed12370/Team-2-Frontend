@@ -1,6 +1,5 @@
 import React from 'react';
-
-const PageHeader = () => {
+const PageHeader = ({ next, pre }) => {
   return (
     <>
       <div className="parent1 text-white pt-5">
@@ -12,13 +11,19 @@ const PageHeader = () => {
       <div className="icon-Newcourses text-white  d-flex justify-content-between mt-5">
         <h5>New Courses</h5>
         <div>
-          <a href="#/">
+          <button
+            className="border-none bg-transparent rounded-pill"
+            onClick={pre}
+          >
             <i className="fa-solid fa-circle-chevron-left "></i>
-          </a>
+          </button>
           &nbsp;
-          <a href="#/">
+          <button
+            className="border-none bg-transparent rounded-pill"
+            onClick={next}
+          >
             <i className="fa-solid fa-circle-chevron-right"></i>
-          </a>
+          </button>
         </div>
       </div>
     </>
