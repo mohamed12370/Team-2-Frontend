@@ -8,7 +8,7 @@ import Buttons from '../../../Coponents/Exames/OnlineExam/Buttons';
 export default function OnlineExamPage() {
   return (
     <div>
-      <section className="bg-exam">
+      <section className="">
         <div className="overlay-exam text-light h-auto">
           <div className="container">
             <TitleExamResult />

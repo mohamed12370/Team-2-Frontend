@@ -2,12 +2,14 @@ import React from 'react';
 import CoursesArrayData from './CoursesArrayData';
 import img from '../../../Images/Python.svg.png';
 import { useNavigate } from 'react-router-dom';
+import PageHeader from './PageHeader';
 
 const NewCourse = () => {
   const navigate = useNavigate();
 
   return (
     <>
+      <PageHeader />
       <div className="row  mt-1 parent-card">
         {CoursesArrayData.map((course) => {
           return (

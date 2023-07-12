@@ -15,9 +15,9 @@ function FooterHome() {
             />
           </div>
 
-          <div className=" float-end footer-icon-arow-box8">
+          {/* <div className=" float-end footer-icon-arow-box8">
             <i class="fa-solid fa-circle-up footer-icon-arow8"></i>
-          </div>
+          </div> */}
         </div>
 
         <div className="clearfix">

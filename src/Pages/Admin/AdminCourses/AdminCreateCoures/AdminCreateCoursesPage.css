@@ -131,7 +131,7 @@ label {
 .pls-icon input::placeholder {
   color: #99999999;
 }
-.icon {
+.pls-icon .icon {
   position: absolute;
   left: 12px;
   top: 5px;
@@ -305,7 +305,7 @@ input[type='time']::-webkit-calendar-picker-indicator {
   .pls-icon input {
     padding-left: 35px !important;
   }
-  .icon {
+  .pls-icon .icon {
     top: 10px;
   }
   input,
