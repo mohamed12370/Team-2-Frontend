@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Buttons() {
+function Buttons({handleSubmit}) {
   return (
     <>
         <div class="command-buttons ">
             <button class="cancel">cancel</button>
-            <button class="save">save</button>
+            <button type='submit' onClick={handleSubmit} class="save">save</button>
         </div>
 
     </>

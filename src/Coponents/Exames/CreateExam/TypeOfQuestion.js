@@ -1,18 +1,11 @@
 
-import React, { useState } from 'react';
 import McqQuestion from './McqQuestion';
 import WrittenQuestion from './WrittenQuestion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
-function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton }) {
-  const [showComponent, setShowComponent] = useState(false);
-
-  const handleSelectChange = (event) => {
-    const selectedValue = event.target.value;
-    setShowComponent(selectedValue === 'show');
-  };
-
+function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton ,question , handleQuestionChange ,mark , handleMarkChange,
+  image, handleImageChange,questionType, handleSelectChange,WrittenAnswer , handleWrittenAnswerChange}) {
   return (
     <div className="row question-form">
       <div className="col-lg-10 form-info mb-3 ">
@@ -22,13 +15,13 @@ function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton }) {
               <label htmlFor="inputEmail4" className="form-label">
                 question {id}
               </label>
-              <input type="text" className="form-control" id="inputText0"></input>
+              <input type="text" className="form-control" id="inputText0" required value={question} onChange={handleQuestionChange} ></input>
             </div>
             <div className="form-group col-md-4 mb-3">
               <label htmlFor="inputPassword4" className="form-label">
                 mark
               </label>
-              <input type="text" className="form-control" id="inputText1"></input>
+              <input type="text" className="form-control" id="inputText1" required value={mark} onChange={handleMarkChange}  ></input>
             </div>
           </div>
           <div className="row">
@@ -40,6 +33,7 @@ function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton }) {
                 className="form-select form-select-sm"
                 id="sec-select"
                 aria-label=".form-select-sm example"
+                required
                 onChange={handleSelectChange}
               >
                 <option value="" selected>select Type Of Question</option>
@@ -51,7 +45,7 @@ function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton }) {
               <label htmlFor="inputPassword4" className="form-label">
                 image upload
               </label>
-              <input type="file" className="form-control" id="inputfile4"></input>
+              <input type="file" className="form-control" id="inputfile4" required value={image} onChange={handleImageChange} ></input>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -71,7 +65,7 @@ function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton }) {
               </svg>
             </div>
           </div>
-          {showComponent ? <McqQuestion /> : <WrittenQuestion />}
+          {questionType ? <McqQuestion mc /> : <WrittenQuestion WrittenAnswer={WrittenAnswer} handleWrittenAnswerChange={handleWrittenAnswerChange}/>}
         </form>
       </div>
       {!hideDeleteButton && (
