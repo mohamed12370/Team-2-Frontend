@@ -23,10 +23,6 @@ export const websiteAvailableIcons = [
 
 const iniInputsCount = 3;
 
-// export const initialFormData = {
-// 	skills: Array(iniInputsCount).fill(""),
-// };
-
 export const initialformData = {
 	image: "",
 	main_information: {
@@ -37,9 +33,12 @@ export const initialformData = {
 		country: "",
 		mobileNumber: "",
 		email: "",
+		date: "",
+		birthDay: "",
+		state: "",
 	},
 	about: "",
-	skills: [Array(iniInputsCount).fill("")],
+	skills: Array(iniInputsCount).fill(""),
 	experience: [
 		{
 			companyName: "",
@@ -66,8 +65,8 @@ export const initialformData = {
 			description: "",
 		},
 	],
-	hobbiesAndInterests: [Array(iniInputsCount).fill('')],
-	links: [Array(iniInputsCount).fill({ sitename: "", url: "" })],
+	hobbiesAndInterests: Array(iniInputsCount).fill(""),
+	links: Array(iniInputsCount).fill({ sitename: "", url: "" }),
 };
 
 export const formDataFiled = {

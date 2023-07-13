@@ -355,7 +355,7 @@ a {
   border: var(--border-width) solid var(--gray-dark);
   outline: none;
   color: var(--white);
-  padding: 10px 15px;
+  padding: 10px 15px !important;
   background-color: var(--input-pg-color);
 }
 
@@ -407,7 +407,7 @@ a {
   letter-spacing: 0.01rem;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  padding-left: 60px;
+  padding-left: 60px !important;
   margin-left: 0;
   background: var(--input-pg-color);
   border: var(--border-width) solid var(--gray-dark);

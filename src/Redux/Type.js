@@ -41,3 +41,9 @@ export const GET_USER_ALL_JOB = 'GET_USER_ALL_JOB';
 export const GET_USER_ONE_JOB = 'GET_USER_ONE_JOB';
 
 export const USER_EDIT_PROFILE = 'USER_EDIT_PROFILE';
+
+export const CREATE_NEW_EXAM = 'CREATE_NEW_EXAM';
+export const UPDATE_NEW_EXAM = 'UPDATE_NEW_EXAM';
+export const GET_ALL_EXAM = 'GET_ALL_EXAM';
+export const GET_ONE_EXAM = 'GET_ONE_EXAM';
+export const DELETE_ONE_EXAM = 'DELETE_ONE_EXAM';
