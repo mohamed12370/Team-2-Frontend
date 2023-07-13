@@ -231,10 +231,14 @@ body {
 .can-pluse {
   display: flex;
   align-items: center;
+  margin-right: 40px !important;
 }
 #undefined {
   display: flex;
   align-items: center;
+}
+ .circle-plus {
+  margin-right: 45px !important;
 }
 @media (max-width: 991px) {
   .add-question {
@@ -246,6 +250,8 @@ body {
     font-size: 24px;
     color: #d8b23f;
     margin-left: 10px;
+    margin-right: 0 !important;
+
   }
   .del-quistion {
     position: absolute;
@@ -253,13 +259,12 @@ body {
   }
   .correct-button {
     width: 90%;
-    padding: 5px 0;
     position: absolute;
     border: none;
     background: #065f06d6;
     color: white;
     border-radius: 7px;
-    top: 62%;
+    top: 80%;
     left: 5%;
   }
   #inputText2,
@@ -267,7 +272,6 @@ body {
     height: 90px;
   }
   .wrong-button {
-    padding: 5px 0px;
     border: none;
     background: #b11f1fc7;
     color: white;
@@ -329,7 +333,6 @@ body {
     display: flex;
     justify-content: end;
     position: relative;
-    top: 20px;
   }
   .circule {
     margin-left: 10px;

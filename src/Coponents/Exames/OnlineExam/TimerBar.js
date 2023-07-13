@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function TimerBar({ duration }) {
   const navigate = useNavigate();
-  //  create a timer object
-  const [timeLeft, setTimeLeft] = useState(
-    parseInt(localStorage.getItem('timeLeft')) || 0
-  );
 
+  //  create a timer object
+
+  const [timeLeft, setTimeLeft] = useState(0);
   //   create a timer object effect
   useEffect(() => {
-    if (timeLeft >= duration * 3600) {
-      localStorage.removeItem('timeLeft');
-      navigate('/');
-    }
-  }, [timeLeft, duration, navigate]);
-
+    const timerId = setInterval(() => {
+      setTimeLeft((prevTimeLeft) => {
+        const newTimeLeft = prevTimeLeft + 1;
+        localStorage.setItem('timeLeft', newTimeLeft.toString());
+        return newTimeLeft;
+      });
+    }, 1);
+    return () => clearInterval(timerId);
+  }, []);
   function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -23,9 +25,15 @@ export default function TimerBar({ duration }) {
       .toString()
       .padStart(2, '0')}`;
   }
-  // width bar
-  const barWidth = `${(timeLeft / duration / 3600) * 100}%;`;
+  useEffect(() => {
+    if (timeLeft >= duration * 3600) {
+      localStorage.removeItem('timeLeft');
+      navigate('/');
+    }
+  }, [timeLeft, duration, navigate]);
 
+  // width bar
+  const barWidth = `${(timeLeft / duration / 3600) * 100}%`;
   return (
     <>
       {/*  start bar timer  */}

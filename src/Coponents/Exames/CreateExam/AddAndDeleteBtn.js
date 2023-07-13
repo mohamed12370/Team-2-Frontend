@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import TypeOfQuestion from './TypeOfQuestion';
-
+import TypeOfQuestion from "./TypeOfQuestion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 function AddAndDeleteBtn({
   Question,
   handleQuestionChange,
@@ -12,9 +12,9 @@ function AddAndDeleteBtn({
   questionType,
   handleSelectChange,
   WrittenAnswer,
-  handleWrittenAnswerChange,
+  handleWrittenAnswerChange
 }) {
-  const [questions, setQuestions] = useState([{ id: 0 }, { id: 1 }]);
+  const [questions, setQuestions] = useState([{ id: 0 }]);
   const handleDelete = (index) => {
     const newQuestions = [...questions];
     newQuestions.splice(index, 1);
@@ -24,7 +24,7 @@ function AddAndDeleteBtn({
     const newQuestions = [...questions];
     const lastQuestion = newQuestions[newQuestions.length - 1];
     const newQuestion = { id: lastQuestion?.id ? lastQuestion?.id + 1 : 1 };
-    newQuestions.splice(index, 0, newQuestion);
+    newQuestions.splice(index + 1, 0, newQuestion);
     setQuestions(newQuestions);
   };
   return (
@@ -47,10 +47,12 @@ function AddAndDeleteBtn({
           />
         </div>
       ))}
-      <div key={questions[0].id}>
-        <TypeOfQuestion
-          onAdd={() => handleAdd(questions.length)}
-          hideDeleteButton={true}
+      <div className="col justify-content-end mb-5 add-question">
+        add question
+        <FontAwesomeIcon
+          onClick={() => handleAdd(questions.length - 1)}
+          icon={faCirclePlus}
+          className="circle-plus mx-2"
         />
       </div>
     </div>

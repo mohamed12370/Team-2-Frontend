@@ -4,7 +4,7 @@ import WrittenQuestion from './WrittenQuestion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
-function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton ,question , handleQuestionChange ,mark , handleMarkChange,
+function TypeOfQuestion({ id, onDelete,  hideDeleteButton ,question , handleQuestionChange ,mark , handleMarkChange,
   image, handleImageChange,questionType, handleSelectChange,WrittenAnswer , handleWrittenAnswerChange}) {
   return (
     <div className="row question-form">
@@ -71,11 +71,6 @@ function TypeOfQuestion({ id, onDelete, onAdd, hideDeleteButton ,question , hand
       {!hideDeleteButton && (
         <div className="col-md-2 " onClick={onDelete}>
           <FontAwesomeIcon icon={faTrashCan} className='del-quistion' />
-        </div>
-      )}
-      {onAdd && (
-        <div className="col-md-2 add-question">
-          add question<FontAwesomeIcon onClick={onAdd} icon={faCirclePlus} className='circle-plus' />
         </div>
       )}
     </div>
