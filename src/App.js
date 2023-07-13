@@ -55,6 +55,7 @@ import HobbiesAndInterests7Form from './Coponents/MainCreateCV/HobbiesAndInteres
 import Experience4Form from './Coponents/MainCreateCV/Experience4Form';
 import Education5Form from './Coponents/MainCreateCV/Education5Form';
 import Links8Form from './Coponents/MainCreateCV/Links8Form';
+import ResetPasswordPage from './Pages/Auth/ResetPasswordPage';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/singup" element={<RegisterPage />} />
           <Route path="/forgetpassword" element={<ForgetPasswordPage />} />
+          <Route path="/resetpassword" element={<ResetPasswordPage />} />
 
           <Route path="/studentportal" element={<StudentPortalPage />} />
           <Route path="/instructorportal" element={<InstructorPortalPage />} />

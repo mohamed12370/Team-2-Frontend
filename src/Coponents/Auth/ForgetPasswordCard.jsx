@@ -149,12 +149,15 @@ function ResetPasswordCard() {
           )}
 
           <h6 className=" text-center fw-bold pe-3">
-            <Link to="/login" className=" hover_primary shadow text-light">
+            <Link
+              to="/resetpassword"
+              className=" hover_primary shadow text-light"
+            >
               <i
                 className="fa-solid fa-angle-left"
                 style={{ color: '#bf9b30' }}
               />{' '}
-              <span style={{ color: '#bf9b30' }}>Back to Login</span>
+              <span style={{ color: '#bf9b30' }}>Go to ResetPassword</span>
             </Link>
           </h6>
         </form>
