@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import adminArticlesReducer from './Reducer/AdminArticlesReducer/AdminArticleReducer';
-import adminCoursesReducer from './Reducer/AdminCoursesReducer/AdminCoursesReducer.JS';
+import adminCoursesReducer from './Reducer/AdminCoursesReducer/AdminCoursesReducer';
 import adminJobsReducer from './Reducer/AdminJobsReducer/AdminJobsReducer';
 import adminUserReducer from './Reducer/AdminUsersReducer/AdminUsersReducer';
 import adminCertifcateReducer from './Reducer/AdminUploadCertficateReducer/AdminUploadCertficateReducer';

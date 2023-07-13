@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AdminCreateCoursesPage.css';
 import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
@@ -7,6 +7,75 @@ import SaveButtons from '../../../../Coponents/Admin/AdminCourses/AdminCreateCou
 import AddAndDeleteBtn from '../../../../Coponents/Admin/AdminCourses/AdminCreateCourses/AddAndDeletelesson';
 
 export default function AdminCreateCoursesPage() {
+  // props عن طريق ال component انت عاوز لاى function هندسة ممكن تبعت اى
+
+  const [inputType, setInputType] = useState('text');
+
+  const handleFocus = () => {
+    setInputType('date');
+  };
+  const handleFocusT = () => {
+    setInputType('time');
+  };
+
+  const handleBlur = () => {
+    setInputType('text');
+  };
+  //Input States
+  const [courseName, setcourseName] = useState('');
+  const [level, setLevel] = useState('');
+  const [noOfLessons, setnoOfLessons] = useState('');
+  const [language, setLanguage] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [duration, setDuraiton] = useState('');
+  const [certificate, setcertificate] = useState('');
+  const [courseIntroduction, setcourseIntroduction] = useState('');
+  const [courseAssignment, setcourseAssignment] = useState('');
+  const [courseRequirement, setcourseRequirement] = useState('');
+  const [courseMaterials, setcourseMaterials] = useState('');
+  const [puplishingDate, setpuplishingDate] = useState('');
+  const [uploadCoverPhoto, setuploadCoverPhoto] = useState();
+  // //Inputs States setting functions
+  const handlecourseName = (e) => {
+    setcourseName(e.target.value);
+  };
+  const handlelevel = (e) => {
+    setLevel(e.target.value);
+  };
+  const handlenoOfLessons = (e) => {
+    setnoOfLessons(e.target.value);
+  };
+  const handlelanguage = (e) => {
+    setLanguage(e.target.value);
+  };
+  const handlestartDate = (e) => {
+    console.log(setStartDate(e.target.value));
+  };
+  const handleduration = (e) => {
+    setDuraiton(e.target.value);
+  };
+  const handlecertificate = (e) => {
+    setcertificate(e.target.value);
+  };
+  const handlecourseIntroduction = (e) => {
+    setcourseIntroduction(e.target.value);
+  };
+  const handlecourseAssignment = (e) => {
+    setcourseAssignment(e.target.value);
+  };
+  const handlecourseRequirement = (e) => {
+    setcourseRequirement(e.target.value);
+  };
+  const handlecourseMaterials = (e) => {
+    setcourseMaterials(e.target.value);
+  };
+  const handlepuplishingDate = (e) => {
+    setpuplishingDate(e.target.value);
+  };
+  const handleuploadCoverPhoto = (e) => {
+    setuploadCoverPhoto(e.target.files[0]);
+  };
+
   return (
     <div>
       <div className="overlay"></div>

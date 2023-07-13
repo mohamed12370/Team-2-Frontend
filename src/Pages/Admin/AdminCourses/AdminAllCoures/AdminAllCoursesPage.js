@@ -7,8 +7,14 @@ import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import Pagination from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Pagination';
 import TableAllCourses from '../../../../Coponents/Admin/AdminCourses/AdminAllCourses/TableAllCourses';
+import { useSelector } from 'react-redux';
 
 export default function AdminAllCoursesPage() {
+  // props عن طريق ال component انت عاوز لاى function هندسة ممكن تبعت اى
+
+  const { adminCoursesReducer } = useSelector((state) => state);
+  const { adminAllCourse } = adminCoursesReducer;
+
   return (
     <div>
       <Overlay />

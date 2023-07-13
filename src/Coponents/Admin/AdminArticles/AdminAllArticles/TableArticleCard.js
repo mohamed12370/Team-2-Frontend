@@ -8,9 +8,14 @@ export default function TableArticleCard({ item }) {
       <div className=" col-lg-2 col-12 upper name-text">{item?.title}</div>
       <div className="col-lg-3 col-6 text-center status">
         {item?.status === 'puplish' ? (
-          <button className="active">{item?.status}</button>
+          <button
+            className="active py-2 px-3"
+            style={{ backgroundColor: '#bf9b30' }}
+          >
+            {item?.status}
+          </button>
         ) : (
-          <button className="notActive">{item?.status}</button>
+          <button className="notActive w-100">{item?.status}</button>
         )}
       </div>
       <div className="d-lg-none col-6 user">Category</div>

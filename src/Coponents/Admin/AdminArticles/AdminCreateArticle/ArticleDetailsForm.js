@@ -1,6 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ArticleDetailsForm = () => {
+  //Inputs states
+  const [enteredTitle, setenteredTitle] = useState('');
+  const [enteredCategory, setenteredCategory] = useState('');
+  const [enteredContent, setenteredContent] = useState('');
+  const [enteredDate, setenteredDate] = useState('');
+  const [uploadedPhoto, setuploadedPhoto] = useState();
+
+  //Inputs States setting functions
+  const handleenteredTitle = (e) => {
+    setenteredTitle(e.target.value);
+  };
+  const handleenteredCategory = (e) => {
+    setenteredCategory(e.target.value);
+  };
+  const handleenteredContent = (e) => {
+    setenteredContent(e.target.value);
+  };
+  const handleenteredDate = (e) => {
+    setenteredDate(e.target.value);
+  };
+  const handleuploadedPhoto = (e) => {
+    setuploadedPhoto(e.target.files);
+  };
+
+  //Submit handler
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    const fData = new FormData();
+    fData.append('enteredTitle', enteredTitle);
+    fData.append('enteredCategory', enteredCategory);
+    fData.append('enteredContent', enteredContent);
+    fData.append('enteredDate', enteredDate);
+    fData.append('uploadedPhoto', uploadedPhoto);
+    console.log(fData.enteredContent);
+  };
+
   return (
     <div className="row">
       <div className="col-lg-12 article-form">

@@ -85,7 +85,7 @@ function CoursesContent({
         {/*  edit and delet  */}
         <div className="col-lg-1 col-12 d-flex justify-content-end justify-content-lg-around pe-0 ">
           <Link to={`/adminupdatecourses/:id`}>
-            <FontAwesomeIcon icon={faPenToSquare} className="pt-1 edit" />
+            <FontAwesomeIcon icon={faPenToSquare} className="pt-1 edit me-2" />
           </Link>
           <a href="/#">
             <FontAwesomeIcon icon={faTrashCan} className="pt-1 delete" />

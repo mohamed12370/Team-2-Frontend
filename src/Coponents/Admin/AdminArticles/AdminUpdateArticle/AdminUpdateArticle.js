@@ -1,6 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function AdminUpdateArticle() {
+export default function AdminUpdateArticle({
+  enteredTitle,
+  enteredCategory,
+  enteredContent,
+  enteredDate,
+  uploadedPhoto,
+}) {
+  //Inputs States
+  const [uenteredTitle, setuenteredTitle] = useState(enteredTitle);
+  const [uenteredCategory, setuenteredCategory] = useState(enteredCategory);
+  const [uenteredContent, setuenteredContent] = useState(enteredContent);
+  const [uenteredDate, setuenteredDate] = useState(enteredDate);
+  const [uuploadedPhoto, setuuploadedPhoto] = useState(uploadedPhoto);
+
+  //Inputs States setting functions
+  const handleuenteredTitle = (e) => {
+    setuenteredTitle(e.target.value);
+  };
+  const handleuenteredCategory = (e) => {
+    setuenteredCategory(e.target.value);
+  };
+  const handleuenteredContent = (e) => {
+    setuenteredContent(e.target.value);
+  };
+  const handleuenteredDate = (e) => {
+    setuenteredDate(e.target.value);
+  };
+  const handleuuploadedPhoto = (e) => {
+    setuuploadedPhoto(e.target.files);
+  };
+
+  //EditingSubmitHandler
+  const EditingSubmitHandler = (e) => {
+    e.preventDefault();
+    const fData = new FormData();
+    fData.append('uenteredTitle', uenteredTitle);
+    fData.append('uenteredCategory', uenteredCategory);
+    fData.append('uenteredContent', uenteredContent);
+    fData.append('uenteredDate', uenteredDate);
+    fData.append('uuploadedPhoto', uuploadedPhoto);
+    // console.log(fData)
+  };
+
   return (
     <div className="row">
       <div className="col-lg-12 article-form">
