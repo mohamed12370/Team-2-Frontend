@@ -66,10 +66,10 @@ export default function TableAllCourses() {
       {Courses.map((Card, index) => {
         return <CoursesContent key={index} {...Card} />;
       })}
-      <div class="w-100 d-lg-none d-flex mt-5">
+      <div className="w-100 d-lg-none d-flex mt-5">
         <Link
           to={`/admincreatecourses`}
-          class=" fs-6 btn btn-course  text-white"
+          className=" fs-6 btn btn-course  text-white"
         >
           CREATE NEW COURSE
         </Link>

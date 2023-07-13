@@ -1,20 +1,100 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { FaCloudUploadAlt } from 'react-icons/fa';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 export default function AdminUpdateJob() {
+  // all state variables
+  const [companyName, setCompanyName] = useState('');
+  const [filed, setfiled] = useState('');
+  const [location, setLocation] = useState('');
+  const [file, setFile] = useState(null);
+  const [aboutCompany, setaboutCompany] = useState('');
+  const [position, setPosition] = useState('');
+  const [jobType, setJobType] = useState('');
+  const [jobStateOption, setjobStateOption] = useState('');
+  const [salaryFrom, setsalaryFrom] = useState('');
+  const [salaryTo, setsalaryTo] = useState('');
+  const [currency, setcurrency] = useState('');
+  const [jobDescription, setjobDescription] = useState('');
+  const [jobRequirement, setjobRequirement] = useState('');
+  const [skills, setskills] = useState('');
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  // image upload
   const fileInputRef = useRef(null);
-
   const handleButtonClick = (event) => {
     event.preventDefault();
     fileInputRef.current.click();
+    console.log(fileInputRef);
+  };
+  // handle state change
+  const handleCompanyName = (event) => {
+    setCompanyName(event.target.value);
+  };
+  const handlefiled = (event) => {
+    setfiled(event.target.value);
+  };
+  const handleLocation = (event) => {
+    setLocation(event.target.value);
+  };
+  const handlefile = (event) => {
+    setFile(event.target.files[0]);
+  };
+  const handleaboutCompany = (event) => {
+    setaboutCompany(event.target.value);
+  };
+  const handlePosition = (event) => {
+    setPosition(event.target.value);
+  };
+  const handleJobType = (event) => {
+    setJobType(event.target.value);
+  };
+  const handlejobStateOption = (event) => {
+    setjobStateOption(event.target.value);
+  };
+  const handlesalaryFrom = (event) => {
+    setsalaryFrom(event.target.value);
+  };
+  const handlesalaryTo = (event) => {
+    setsalaryTo(event.target.value);
+  };
+  const handlecurrency = (event) => {
+    setcurrency(event.target.value);
+  };
+  const handlejobDescription = (event) => {
+    setjobDescription(event.target.value);
+  };
+  const handlejobRequirement = (event) => {
+    setjobRequirement(event.target.value);
+  };
+  const handleskills = (event) => {
+    setskills(event.target.value);
   };
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    // هنا يمكنك إجراء المزيد من العمليات على الملف المحدد، مثل قراءة محتوياته أو إرساله إلى الخادم
-
-    console.log('تم تحديد الملف:', file.name);
+  // handle job submission
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    // if (companyName &
+    const jobData = new FormData();
+    jobData.append('companyName', companyName);
+    jobData.append('filed', filed);
+    jobData.append('location', location);
+    jobData.append('file', file);
+    jobData.append('aboutCompany', aboutCompany);
+    jobData.append('position', position);
+    jobData.append('jobType', jobType);
+    jobData.append('jobStateOption', jobStateOption);
+    jobData.append('salaryFrom', salaryFrom);
+    jobData.append('salaryTo', salaryTo);
+    jobData.append('currency', currency);
+    jobData.append('jobDescription', jobDescription);
+    jobData.append('jobRequirement', jobRequirement);
+    jobData.append('skills', skills);
+    // dispatch(adminCreateNewJob(jobData));
+    // toast.success("hello")
   };
+
   return (
     <div className="FormSection">
       <div className="d-flex HeaderForm">
@@ -63,7 +143,6 @@ export default function AdminUpdateJob() {
                   type="file"
                   style={{ display: 'none' }}
                   ref={fileInputRef}
-                  onChange={handleFileChange}
                 />
                 <button onClick={handleButtonClick} className="BtnUpload">
                   <div className="shape-upload">

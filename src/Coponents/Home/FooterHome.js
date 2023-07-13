@@ -60,10 +60,10 @@ function FooterHome() {
             <span>@2023 EGYPT,ALL RIGHTS RESERVED</span>
           </div>
           <div className="float-end footer-icon11-box8">
-            <i class="fa-brands fa-facebook  footer-icon118"></i>
-            <i class="fa-brands fa-twitter  footer-icon118"></i>
-            <i class="fa-brands fa-instagram  footer-icon118"></i>
-            <i class="fa-brands fa-linkedin  footer-icon118"></i>
+            <i className="fa-brands fa-facebook  footer-icon118"></i>
+            <i className="fa-brands fa-twitter  footer-icon118"></i>
+            <i className="fa-brands fa-instagram  footer-icon118"></i>
+            <i className="fa-brands fa-linkedin  footer-icon118"></i>
           </div>
         </div>
       </div>

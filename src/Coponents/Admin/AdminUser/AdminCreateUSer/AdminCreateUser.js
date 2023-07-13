@@ -1,6 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 export default function AdminCreateUser() {
+  // all state variables
+  const [firstName, setfirstName] = useState('');
+  const [lastName, setlastName] = useState('');
+  const [status, setstatus] = useState('');
+  const [email, setemail] = useState('');
+  const [role, setrole] = useState('');
+  const [mobileNum, setmobileNum] = useState('');
+  const [userId, setuserId] = useState('');
+  const [password, setpassword] = useState('');
+  const [confirmPassword, setconfirmPassword] = useState('');
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  // handle state changes
+  const handlefirstName = (event) => {
+    setfirstName(event.target.value);
+  };
+  const handlelastName = (event) => {
+    setlastName(event.target.value);
+  };
+  const handlestatus = (event) => {
+    setstatus(event.target.value);
+  };
+  const handleEmail = (event) => {
+    setemail(event.target.value);
+  };
+  const handlerole = (event) => {
+    setrole(event.target.value);
+  };
+  const handleMobileNum = (event) => {
+    setmobileNum(event.target.value);
+  };
+  const handleUserId = (event) => {
+    setuserId(event.target.value);
+  };
+  const handlePassword = (event) => {
+    setpassword(event.target.value);
+  };
+  const handleConfirmPassword = (event) => {
+    setconfirmPassword(event.target.value);
+  };
+
+  // handle user submission
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    if (
+      firstName &
+      lastName &
+      email &
+      password &
+      confirmPassword &
+      mobileNum &
+      status &
+      userId &
+      (role === '')
+    ) {
+      //alert("Please fill in all fields");
+    } else if (password === confirmPassword) {
+      const userData = new FormData();
+      userData.append('firstName', firstName);
+      userData.append('lastName', lastName);
+      userData.append('status', status);
+      userData.append('email', email);
+      userData.append('role', role);
+      userData.append('mobileNum', mobileNum);
+      userData.append('userId', userId);
+      userData.append('password', password);
+      userData.append('confirmPassword', confirmPassword);
+      console.log(userData);
+    } else {
+      //alert("Passwords do not match");
+    }
+  };
+
   return (
     <div className="FormSection">
       <div className="d-flex HeaderForm">
