@@ -44,7 +44,7 @@
   border-radius: 8px;
   color: white;
   margin-left: 15px;
-  padding-left: 35px !important;
+  padding-left: 40px !important;
 }
 
 .sign-up-first-name-box,
@@ -197,7 +197,7 @@
     .sign-up-email,
     .sign-up-password-confirmation,
     .sign-up-password {
-      padding-left: 30px !important;
+      padding-left: 40px !important;
     }
 
     .sign-up-password-confirmation-icon2,
@@ -315,4 +315,15 @@
       font-size: 12px !important;
     }
   }
+}
+
+/* ----------------------------------- */
+.signup-inputs .login_right-icon {
+  position: absolute;
+  top: 13px;
+  right: 30px;
+}
+
+.signup-inputs .pass-padding {
+  padding-right: 65px !important;
 }

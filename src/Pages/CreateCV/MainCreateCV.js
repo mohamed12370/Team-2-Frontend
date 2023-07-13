@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './create-cv-style.css';
 import { Outlet } from 'react-router-dom';
 
-import HeaderTitle from '../../../Coponents/Global/HeaderTitle';
-import CreateCVStipper from '../../../Coponents/MainCreateCV/CreateCVStipper';
-import BackAndContinueBtns from '../../../Coponents/MainCreateCV/BackAndContinueBtns';
-import CustomizeYourCv from '../../../Coponents/MainCreateCV/CustomizeYourCv';
-import CVTemplate from '../../../Coponents/MainCreateCV/CVTemplate';
+import HeaderTitle from '../../Coponents/Global/HeaderTitle';
+import CreateCVStipper from '../../Coponents/MainCreateCV/CreateCVStipper';
+import BackAndContinueBtns from '../../Coponents/MainCreateCV/BackAndContinueBtns';
+import CustomizeYourCv from '../../Coponents/MainCreateCV/CustomizeYourCv';
+import CVTemplate from '../../Coponents/MainCreateCV/CVTemplate';
 import {
   formDataFiled,
   initialformData,
-} from '../../../Coponents/MainCreateCV/data';
+} from '../../Coponents/MainCreateCV/data';
 import { jsPDF } from 'jspdf';
 
 function NewCreateCVPage() {

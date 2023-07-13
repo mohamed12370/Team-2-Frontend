@@ -5,14 +5,6 @@ import ExamResultPage from './Pages/ExamPages/ExamResult/ExamResultPage';
 import AdminCreateUserPage from './Pages/Admin/AdminUser/AdminCreateUser/AdminCreateUserPage';
 import CreateNewExamPage from './Pages/ExamPages/CreateNewExamPage/CreateNewExamPage';
 import OnlineExamPage from './Pages/ExamPages/OnlineExamPage/OnlineExamPage';
-import MainInformationPage from './Pages/CreateCV/main-information';
-import SummaryPage from './Pages/CreateCV/summary';
-import SkillsPage from './Pages/CreateCV/skills';
-import HonersAndAwardsPage from './Pages/CreateCV/honers-and-awards';
-import HobbiesAndInterestsPage from './Pages/CreateCV/hobbies-and-interests';
-import ExperiencePage from './Pages/CreateCV/experience';
-import EducationPage from './Pages/CreateCV/education';
-import LinksPage from './Pages/CreateCV/links';
 import AdminAllArticlesPage from './Pages/Admin/AdminArticles/AdminAllArticlesPage/AdminAllArticlesPage';
 import AdminAllUsersPage from './Pages/Admin/AdminUser/AdminAllUser/AdminAllUsersPage';
 import AdminAllCoursesPage from './Pages/Admin/AdminCourses/AdminAllCoures/AdminAllCoursesPage';
@@ -46,7 +38,7 @@ import ShowUserJobDetailsPage from './Pages/UserJobs/ShowUserJobDetails/ShowUser
 import UserApplyForJobPage from './Pages/UserJobs/UserApplyForJobPage/UserApplyForJobPage';
 import ForgetPasswordPage from './Pages/Auth/ForgetPasswordPage';
 
-import NewCreateCVPage from './Pages/CreateCV/MainCreateCV/MainCreateCV';
+import NewCreateCVPage from './Pages/CreateCV/MainCreateCV';
 import MainInformation1Form from './Coponents/MainCreateCV/MainInformation1Form';
 import Summary2Form from './Coponents/MainCreateCV/Summary2Form';
 import Skills3Form from './Coponents/MainCreateCV/Skills3Form';
@@ -61,91 +53,346 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <HeaderTopLogIn />
-        <HeaderHome />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/contactus" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/singup" element={<RegisterPage />} />
           <Route path="/forgetpassword" element={<ForgetPasswordPage />} />
           <Route path="/resetpassword" element={<ResetPasswordPage />} />
+          <Route
+            path="/contactus"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <ContactUsPage />
+              </>
+            }
+          />
 
-          <Route path="/studentportal" element={<StudentPortalPage />} />
-          <Route path="/instructorportal" element={<InstructorPortalPage />} />
-          <Route path="/userprofile" element={<UserProfilePage />} />
-          <Route path="/edituserprofile" element={<EditUserProfilePage />} />
+          <Route
+            path="/studentportal"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <StudentPortalPage />
+              </>
+            }
+          />
+          <Route
+            path="/instructorportal"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <InstructorPortalPage />
+              </>
+            }
+          />
+          <Route
+            path="/userprofile"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UserProfilePage />
+              </>
+            }
+          />
+          <Route
+            path="/edituserprofile"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <EditUserProfilePage />
+              </>
+            }
+          />
 
           {/* User Jobs */}
-          <Route path="/useralljob" element={<UserAllJobsPage />} />
+          <Route
+            path="/useralljob"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UserAllJobsPage />
+              </>
+            }
+          />
           <Route
             path="/userjobdetails/:id"
-            element={<ShowUserJobDetailsPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <ShowUserJobDetailsPage />
+              </>
+            }
           />
           <Route
             path="/userapplyforjob/:id"
-            element={<UserApplyForJobPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UserApplyForJobPage />
+              </>
+            }
           />
-          <Route path="/userallcourses" element={<UserAllCoursesPage />} />
+          <Route
+            path="/userallcourses"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UserAllCoursesPage />
+              </>
+            }
+          />
           <Route
             path="/usercoursesdetails/:id"
-            element={<ShowCourseDetailsPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <ShowCourseDetailsPage />
+              </>
+            }
           />
-          <Route path="/userallarticle" element={<UserAllArticlesPage />} />
+          <Route
+            path="/userallarticle"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UserAllArticlesPage />
+              </>
+            }
+          />
           <Route
             path="/userarticledetails/:id"
-            element={<ShowUserArticleDetailsPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <ShowUserArticleDetailsPage />
+              </>
+            }
           />
 
           {/* Exam Page */}
-          <Route path="/examresult/:id" element={<ExamResultPage />} />
-          <Route path="/createexam" element={<CreateNewExamPage />} />
-          <Route path="/updateexam/:id" element={<UpdateExamPage />} />
-          <Route path="/onlineexam/:id" element={<OnlineExamPage />} />
-          <Route path="/upcomingexam" element={<UpComingExamPagea />} />
+          <Route
+            path="/examresult/:id"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <ExamResultPage />
+              </>
+            }
+          />
+          <Route
+            path="/createexam"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <CreateNewExamPage />
+              </>
+            }
+          />
+          <Route
+            path="/updateexam/:id"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UpdateExamPage />
+              </>
+            }
+          />
+          <Route
+            path="/onlineexam/:id"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <OnlineExamPage />
+              </>
+            }
+          />
+          <Route
+            path="/upcomingexam"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <UpComingExamPagea />
+              </>
+            }
+          />
 
           {/* Admin Route */}
           <Route
             path="/adminuploadcertificate"
-            element={<AdminUploadCertificatePage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminUploadCertificatePage />
+              </>
+            }
           />
-          <Route path="/adminalluser" element={<AdminAllUsersPage />} />
-          <Route path="/admincreateuser" element={<AdminCreateUserPage />} />
-          <Route path="/adminedituser/:id" element={<AdminEditUserPage />} />
-          <Route path="/adminallarticle" element={<AdminAllArticlesPage />} />
+          <Route
+            path="/adminalluser"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminAllUsersPage />
+              </>
+            }
+          />
+          <Route
+            path="/admincreateuser"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminCreateUserPage />
+              </>
+            }
+          />
+          <Route
+            path="/adminedituser/:id"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminEditUserPage />
+              </>
+            }
+          />
+          <Route
+            path="/adminallarticle"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminAllArticlesPage />
+              </>
+            }
+          />
           <Route
             path="/admincreatearticle"
-            element={<AdminCreateArticlePage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminCreateArticlePage />
+              </>
+            }
           />
           <Route
             path="/adminupdatearticle/:id"
-            element={<AdminUpdateArticlePage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminUpdateArticlePage />
+              </>
+            }
           />
-          <Route path="/adminallcourses" element={<AdminAllCoursesPage />} />
+          <Route
+            path="/adminallcourses"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminAllCoursesPage />
+              </>
+            }
+          />
           <Route
             path="/admincreatecourses"
-            element={<AdminCreateCoursesPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminCreateCoursesPage />
+              </>
+            }
           />
           <Route
             path="/adminupdatecourses/:id"
-            element={<AdminUpdateCoursesPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminUpdateCoursesPage />
+              </>
+            }
           />
-          <Route path="/adminalljob" element={<AdminAllJobsPage />} />
-          <Route path="/admincreatejob" element={<AdminCreateJobPage />} />
-          <Route path="/adminupdatejob/:id" element={<AdminUpdateJobPage />} />
+          <Route
+            path="/adminalljob"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminAllJobsPage />
+              </>
+            }
+          />
+          <Route
+            path="/admincreatejob"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminCreateJobPage />
+              </>
+            }
+          />
+          <Route
+            path="/adminupdatejob/:id"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminUpdateJobPage />
+              </>
+            }
+          />
           <Route
             path="/adminapplicationjob/:id"
-            element={<AdminApplicationJobPage />}
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <AdminApplicationJobPage />
+              </>
+            }
           />
 
           {/* New Create CV */}
-          <Route path="/createcv" element={<NewCreateCVPage />}>
+          <Route
+            path="/createcv"
+            element={
+              <>
+                <HeaderTopLogIn />
+                <HeaderHome />
+                <NewCreateCVPage />
+              </>
+            }
+          >
             {/* redirect to first route -------------------------------- */}
             <Route
               index
               element={<Navigate replace to="/createcv/main-information" />}
             />
-
             <Route path="main-information" element={<MainInformation1Form />} />
             <Route path="summary" element={<Summary2Form />} />
             <Route path="skills" element={<Skills3Form />} />
@@ -161,25 +408,6 @@ function App() {
             <Route path="education" element={<Education5Form />} />
             <Route path="links" element={<Links8Form />} />
           </Route>
-
-          {/* Create Cv */}
-          {/* <Route
-            path="/createcv/main-information"
-            element={<MainInformationPage />}
-          />
-          <Route path="/createcv/summary" element={<SummaryPage />} />
-          <Route path="/createcv/skills" element={<SkillsPage />} />
-          <Route
-            path="/createcv/honers-and-awards"
-            element={<HonersAndAwardsPage />}
-          />
-          <Route
-            path="/createcv/hobbies-and-interests"
-            element={<HobbiesAndInterestsPage />}
-          />
-          <Route path="/createcv/experience" element={<ExperiencePage />} />
-          <Route path="/createcv/education" element={<EducationPage />} />
-          <Route path="/createcv/links" element={<LinksPage />} /> */}
         </Routes>
         <FooterHome />
       </BrowserRouter>

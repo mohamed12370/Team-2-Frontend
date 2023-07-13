@@ -19,7 +19,7 @@ body {
 }
 
 .edit-profile-container {
-  padding: 120px 0px;
+  padding: 60px 0px;
   width: 87%;
   margin: auto;
 }
@@ -31,7 +31,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #1a1919f1;
+  background-color: rgba(29, 29, 29, 0.9);
 }
 
 .edit-profile-background {
