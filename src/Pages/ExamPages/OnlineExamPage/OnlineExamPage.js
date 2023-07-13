@@ -1,9 +1,9 @@
 import React from 'react';
 import './OnlineExamPage.css';
 import TitleExamResult from '../../../Coponents/Exames/ExamResult/TitleExamResult';
-import TimerBar from '../../../Coponents/Exames/ExamResult/TimerBar';
 import ValiQuestion from '../../../Coponents/Exames/OnlineExam/ValiQuestion';
 import Buttons from '../../../Coponents/Exames/OnlineExam/Buttons';
+import TimerBar from '../../../Coponents/Exames/OnlineExam/TimerBar';
 
 export default function OnlineExamPage() {
   return (
@@ -12,7 +12,7 @@ export default function OnlineExamPage() {
         <div className="overlay-exam text-light h-auto">
           <div className="container">
             <TitleExamResult />
-            <TimerBar />
+            <TimerBar duration={1} />
             <ValiQuestion />
             <Buttons />
           </div>

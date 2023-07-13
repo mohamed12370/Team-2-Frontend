@@ -38,8 +38,8 @@ export default function TableAllAtricles() {
       </div>
 
       <div>
-        {lists.map((current) => (
-          <TableArticleCard item={current} />
+        {lists.map((current, i) => (
+          <TableArticleCard key={i} item={current} />
         ))}
       </div>
     </div>

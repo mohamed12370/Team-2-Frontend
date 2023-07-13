@@ -1,10 +1,10 @@
 // import './style.css'
 import CardWelcomeBackAndViewPortal from './CardWelcomeBackAndViewPortal';
 
-function WelcomeBackAndViewPortal() {
+function WelcomeBackAndViewPortal({ data }) {
   return (
     <div>
-      <CardWelcomeBackAndViewPortal title="balqees sabir" />
+      <CardWelcomeBackAndViewPortal title="balqees sabir" data={data} />
     </div>
   );
 }
