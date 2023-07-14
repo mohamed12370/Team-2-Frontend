@@ -33,10 +33,10 @@ function PreviousExams({ title, instructor, Date, time, level, degree }) {
             {degree}
           </span>
         </div>
-        <div className="col-lg-2 col-12">
+        <div className="col-lg-2 col-12 d-flex justify-content-end justify-content-lg-center align-items-start">
           <Link
             to={`/examresult/:id`}
-            className="text-light py-2 px-1 rounded"
+            className="text-light py-2 px-2 rounded"
             style={{ backgroundColor: '#bf9b30' }}
           >
             ShowExamResult
