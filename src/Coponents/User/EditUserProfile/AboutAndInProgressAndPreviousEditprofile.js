@@ -2,11 +2,18 @@ import AboutEidtprofile from './AboutEidtprofile';
 import InProgressEditprofile from './InProgressEditprofile';
 import PreviousEditprofile from './PreviousEditprofile';
 
-function AboutAndInProgressAndPreviousEditprofile() {
+function AboutAndInProgressAndPreviousEditprofile({
+  editorofileAbout,
+  handleEditorofileAbout,
+
+}) {
   return (
     <>
       <div className="col-lg-7 col-12 About5-InProgress-Previous-box ">
-        <AboutEidtprofile />
+        <AboutEidtprofile 
+                editorofileAbout={editorofileAbout}
+                handleEditorofileAbout={handleEditorofileAbout}
+        />
         <InProgressEditprofile />
         <PreviousEditprofile />
       </div>

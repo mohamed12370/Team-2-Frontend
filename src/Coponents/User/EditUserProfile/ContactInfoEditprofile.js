@@ -1,4 +1,10 @@
-function ContactInfoEditprofile() {
+function ContactInfoEditprofile({
+  editorofileEmail,
+  handleEditorofileEmail,
+  editorofileMobileNumber,
+  handleEditorofileMobileNumber,
+
+}) {
   return (
     <>
       <div className="Contact5-info-title-box">
@@ -14,7 +20,9 @@ function ContactInfoEditprofile() {
             <input
               className="Contact5-info-subtitle-input"
               type="email"
-              value="balqeessaber@gmail.com"
+              required
+              value={editorofileEmail}
+              onChange={handleEditorofileEmail}
             />
           </div>
         </div>
@@ -28,7 +36,9 @@ function ContactInfoEditprofile() {
             <input
               className="Contact5-info-subtitle-input"
               type="email"
-              value="0020 1064569047"
+              required
+              value={editorofileMobileNumber}
+              onChange={handleEditorofileMobileNumber}
             />
           </div>
         </div>

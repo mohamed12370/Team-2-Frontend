@@ -1,5 +1,14 @@
-function EducationEditProfile() {
+function EducationEditProfile({
+  editorofileUniversity,
+  handleEditorofileUniversity,
+  editorofileMajor,
+  handleEditorofileMajor,
+  editorofileGraduationyear,
+  handleEditorofileGraduationyear,
+
+}) {
   return (
+    
     <>
       <div className=" education5-title-box mt-4 ">
         <h4> Education</h4>
@@ -10,18 +19,25 @@ function EducationEditProfile() {
         <input
           className=" education5-subtitle-input"
           type="text"
-          value="International islamic university"
+          required
+          value={editorofileUniversity}
+         onChange={handleEditorofileUniversity}
         />
 
         <label className=" education5-subtitle">Major</label>
 
-        <select className="education5-subtitle-input">
-          <option>Computer science</option>
-          <option>Electrical engeneering</option>
-          <option>Computer science</option>
+        <select  className="education5-subtitle-input"
+        required
+        value={editorofileMajor}
+        onChange={handleEditorofileMajor}
+        >
+          <option value="Computer science">Computer science</option>
+          <option value="Electrical engeneering">Electrical engeneering</option>
+          <option value="Computer science">Computer science</option>
         </select>
         <label className=" education5-subtitle">Graduation year</label>
-        <input className="education5-subtitle-input" type="text" value="2019" />
+        <input className="education5-subtitle-input" type="text" required value={editorofileGraduationyear}
+        onChange={handleEditorofileGraduationyear} />
       </div>
     </>
   );

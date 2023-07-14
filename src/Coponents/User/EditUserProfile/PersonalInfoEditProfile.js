@@ -1,4 +1,13 @@
-function PersonalInfoEditProfile() {
+function PersonalInfoEditProfile({
+  editorofileAge,
+  handleEditorofileAge,
+  editorofileNationality,
+  handleEditorofileNationality,
+  editorofileCountry,
+  handleEditorofileCountry,
+  editorofileCity,
+  handleEditorofileCity,
+}) {
   return (
     <>
       <div className=" personal5-info-title-box ">
@@ -32,28 +41,36 @@ function PersonalInfoEditProfile() {
             <input
               className="personal5-info-subtitle-input"
               type="text"
-              value="26 yo"
+              required
+              value={editorofileAge}
+              onChange={handleEditorofileAge}
             />
           </div>
           <div>
             <input
               className="personal5-info-subtitle-input"
               type="text"
-              value="Sudanese"
+              required
+              value={editorofileNationality}
+              onChange={handleEditorofileNationality}
             />
           </div>
           <div>
             <input
               className="personal5-info-subtitle-input"
               type="text"
-              value="Egypt"
+              required
+              value={editorofileCountry}
+              onChange={handleEditorofileCountry}
             />
           </div>
           <div>
             <input
               className="personal5-info-subtitle-input"
               type="text"
-              value="Cairo"
+              required
+              value={editorofileCity}
+              onChange={handleEditorofileCity}
             />
           </div>
         </div>

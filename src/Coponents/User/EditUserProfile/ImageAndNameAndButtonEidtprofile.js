@@ -1,4 +1,4 @@
-function ImageAndNameAndButtonEidtprofile() {
+function ImageAndNameAndButtonEidtprofile({handleSubmit}) {
   return (
     <div className="row Image-Name-Button-box-Eidtprofile py-4">
       <div className="col-10 ">
@@ -14,7 +14,7 @@ function ImageAndNameAndButtonEidtprofile() {
         </div>
       </div>
       <div className="col-2  cleacrfix">
-        <button className="btn float-end  Image-Name-Button-button-Eidtprofile">
+        <button type="submit" onClick={handleSubmit} className="btn float-end  Image-Name-Button-button-Eidtprofile">
           SAVE CHANGES
         </button>
       </div>
