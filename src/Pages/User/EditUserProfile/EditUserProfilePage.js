@@ -86,8 +86,29 @@ export default function EditUserProfilePage() {
       <div className="edit-profile-container ">
         <div className="edit-profile-overlayOnImage"></div>
         <EidtProfile6thJun2023 />
-        <ImageAndNameAndButtonEidtprofile />
-        <PersonalInfoAndAboutEditprofile />
+        <ImageAndNameAndButtonEidtprofile handleSubmit={handleSubmit} />
+        <PersonalInfoAndAboutEditprofile
+          editorofileAbout={editorofileAbout}
+          handleEditorofileAbout={handleEditorofileAbout}
+          editorofileEmail={editorofileEmail}
+          handleEditorofileEmail={handleEditorofileEmail}
+          editorofileMobileNumber={editorofileMobileNumber}
+          handleEditorofileMobileNumber={handleEditorofileMobileNumber}
+          editorofileUniversity={editorofileUniversity}
+          handleEditorofileUniversity={handleEditorofileUniversity}
+          editorofileMajor={editorofileMajor}
+          handleEditorofileMajor={handleEditorofileMajor}
+          editorofileGraduationyear={editorofileGraduationyear}
+          handleEditorofileGraduationyear={handleEditorofileGraduationyear}
+          editorofileAge={editorofileAge}
+          handleEditorofileAge={handleEditorofileAge}
+          editorofileNationality={editorofileNationality}
+          handleEditorofileNationality={handleEditorofileNationality}
+          editorofileCountry={editorofileCountry}
+          handleEditorofileCountry={handleEditorofileCountry}
+          editorofileCity={editorofileCity}
+          handleEditorofileCity={handleEditorofileCity}
+        />
       </div>
     </>
   );
