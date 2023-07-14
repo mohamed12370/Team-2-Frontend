@@ -8,14 +8,13 @@ import BackToTopButton from '../../../Coponents/UserArticles/UserArticleDetails/
 export default function ShowUserArticleDetailsPage() {
   return (
     <>
-      <section className="bg-article-detials">
-        <div className="overlay-article-detials text-light">
-          <div className="container  ">
-            <TitleArticle />
-            <CardArticleDetails />
-            <Subscribe />
-            <BackToTopButton />
-          </div>
+      <section className="">
+        <div className="overlay text-light"></div>
+        <div className="container  ">
+          <TitleArticle />
+          <CardArticleDetails />
+          <Subscribe />
+          <BackToTopButton />
         </div>
       </section>
     </>

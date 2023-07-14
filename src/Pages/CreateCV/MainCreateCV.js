@@ -101,38 +101,41 @@ function NewCreateCVPage() {
   };
 
   return (
-    <div style={{ backgroundColor: 'rgb(26 26 26 / .9)', color: '#fff' }}>
-      <HeaderTitle title={'Create CV'} />
-      <CustomizeYourCv />
-      <CreateCVStipper />
-      <section className="container-fluid">
-        <div className="row create-cv p-3 bg_black-opc my-4 mx-0 p-0 p-lg-4 rounded ">
-          <div className="col-12 col-lg-6 p-0 px-lg-3">
-            {/* forms part ---------------------------------------------- */}
-            <Outlet
-              context={[
-                formData,
-                handelChange,
-                handelChangeAbout,
-                handelChangeMobile,
-                handelChangeSkills,
-                addSkillInput,
-                deleteSkill,
-                handelChangeComplex,
-                deleteComplexItem,
-                addComplexItem,
-                setFormData,
-              ]}
-            />
+    <>
+      <div>
+        <div className="overlay"></div>
+        <HeaderTitle title={'Create CV'} />
+        <CustomizeYourCv />
+        <CreateCVStipper />
+        <section className="container-fluid">
+          <div className="row create-cv p-3 bg_black-opc my-4 mx-0 p-0 p-lg-4 rounded ">
+            <div className="col-12 col-lg-6 p-0 px-lg-3">
+              {/* forms part ---------------------------------------------- */}
+              <Outlet
+                context={[
+                  formData,
+                  handelChange,
+                  handelChangeAbout,
+                  handelChangeMobile,
+                  handelChangeSkills,
+                  addSkillInput,
+                  deleteSkill,
+                  handelChangeComplex,
+                  deleteComplexItem,
+                  addComplexItem,
+                  setFormData,
+                ]}
+              />
+            </div>
+            <div className="col-12 col-lg-6 d-none d-lg-block">
+              {/* template part ----------------------------------------- */}
+              <CVTemplate data={formData} />
+            </div>
           </div>
-          <div className="col-12 col-lg-6 d-none d-lg-block">
-            {/* template part ----------------------------------------- */}
-            <CVTemplate data={formData} />
-          </div>
-        </div>
-        <BackAndContinueBtns loading={loading} createPDF={createPDF} />
-      </section>
-    </div>
+          <BackAndContinueBtns loading={loading} createPDF={createPDF} />
+        </section>
+      </div>
+    </>
   );
 }
 

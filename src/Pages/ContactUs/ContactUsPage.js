@@ -7,14 +7,13 @@ import ContactForm from '../../Coponents/ContactUs/ContactForm';
 export default function ContactUsPage() {
   return (
     <>
-      <section className="CONTACT_US">
-        <div className="overlay-contact">
-          <div className="container">
-            <Title />
-            <div className="row text-white content-contact">
-              <ConatctInfo />
-              <ContactForm />
-            </div>
+      <section className="CONTACT_US mb-5 pb-5">
+        <div className="overlay"></div>
+        <div className="container">
+          <Title />
+          <div className="row text-white content-contact">
+            <ConatctInfo />
+            <ContactForm />
           </div>
         </div>
       </section>

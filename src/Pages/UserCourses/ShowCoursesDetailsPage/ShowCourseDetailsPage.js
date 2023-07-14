@@ -8,18 +8,17 @@ import CourseTitle from '../../../Coponents/UserCourses/UserCourseDetails/Course
 export default function ShowCourseDetailsPage() {
   return (
     <>
-      <div className="tech">
-        <div className="tech-overlay">
-          <div className="container">
-            <CourseTitle />
-            <div className="row mt-5 orde p-0 m-0 ">
-              <CourseInfo />
-            </div>
+      <div className="">
+        <div className="overlay"></div>
+        <div className="container">
+          <CourseTitle />
+          <div className="row mt-5 orde p-0 m-0 ">
+            <CourseInfo />
+          </div>
 
-            <div className="row  orde p-0 m-0 pb-5">
-              <CourseContent />
-              <CourseInteraction />
-            </div>
+          <div className="row  orde p-0 m-0 pb-5">
+            <CourseContent />
+            <CourseInteraction />
           </div>
         </div>
       </div>

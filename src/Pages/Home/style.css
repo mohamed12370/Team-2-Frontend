@@ -70,12 +70,16 @@ body {
 }
 
 .nav-link-home-text {
-  font-size: 11.4px;
+  font-size: 14px;
 }
+.active-nav {
+  border-bottom: 1px solid #bf9b30;
+  color: #bf9b30 !important;
+}
+
 /* end navbar */
 .home-h3 {
   width: 85%;
-
   margin: auto;
   margin-top: 180px;
   font-size: 45px;

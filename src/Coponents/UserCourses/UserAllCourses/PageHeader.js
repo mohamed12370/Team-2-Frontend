@@ -15,14 +15,20 @@ const PageHeader = ({ next, pre }) => {
             className="border-none bg-transparent rounded-pill"
             onClick={pre}
           >
-            <i className="fa-solid fa-circle-chevron-left "></i>
+            <i
+              className="fa-solid fa-circle-chevron-left"
+              style={{ color: '#e7bc3c' }}
+            ></i>
           </button>
           &nbsp;
           <button
             className="border-none bg-transparent rounded-pill"
             onClick={next}
           >
-            <i className="fa-solid fa-circle-chevron-right"></i>
+            <i
+              className="fa-solid fa-circle-chevron-right"
+              style={{ color: '#e7bc3c' }}
+            ></i>
           </button>
         </div>
       </div>

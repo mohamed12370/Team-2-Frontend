@@ -9,13 +9,12 @@ export default function OnlineExamPage() {
   return (
     <div>
       <section className="">
-        <div className="overlay-exam text-light h-auto">
-          <div className="container">
-            <TitleExamResult />
-            <TimerBar duration={1} />
-            <ValiQuestion />
-            <Buttons />
-          </div>
+        <div className="overlay text-light"></div>
+        <div className="container">
+          <TitleExamResult />
+          <TimerBar duration={1} />
+          <ValiQuestion />
+          <Buttons />
         </div>
       </section>
     </div>

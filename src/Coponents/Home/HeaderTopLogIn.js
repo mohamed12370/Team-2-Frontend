@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HeaderTopLogIn() {
   return (
-    <nav className="navbar  navbar-expand-sm navbar-globle-color">
+    <nav className="navbar  navbar-expand-lg navbar-globle-color">
       <div className="container ">
         <button
           className="navbar-toggler ms-auto"
@@ -35,7 +35,7 @@ function HeaderTopLogIn() {
               </Link>
             </li>
             <li className="nav-item ">
-              <Link to={`/studentportal`} className="nav-link ">
+              <Link to={`/studentportal`} className="nav-link">
                 Student Portal
               </Link>
             </li>

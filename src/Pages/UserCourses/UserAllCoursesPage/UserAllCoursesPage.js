@@ -7,14 +7,13 @@ import OtherCourses from '../../../Coponents/UserCourses/UserAllCourses/OtherCou
 export default function UserAllCoursesPage() {
   return (
     <>
-      <div className="all-courses">
-        <div className="userCourses-overlay">
-          <div className="container">
-            <NewCourse />
-            <OtherCoursesHeader />
-          </div>
-          <OtherCourses />
+      <div className="all-courses mb-5 pb-5">
+        <div className="overlay"></div>
+        <div className="container">
+          <NewCourse />
+          <OtherCoursesHeader />
         </div>
+        <OtherCourses />
       </div>
     </>
   );

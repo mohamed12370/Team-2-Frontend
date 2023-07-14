@@ -9,14 +9,14 @@ export default function UpComingExamPagea() {
   return (
     <>
       <section className="">
-        <div className="overlay-exam text-light ">
+        <div className="overlay text-light "> </div>
           <div className="container">
             <Title />
             <ShowExams />
             <ShowPre />
             <Pagination />
           </div>
-        </div>
+       
       </section>
     </>
   );

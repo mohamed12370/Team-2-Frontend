@@ -63,7 +63,11 @@ const NewCourse = () => {
         <Slider ref={setSlider} {...settings}>
           {CoursesArrayData.map((course) => {
             return (
-              <div key={course.id} className="card p-2 col-md-6 col-lg-3">
+              <div
+                key={course.id}
+                className="card p-2 col-md-6 col-lg-3 bg-transparent text-light"
+                style={{ backgroundColor: 'transparent' }}
+              >
                 <div className="userCourses-parent">
                   <div className="userCourses-parentImg position-relative">
                     <img className="" src={img} alt="Card-cap" height={200} />
