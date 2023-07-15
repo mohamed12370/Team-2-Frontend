@@ -1,15 +1,20 @@
 import React from 'react';
 import CoursesArrayData from './CoursesArrayData';
 import img from '../../../Images/Python.svg.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState } from 'react';
 import PageHeader from './PageHeader';
+import LoginModal from '../../Auth/LoginModal';
+import { Button, Modal } from 'react-bootstrap';
 
 const NewCourse = () => {
   const [slider, setSlider] = useState(null);
+  const [showLogin, setShowLogin] = useState(false);
+  const navigate = useNavigate();
+
   const next = () => {
     slider.slickNext();
   };
@@ -17,6 +22,9 @@ const NewCourse = () => {
   const previous = () => {
     slider.slickPrev();
   };
+
+  const handleClose = () => setShowLogin(false);
+  const handleShow = () => setShowLogin(true);
 
   // carsoul settings
   var settings = {
@@ -54,17 +62,25 @@ const NewCourse = () => {
     ],
   };
 
-  const navigate = useNavigate();
+  const handleUserToken = (id) => {
+    const token = localStorage.getItem('token');
+    // console.log(token);
+    if (token) {
+      navigate(`/usercoursesdetails/${id}`);
+    } else {
+      handleShow();
+    }
+  };
 
   return (
     <>
       <PageHeader next={next} pre={previous} />
       <div className="row  mt-1 parent-card">
         <Slider ref={setSlider} {...settings}>
-          {CoursesArrayData.map((course) => {
+          {CoursesArrayData.map((course, i) => {
             return (
               <div
-                key={course.id}
+                key={i}
                 className="card p-2 col-md-6 col-lg-3 bg-transparent text-light"
                 style={{ backgroundColor: 'transparent' }}
               >
@@ -94,7 +110,7 @@ const NewCourse = () => {
                     <div
                       className="mt-2"
                       style={{ cursor: 'pointer' }}
-                      onClick={() => navigate(`/usercoursesdetails/:id`)}
+                      onClick={() => handleUserToken(course.id)}
                     >
                       <span className="text-light">View Details </span>
                       <i className="fa-solid fa-angle-right"></i>
@@ -106,6 +122,27 @@ const NewCourse = () => {
           })}
         </Slider>
       </div>
+
+      <>
+        <Modal
+          show={showLogin}
+          onHide={handleClose}
+          style={{ backgroundColor: 'rgb(100,100,100,.9)' }}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>you are not login plz go to login</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              <Link to={`/login`}>Login</Link>
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
     </>
   );
 };

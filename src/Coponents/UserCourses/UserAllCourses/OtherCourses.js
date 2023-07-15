@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Pagination from './Pagination';
 import CoursesArrayData from './CoursesArrayData';
 import img from '../../../Images/Python.svg.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button, Modal } from 'react-bootstrap';
 
 const OtherCourses = () => {
+  const [showLogin, setShowLogin] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClose = () => setShowLogin(false);
+  const handleShow = () => setShowLogin(true);
+
+  const handleUserToken = (id) => {
+    const token = localStorage.getItem('token');
+    // console.log(token);
+    if (token) {
+      navigate(`/usercoursesdetails/${id}`);
+    } else {
+      handleShow();
+    }
+  };
+
   return (
     <div>
       <div className="container parent-othercourses mt-5">
@@ -66,12 +83,16 @@ const OtherCourses = () => {
                     <button className=" btn w-75 mb-2 d-flex justify-content-center mx-auto">
                       ENROLL
                     </button>
-                    <Link
-                      to={`/usercoursesdetails/:id`}
-                      className="d-flex justify-content-lg-center justify-content-end"
+                    <p
+                      className="d-flex justify-content-lg-center justify-content-end border-none"
+                      style={{
+                        backgroundColor: 'transparent',
+                        cursor: 'pointer',
+                      }}
+                      onClick={() => handleUserToken(course.id)}
                     >
                       View Deatils
-                    </Link>
+                    </p>
                   </div>
                 </div>
               </>
@@ -80,6 +101,27 @@ const OtherCourses = () => {
         </div>
         <Pagination />
       </div>
+
+      <>
+        <Modal
+          show={showLogin}
+          onHide={handleClose}
+          style={{ backgroundColor: 'rgb(100,100,100,.9)' }}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>you are not login plz go to login</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              <Link to={`/login`}>Login</Link>
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
     </div>
   );
 };

@@ -90,43 +90,42 @@ export default function CreateNewExamPage() {
 
   return (
     <>
-      <div class="main-overlay">
-        <div class="container">
-          <Title
-            title={'create new exam'}
-            subTitle={'add exam details'}
-            date={'6th june 2023'}
-            btnTitle={'puplish'}
+      <div className="overlay"></div>
+      <div className="container mb-5 pb-5">
+        <Title
+          title={'create new exam'}
+          subTitle={'add exam details'}
+          date={'6th june 2023'}
+          btnTitle={'puplish'}
+        />
+        <ExamInfo
+          courseName={courseName}
+          handleCourseNameChange={handleCourseNameChange}
+          level={level}
+          handleLevelChange={handleLevelChange}
+          fullMark={fullMark}
+          handleFullMarkChange={handleFullMarkChange}
+          date={date}
+          handleDateChange={handleDateChange}
+          time={time}
+          handleTimeChange={handleTimeChange}
+          duration={duration}
+          handleDurationChange={handleDurationChange}
+        />
+        <div class="main-questions">
+          <AddAndDeleteBtn
+            question={Question}
+            handleQuestionChange={handleQuestionChange}
+            mark={mark}
+            handleMarkChange={handleMarkChange}
+            questionType={questionType}
+            handleSelectChange={handleSelectChange}
+            image={image}
+            handleImageChange={handleImageChange}
+            WrittenAnswer={WrittenAnswer}
+            handleWrittenAnswerChange={handleWrittenAnswerChange}
           />
-          <ExamInfo
-            courseName={courseName}
-            handleCourseNameChange={handleCourseNameChange}
-            level={level}
-            handleLevelChange={handleLevelChange}
-            fullMark={fullMark}
-            handleFullMarkChange={handleFullMarkChange}
-            date={date}
-            handleDateChange={handleDateChange}
-            time={time}
-            handleTimeChange={handleTimeChange}
-            duration={duration}
-            handleDurationChange={handleDurationChange}
-          />
-          <div class="main-questions">
-            <AddAndDeleteBtn
-              question={Question}
-              handleQuestionChange={handleQuestionChange}
-              mark={mark}
-              handleMarkChange={handleMarkChange}
-              questionType={questionType}
-              handleSelectChange={handleSelectChange}
-              image={image}
-              handleImageChange={handleImageChange}
-              WrittenAnswer={WrittenAnswer}
-              handleWrittenAnswerChange={handleWrittenAnswerChange}
-            />
-            <Buttons handleSubmit={handleSubmit} />
-          </div>
+          <Buttons handleSubmit={handleSubmit} />
         </div>
       </div>
     </>

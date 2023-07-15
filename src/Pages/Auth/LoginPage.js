@@ -9,7 +9,6 @@ export default function LoginPage() {
       <div className="overlay"></div>
       <div className="container login-container d-flex flex-column justify-content-center align-items-center mx-auto min-vh-100">
         <LoginCard />
-        <LoginModal />
       </div>
     </>
   );

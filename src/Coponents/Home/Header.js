@@ -164,48 +164,13 @@ function HeaderHome() {
             <li className="nav-item dropdown">
               <Link
                 to={`/userallcourses`}
-                className={`nav-link dropdown-toggle nav-link-home-text ${
+                className={`nav-link nav-link-home-text ${
                   activeLink.startsWith('/userallcourses') ? 'active-nav' : ''
                 }`}
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
                 onClick={() => handleClick('/userallcourses')}
               >
                 COURSES
               </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link
-                    to={`/userallcourses`}
-                    className="dropdown-item nav-link-home-text"
-                    onClick={() => handleClick('/userallcourses')}
-                  >
-                    LAPTOPS
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    className="dropdown-item nav-link-home-text"
-                    href="/#"
-                    onClick={() => handleClick('/userallcourses/phones')}
-                  >
-                    PHONES
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a
-                    className="dropdown-item nav-link-home-text"
-                    href="/#"
-                    onClick={() => handleClick('/userallcourses/tablets')}
-                  >
-                    TABLETS
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
               <Link

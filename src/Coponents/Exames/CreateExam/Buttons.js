@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-function Buttons({handleSubmit}) {
+function Buttons({ handleSubmit }) {
   return (
     <>
-        <div class="command-buttons ">
-            <button class="cancel">cancel</button>
-            <button type='submit' onClick={handleSubmit} class="save">save</button>
-        </div>
-
+      <div className="command-buttons ">
+        <button className="cancel">cancel</button>
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          className="border-none text-light py-2 px-5 rounded ms-0 ms-lg-2"
+          style={{ backgroundColor: '#e7bc3c' }}
+        >
+          save
+        </button>
+      </div>
     </>
-  )
+  );
 }
 
-export default Buttons
+export default Buttons;
