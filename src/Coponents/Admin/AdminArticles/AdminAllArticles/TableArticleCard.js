@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default function TableArticleCard({ item }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleDeleteArticle = async () => {
+    console.log('write your function deleted here');
+    handleClose();
+  };
+
   return (
     <div className="row table-container">
+      <>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body> are you sure from delete this article </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleDeleteArticle}>
+              Delete
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+
       <div className="d-lg-none col-6 name">Title</div>
       <div className=" col-lg-2 col-12 upper name-text">{item?.title}</div>
       <div className="col-lg-3 col-6 text-center status">
@@ -24,9 +52,9 @@ export default function TableArticleCard({ item }) {
       <div className="col-lg-3 col-6 text-center user-id">{item?.dateTime}</div>
       <div className="col-lg-2 col-12 d-flex justify-content-end email-name">
         <Link to={`/adminupdatearticle/:id`}>
-          <i class="far fa-edit edit"></i>
+          <i className="far fa-edit edit"></i>
         </Link>
-        <i class="far fa-trash-alt delete ms-2"></i>
+        <i className="far fa-trash-alt delete ms-2" onClick={handleShow}></i>
       </div>
     </div>
   );

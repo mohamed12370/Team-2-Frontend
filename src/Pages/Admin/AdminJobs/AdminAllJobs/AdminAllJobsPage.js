@@ -8,7 +8,7 @@ import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Sear
 import JobListContainerLg from '../../../../Coponents/Admin/AdminJobs/AdminAllJobs/JobListContainerLg';
 import JobListContainer from '../../../../Coponents/Admin/AdminJobs/AdminAllJobs/JobListContainer';
 import { Link } from 'react-router-dom';
-import Pagination from '../../../../Coponents/UserCourses/UserAllCourses/Pagination';
+import MainPagination from '../../../../Coponents/Admin/MainPagination';
 
 export default function AdminAllJobsPage() {
   return (
@@ -30,11 +30,7 @@ export default function AdminAllJobsPage() {
             />
             <JobListContainerLg />
             <JobListContainer />
-          </div>
-        </div>
-        <div className="row mt-2">
-          <div className="col">
-            <Pagination />
+            <MainPagination pageCount={50} />
           </div>
         </div>
         <div className="row">

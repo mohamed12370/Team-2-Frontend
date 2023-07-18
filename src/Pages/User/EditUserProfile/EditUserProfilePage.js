@@ -16,6 +16,12 @@ export default function EditUserProfilePage() {
   const [editorofileNationality, setEditorofileNationality] = useState();
   const [editorofileCountry, setEditorofileCountry] = useState();
   const [editorofileCity, setEditorofileCity] = useState();
+  const [img, setImg] = useState();
+  const [selectedImg, setSelectedImg] = useState();
+  const handleChangeImg = (e) => {
+    setImg(URL.createObjectURL(e.target.files[0]));
+    setSelectedImg(e.target.files[0]);
+  };
 
   // handle state change
   const handleEditorofileAbout = (e) => {
@@ -67,6 +73,7 @@ export default function EditUserProfilePage() {
       return;
     } else {
       const profileData = new FormData();
+      profileData.append('newUserImg', selectedImg);
       profileData.append('about', editorofileAbout);
       profileData.append('email', editorofileEmail);
       profileData.append('mobileNumber', editorofileMobileNumber);
@@ -86,7 +93,11 @@ export default function EditUserProfilePage() {
       <div className="edit-profile-container ">
         <div className="edit-profile-overlayOnImage"></div>
         <EidtProfile6thJun2023 />
-        <ImageAndNameAndButtonEidtprofile handleSubmit={handleSubmit} />
+        <ImageAndNameAndButtonEidtprofile
+          handleSubmit={handleSubmit}
+          handleChangeImg={handleChangeImg}
+          img={img}
+        />
         <PersonalInfoAndAboutEditprofile
           editorofileAbout={editorofileAbout}
           handleEditorofileAbout={handleEditorofileAbout}

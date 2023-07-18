@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 export default function TableUserCard({ item }) {
   const navigate = useNavigate();
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleDeleteUser = async () => {
+    console.log('write your function deleted here');
+    handleClose();
+  };
+
   return (
     <div className="row table-container">
+      <>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body> are you sure from delete this user </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleDeleteUser}>
+              Delete
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+
       <div className="d-lg-none col-6 name">Name</div>
       <div className=" col-lg-2 col-12 upper  name-text">{item?.name}</div>
       <div className="col-lg-2 col-6  status">
@@ -30,7 +58,7 @@ export default function TableUserCard({ item }) {
           onClick={() => navigate(`/adminedituser/id`)}
         ></i>
 
-        <i className="far fa-trash-alt delete ms-3"></i>
+        <i className="far fa-trash-alt delete ms-3" onClick={handleShow}></i>
       </div>
     </div>
   );

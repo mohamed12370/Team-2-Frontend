@@ -6,8 +6,8 @@ import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import TableAllUsers from '../../../../Coponents/Admin/AdminUser/AdminAllUser/TableAllUsers';
-import Pagination from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Pagination';
 import { Link } from 'react-router-dom';
+import MainPagination from '../../../../Coponents/Admin/MainPagination';
 //import AdminSidebar from '../../../../Coponents/Admin/AdminSidebar';
 
 export default function AdminAllUsersPage() {
@@ -31,18 +31,10 @@ export default function AdminAllUsersPage() {
               option3={'Admin'}
             />
             <TableAllUsers />
+            <MainPagination pageCount={50} />
           </div>
         </div>
-        <Pagination />
         <div className="row">
-          <div className="col-12">
-            <Link
-              to={`/admincreateuser`}
-              className="btnAppearInMQ text-center mb-0"
-            >
-              create new user
-            </Link>
-          </div>
           <div className="col-12">
             <Link
               to={`/adminuploadcertificate`}

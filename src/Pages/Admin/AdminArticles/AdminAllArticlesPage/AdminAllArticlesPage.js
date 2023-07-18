@@ -7,7 +7,7 @@ import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
 import TableAllAtricles from '../../../../Coponents/Admin/AdminArticles/AdminAllArticles/TableAllAtricles';
 import { Link } from 'react-router-dom';
-import Pagination from '../../../../Coponents/UserCourses/UserAllCourses/Pagination';
+import MainPagination from '../../../../Coponents/Admin/MainPagination';
 
 export default function AdminAllArticlesPage() {
   return (
@@ -28,7 +28,7 @@ export default function AdminAllArticlesPage() {
               option2={'Draft'}
             />
             <TableAllAtricles />
-            <Pagination />
+            <MainPagination pageCount={100} />
           </Col>
           <Col>
             <Link

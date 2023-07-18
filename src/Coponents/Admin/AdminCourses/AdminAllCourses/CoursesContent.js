@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { Button, Modal } from 'react-bootstrap';
 function CoursesContent({
   title,
   status,
@@ -10,8 +11,34 @@ function CoursesContent({
   startDate,
   publishedOn,
 }) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleDeleteCourse = async () => {
+    console.log('write your function deleted here');
+    handleClose();
+  };
+
   return (
     <>
+      <>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body> are you sure from delete this courses </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleDeleteCourse}>
+              Delete
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+
       {/*  card 1  */}
       <div className="row mx-0 mb-3 card-courses px-4 py-4  bg-black bg-opacity-25  align-items-center ">
         {/*  course name  */}
@@ -87,9 +114,11 @@ function CoursesContent({
           <Link to={`/adminupdatecourses/:id`}>
             <FontAwesomeIcon icon={faPenToSquare} className="pt-1 edit me-2" />
           </Link>
-          <a href="/#">
-            <FontAwesomeIcon icon={faTrashCan} className="pt-1 delete" />
-          </a>
+          <FontAwesomeIcon
+            icon={faTrashCan}
+            className="pt-1 delete"
+            onClick={handleShow}
+          />
         </div>
       </div>
     </>

@@ -2,16 +2,42 @@ import React, { useState } from 'react';
 import { adminJobsListData } from './adminJobData';
 import { LiaTrashAlt } from 'react-icons/lia';
 import { Link, useNavigate } from 'react-router-dom';
+import { Button, Modal } from 'react-bootstrap';
 
 function JobListContainerLg() {
   const navigate = useNavigate();
   const [jobsStat, setJobsStat] = useState(adminJobsListData);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  const handelDeleteJob = (index) => {
-    setJobsStat(jobsStat?.filter((e, i) => i !== index));
+  const handelDeleteJob = async () => {
+    console.log('write your function deleted here');
+    handleClose();
   };
+
+  // const handelDeleteJob = (index) => {
+  //   setJobsStat(jobsStat?.filter((e, i) => i !== index));
+  // };
   return (
     <div className="d-none d-lg-flex flex-column gap-4 mt-5 text-capitalize">
+      <>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body> are you sure from delete this job </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handelDeleteJob}>
+              Delete
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+
       <div className="row align-items-center fw-bold px-4">
         <div className="col-6 col-lg-3">Company</div>
         <div className="col-6 col-lg-3">Position</div>
@@ -61,10 +87,7 @@ function JobListContainerLg() {
                 />
               </Link>
 
-              <div
-                className="clickable active-scale"
-                onClick={() => handelDeleteJob(i)}
-              >
+              <div className="clickable active-scale" onClick={handleShow}>
                 {/* <i className="fa-solid fa-trash-can fa-xl" /> */}
                 <LiaTrashAlt size={30} />
               </div>

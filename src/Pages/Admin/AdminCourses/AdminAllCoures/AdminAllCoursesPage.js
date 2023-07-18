@@ -5,9 +5,9 @@ import Header from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Header';
 import Btn from '../../../../Coponents/Admin/AdminUser/AdminAllUser/BtnCreatUser';
 import Side from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Side';
 import Title from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Title&Search';
-import Pagination from '../../../../Coponents/Admin/AdminUser/AdminAllUser/Pagination';
 import TableAllCourses from '../../../../Coponents/Admin/AdminCourses/AdminAllCourses/TableAllCourses';
 import { useSelector } from 'react-redux';
+import MainPagination from '../../../../Coponents/Admin/MainPagination';
 
 export default function AdminAllCoursesPage() {
   // props عن طريق ال component انت عاوز لاى function هندسة ممكن تبعت اى
@@ -28,9 +28,9 @@ export default function AdminAllCoursesPage() {
           <div className="col-lg-9 col-md-12 col-sm-12">
             <Title title={'Courses'} placeholder={'Search In Courses'} />
             <TableAllCourses />
+            <MainPagination pageCount={50} />
           </div>
         </div>
-        <Pagination />
       </div>
     </div>
   );
