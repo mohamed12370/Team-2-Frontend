@@ -18,6 +18,7 @@ export default function EditUserProfilePage() {
   const [editorofileCity, setEditorofileCity] = useState();
   const [img, setImg] = useState();
   const [selectedImg, setSelectedImg] = useState();
+
   const handleChangeImg = (e) => {
     setImg(URL.createObjectURL(e.target.files[0]));
     setSelectedImg(e.target.files[0]);

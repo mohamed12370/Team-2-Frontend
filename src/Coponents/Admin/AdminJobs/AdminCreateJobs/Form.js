@@ -173,11 +173,7 @@ const Form = () => {
           </div>
           <div className=" row col-lg-4 col-sm-12 JobType">
             <label>Job Type</label>
-            <input type="text" />
-          </div>
-
-          <div className="col-lg-3 col-sm-12">
-            <div className="d-flex align-items-center gap-2 h-100">
+            <div className="d-flex align-items-center gap-2 ">
               <div>
                 <input type="radio" />
               </div>
@@ -192,22 +188,40 @@ const Form = () => {
               </div>
             </div>
           </div>
+
+          {/* <div className="col-lg-3 col-sm-12">
+            <div className="d-flex align-items-center gap-2 h-100">
+              <div>
+                <input type="radio" />
+              </div>
+              <div className="mt-2">
+                <label>Remote</label>
+              </div>
+              <div>
+                <input type="radio" />
+              </div>
+              <div className="mt-2">
+                <label>On Site</label>
+              </div>
+            </div>
+          </div> */}
         </div>
 
-        <div className="row">
-          <div className="col-lg-2 col-sm-4">
+        <div className="row align-items-center">
+          <div className="col-lg-6 col-sm-6">
             <label>Salary Range</label> <br />
             <div className="d-flex align-items-center">
               <input type="text" />
-              <p className="mt-2 ms-2">To</p>
+              <p className=" mx-2">To</p>
+              <input type="text" />
             </div>
           </div>
-          <div className="col-lg-3 col-sm-4 mt-2">
+          {/* <div className="col-lg-3 col-sm-4 ">
             <label></label> <br />
             <div>
               <input type="text" />
             </div>
-          </div>
+          </div> */}
           <div className="col-lg-3 col-sm-4">
             <label>Currency</label> <br />
             <div>
